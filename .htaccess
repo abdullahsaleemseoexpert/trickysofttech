@@ -7,3 +7,13 @@ RewriteRule ^(.*)$ https://trickysofttech.com/$1 [L,R=301]
 # Strip index.html from any URL (e.g. /index.html -> /, /services/index.html -> /services/)
 RewriteCond %{THE_REQUEST} /index\.html[\s?] [NC]
 RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
+
+# Redirect any other direct .html request to its clean, extensionless URL
+RewriteCond %{THE_REQUEST} \s/+([^.]+)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Internally serve the matching .html file for a clean extensionless URL,
+# without changing what the browser shows
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]
