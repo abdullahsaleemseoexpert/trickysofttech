@@ -1,0 +1,13 @@
+# Local Claude Code tooling
+.claude/
+
+# Local Netlify folder
+.netlify
+
+# OS junk
+Thumbs.db
+.DS_Store
+
+# Deploy credentials (never commit these)
+.ftp-config.json
+*.env
