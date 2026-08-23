@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.trickysofttech\.com [NC]
+RewriteRule ^(.*)$ https://trickysofttech.com/$1 [L,R=301]
