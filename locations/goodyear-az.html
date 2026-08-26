@@ -193,6 +193,20 @@ body{overflow-x:hidden}
 .nav-link::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--spectrum-core);transition:width 250ms var(--ease-premium)}
 .nav-link:hover::after,.nav-link.active::after{width:100%}
 .hamburger{width:44px;height:44px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer;border-radius:10px;border:1px solid rgba(15,15,35,0.05);background:rgba(15,15,35,0.04);transition:border-color 200ms,background 200ms;flex-shrink:0}
+/* Desktop nav breakpoint, written explicitly rather than relying on the
+   Tailwind CDN's runtime class scanner: at the 1280-1440px "small laptop"
+   range the play-CDN script was silently failing to generate xl: responsive
+   utilities for this exact class combination, leaving the full nav neither
+   properly hidden nor properly shown and causing nav links to wrap. */
+@media (max-width:1535.98px){
+  header#main-nav nav[aria-label="Main navigation"]{display:none!important}
+  header#main-nav a.btn-nav{display:none!important}
+}
+@media (min-width:1536px){
+  header#main-nav nav[aria-label="Main navigation"]{display:flex!important;align-items:center;gap:24px}
+  header#main-nav a.btn-nav{display:inline-flex!important}
+  header#main-nav button.hamburger{display:none!important}
+}
 .hamburger:hover{border-color:rgba(15,15,35,0.08);background:rgba(15,15,35,0.07)}
 .hamburger span{display:block;width:18px;height:1.5px;background:var(--text-primary);border-radius:2px;transition:all 320ms var(--ease-premium);transform-origin:center}
 .hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
@@ -389,7 +403,7 @@ body{overflow-x:hidden}
   <div class="max-w-[1600px] mx-auto px-6">
     <div class="flex items-center justify-between">
       <a href="../" class="nav-logo" aria-label="Tricky Soft Tech Homepage"><span class="logo-swap"><img src="../assets/logo-on-light-web.png" alt="Tricky Soft Tech" class="nav-logo-img logo-img-light"><img src="../assets/logo-on-dark-web.png" alt="" class="nav-logo-img logo-img-dark" aria-hidden="true"></span></a>
-      <nav aria-label="Main navigation" class="hidden lg:flex items-center gap-8">
+      <nav aria-label="Main navigation" class="hidden xl:flex items-center gap-6">
         <a href="../" class="nav-link">Home</a>
         <div class="nav-dropdown">
       <a href="../services/" class="nav-link nav-dropdown-trigger">Services<svg class="nav-caret" width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
@@ -484,6 +498,7 @@ body{overflow-x:hidden}
         <a href="../locations/" class="nav-dropdown-link nav-dropdown-viewall">View All Locations →</a>
       </div>
     </div>
+        <a href="../blog/" class="nav-link">Blog</a>
         <a href="../portfolio" class="nav-link">Portfolio</a>
         <a href="../case-studies" class="nav-link">Case Studies</a>
         <a href="../about" class="nav-link">About</a>
@@ -494,11 +509,11 @@ body{overflow-x:hidden}
           <svg class="icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <svg class="icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         </button>
-        <a href="../contact" class="btn-nav hidden lg:inline-flex">
+        <a href="../contact" class="btn-nav hidden xl:inline-flex">
           Book Strategy Call
           <span class="btn-arrow" aria-hidden="true">→</span>
         </a>
-        <button class="hamburger lg:hidden" id="hamburger-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">
+        <button class="hamburger xl:hidden" id="hamburger-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">
           <span></span>
           <span></span>
           <span></span>
@@ -566,6 +581,7 @@ body{overflow-x:hidden}
     </div>
   </div>
 
+  <a href="../blog/" class="mobile-nav-link" tabindex="-1">Blog</a>
   <a href="../portfolio" class="mobile-nav-link" tabindex="-1">Portfolio</a>
   <a href="../case-studies" class="mobile-nav-link" tabindex="-1">Case Studies</a>
   <a href="../about" class="mobile-nav-link" tabindex="-1">About</a>
@@ -1001,6 +1017,7 @@ body{overflow-x:hidden}
         <p class="footer-col-title">Company</p>
         <ul class="footer-links">
           <li><a href="../locations/">Locations</a></li>
+          <li><a href="../blog/">Blog</a></li>
           <li><a href="../about">About Us</a></li>
           <li><a href="../portfolio">Portfolio</a></li>
           <li><a href="../case-studies">Case Studies</a></li>
