@@ -1,5 +1,8 @@
 RewriteEngine On
 
+# Custom 404 page for URLs that do not resolve to a file
+ErrorDocument 404 /404.html
+
 # www -> non-www
 RewriteCond %{HTTP_HOST} ^www\.trickysofttech\.com [NC]
 RewriteRule ^(.*)$ https://trickysofttech.com/$1 [L,R=301]
