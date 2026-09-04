@@ -454,8 +454,8 @@ body{overflow-x:hidden}
 .article-table td:first-child{color:var(--text-primary);font-weight:600}
 .article-table tr:last-child td{border-bottom:none}
 .article-checklist{display:flex;flex-direction:column;gap:11px;margin:0 0 22px;list-style:none;padding:0}
-.article-checklist li{display:flex;gap:11px;align-items:flex-start;line-height:1.75}
-.article-checklist li::before{content:'';flex-shrink:0;width:16px;height:16px;margin-top:4px;border-radius:5px;border:1.5px solid var(--spectrum-core)}
+.article-checklist li{position:relative;padding-left:28px;line-height:1.75}
+.article-checklist li::before{content:'';position:absolute;left:0;top:0.55em;width:15px;height:15px;border-radius:5px;border:1.5px solid var(--spectrum-core)}
 
 /* ============================================================
    FAQ - quiet divided list, not boxed cards
