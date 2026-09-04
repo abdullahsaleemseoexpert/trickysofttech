@@ -495,6 +495,8 @@ body{overflow-x:hidden}
 .article-cta-panel p{font-size:14.5px;color:var(--text-secondary);line-height:1.7;margin-bottom:28px}
 
 :root[data-theme="dark"] .article-table th{background:transparent}
+
+@media (max-width:640px){.blog-frame{padding:0 16px}.article-cta-panel{padding:40px 20px}}
 </style>
 </head>
 <body>
@@ -719,12 +721,6 @@ body{overflow-x:hidden}
 <section style="padding:0 0 80px">
   <div class="blog-frame">
 
-
-<main>
-
-<section style="padding:0 0 80px">
-  <div class="blog-frame">
-
     <div class="breadcrumb-row" style="padding-top:156px;margin-bottom:28px">
       <a href="../">Home</a><span>/</span><a href=".">Blog</a><span>/</span><span>Missed Calls Are Lost Leads: Call Handling Systems for Local Service Businesses</span>
     </div>
@@ -792,7 +788,7 @@ body{overflow-x:hidden}
       </div>
     </div>
 
-    <article class="article-body reveal" style="margin-top:44px">
+    <article class="article-body" style="margin-top:44px">
 
 <p>A business can rank first in the map pack, run Local Services Ads, and have a website that converts well, and still leave money on the table every day, because the calls those channels produce hit voicemail, get answered by someone who cannot book a job, or turn into a callback that never happens. Marketing gets a prospect to dial. What happens in the next ninety seconds decides whether that prospect becomes revenue or a competitor's customer.</p>
 <p>This guide is about that ninety seconds and the hour that follows. It covers how fast you actually need to answer, what to do when you cannot, how to structure after-hours and overflow coverage, the intake conversation that books jobs, how to decide which calls to take, emergency routing, the handoff to the technician, and how to follow up on estimates. It does not cover website conversion, which is a separate discipline handled in <a href="turn-visitors-into-booked-jobs">turning website visitors into booked jobs</a>. This is only about the phone, and the follow-up that turns a booked call into a completed job.</p>
@@ -1210,8 +1206,9 @@ window.addEventListener('scroll', () => {
 updateNav();
 const io = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
-}, { threshold: 0.1 });
+}, { threshold: 0, rootMargin: "0px 0px -40px 0px" });
 document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => io.observe(el));
+(function(){function show(){document.querySelectorAll('.reveal:not(.visible), .reveal-stagger:not(.visible)').forEach(function(el){var r=el.getBoundingClientRect();if(r.top<(window.innerHeight||document.documentElement.clientHeight)&&r.bottom>0)el.classList.add('visible');});}requestAnimationFrame(show);setTimeout(function(){document.querySelectorAll('.reveal:not(.visible), .reveal-stagger:not(.visible)').forEach(function(el){el.classList.add('visible');});},1500);})();
 </script>
 
 <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top">

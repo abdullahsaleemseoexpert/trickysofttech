@@ -495,6 +495,8 @@ body{overflow-x:hidden}
 .article-cta-panel p{font-size:14.5px;color:var(--text-secondary);line-height:1.7;margin-bottom:28px}
 
 :root[data-theme="dark"] .article-table th{background:transparent}
+
+@media (max-width:640px){.blog-frame{padding:0 16px}.article-cta-panel{padding:40px 20px}}
 </style>
 </head>
 <body>
@@ -719,12 +721,6 @@ body{overflow-x:hidden}
 <section style="padding:0 0 80px">
   <div class="blog-frame">
 
-
-<main>
-
-<section style="padding:0 0 80px">
-  <div class="blog-frame">
-
     <div class="breadcrumb-row" style="padding-top:156px;margin-bottom:28px">
       <a href="../">Home</a><span>/</span><a href=".">Blog</a><span>/</span><span>Service Area Pages vs City Pages: Which Local Landing Pages Should You Build?</span>
     </div>
@@ -786,7 +782,7 @@ body{overflow-x:hidden}
       </div>
     </div>
 
-    <article class="article-body reveal" style="margin-top:44px">
+    <article class="article-body" style="margin-top:44px">
 
 <p>A service business grows, wants to rank in more towns, and someone suggests building a page for each city. Twenty pages later, none of them rank, a few got hit by a Google update, and the site feels like a phone book. Somewhere in there, "we should have city pages" turned into "we built doorway pages," and the difference between those two things is the whole subject of this article.</p>
 <p>This is about page architecture: what kinds of local landing pages exist, what each one is actually for, when a city page earns its place, where Google draws the line on thin and doorway pages, and how to build local pages that help rather than hurt. It pairs with <a href="how-many-pages-should-a-website-have">how many pages a local service website should have</a>, which covers site size overall. This one goes deep on the service-versus-location question specifically, because that is where most of the damage gets done, and where the fix is usually straightforward once you stop thinking about page count and start thinking about what each page is for.</p>
@@ -1199,8 +1195,9 @@ window.addEventListener('scroll', () => {
 updateNav();
 const io = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
-}, { threshold: 0.1 });
+}, { threshold: 0, rootMargin: "0px 0px -40px 0px" });
 document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => io.observe(el));
+(function(){function show(){document.querySelectorAll('.reveal:not(.visible), .reveal-stagger:not(.visible)').forEach(function(el){var r=el.getBoundingClientRect();if(r.top<(window.innerHeight||document.documentElement.clientHeight)&&r.bottom>0)el.classList.add('visible');});}requestAnimationFrame(show);setTimeout(function(){document.querySelectorAll('.reveal:not(.visible), .reveal-stagger:not(.visible)').forEach(function(el){el.classList.add('visible');});},1500);})();
 </script>
 
 <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top">

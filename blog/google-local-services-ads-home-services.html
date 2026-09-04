@@ -495,6 +495,8 @@ body{overflow-x:hidden}
 .article-cta-panel p{font-size:14.5px;color:var(--text-secondary);line-height:1.7;margin-bottom:28px}
 
 :root[data-theme="dark"] .article-table th{background:transparent}
+
+@media (max-width:640px){.blog-frame{padding:0 16px}.article-cta-panel{padding:40px 20px}}
 </style>
 </head>
 <body>
@@ -719,12 +721,6 @@ body{overflow-x:hidden}
 <section style="padding:0 0 80px">
   <div class="blog-frame">
 
-
-<main>
-
-<section style="padding:0 0 80px">
-  <div class="blog-frame">
-
     <div class="breadcrumb-row" style="padding-top:156px;margin-bottom:28px">
       <a href="../">Home</a><span>/</span><a href=".">Blog</a><span>/</span><span>Google Local Services Ads for Home Services: Costs, Screening, and When They Make Sense</span>
     </div>
@@ -790,7 +786,7 @@ body{overflow-x:hidden}
       </div>
     </div>
 
-    <article class="article-body reveal" style="margin-top:44px">
+    <article class="article-body" style="margin-top:44px">
 
 <p>Google Local Services Ads sit at the very top of the results for a lot of home service searches, above the map pack and above the regular search ads, with a verification badge and a star rating. For some businesses they are the best lead source Google offers. For others they are an expensive way to buy leads that were never going to book. The difference comes down to your category, your market, your reputation, and how ready your office is to answer a phone.</p>
 <p>This guide covers what Local Services Ads actually are, how the screening and payment work, what a "lead" means and how disputes work, the setup choices that affect lead quality, and the specific situations where the program is or is not a sensible investment. It also covers how the program is changing as Google folds it into its broader ad system. Where numbers vary by market, this guide says so rather than inventing a figure, because your cost per lead in Phoenix for HVAC will not match a plumber's in a small town, and a figure pulled from a case study for a different trade in a different city is worse than no figure at all.</p>
@@ -1187,8 +1183,9 @@ window.addEventListener('scroll', () => {
 updateNav();
 const io = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
-}, { threshold: 0.1 });
+}, { threshold: 0, rootMargin: "0px 0px -40px 0px" });
 document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => io.observe(el));
+(function(){function show(){document.querySelectorAll('.reveal:not(.visible), .reveal-stagger:not(.visible)').forEach(function(el){var r=el.getBoundingClientRect();if(r.top<(window.innerHeight||document.documentElement.clientHeight)&&r.bottom>0)el.classList.add('visible');});}requestAnimationFrame(show);setTimeout(function(){document.querySelectorAll('.reveal:not(.visible), .reveal-stagger:not(.visible)').forEach(function(el){el.classList.add('visible');});},1500);})();
 </script>
 
 <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top">

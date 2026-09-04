@@ -495,6 +495,8 @@ body{overflow-x:hidden}
 .article-cta-panel p{font-size:14.5px;color:var(--text-secondary);line-height:1.7;margin-bottom:28px}
 
 :root[data-theme="dark"] .article-table th{background:transparent}
+
+@media (max-width:640px){.blog-frame{padding:0 16px}.article-cta-panel{padding:40px 20px}}
 </style>
 </head>
 <body>
@@ -719,12 +721,6 @@ body{overflow-x:hidden}
 <section style="padding:0 0 80px">
   <div class="blog-frame">
 
-
-<main>
-
-<section style="padding:0 0 80px">
-  <div class="blog-frame">
-
     <div class="breadcrumb-row" style="padding-top:156px;margin-bottom:28px">
       <a href="../">Home</a><span>/</span><a href=".">Blog</a><span>/</span><span>How to Build a Seasonal Marketing Calendar for a Home Service Business</span>
     </div>
@@ -780,7 +776,7 @@ body{overflow-x:hidden}
       </div>
     </div>
 
-    <article class="article-body reveal" style="margin-top:44px">
+    <article class="article-body" style="margin-top:44px">
 
 <p>Every home service business has a rhythm. HVAC spikes in the first heat wave and again in the first cold snap. Landscaping runs hard from spring through fall and nearly stops in winter. Roofing follows storms. Plumbing has a steady base with a cold-weather surge. Moving peaks in summer. Most owners feel this rhythm in their bones but do not plan their marketing around it, so they market hardest when they are already slammed and go quiet exactly when they need work.</p>
 <p>A seasonal marketing calendar fixes that. It is a simple plan that maps your marketing activity, the campaigns, the content, the review pushes, the paid spend, onto the demand curve and the staffing reality of your specific business. This guide shows how to build one that works across trades, with examples from several, without repeating the trade-specific playbooks. If you want the deep version for your category, the <a href="plumbing-marketing-guide">plumbing</a>, <a href="hvac-marketing-guide">HVAC</a>, <a href="roofing-marketing-guide">roofing</a>, and <a href="landscaping-marketing-guide">landscaping</a> guides go further. This one is about the planning method itself, so it applies whether you run a cleaning company, a moving crew, a pest control route, or a junk removal operation.</p>
@@ -1188,8 +1184,9 @@ window.addEventListener('scroll', () => {
 updateNav();
 const io = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
-}, { threshold: 0.1 });
+}, { threshold: 0, rootMargin: "0px 0px -40px 0px" });
 document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => io.observe(el));
+(function(){function show(){document.querySelectorAll('.reveal:not(.visible), .reveal-stagger:not(.visible)').forEach(function(el){var r=el.getBoundingClientRect();if(r.top<(window.innerHeight||document.documentElement.clientHeight)&&r.bottom>0)el.classList.add('visible');});}requestAnimationFrame(show);setTimeout(function(){document.querySelectorAll('.reveal:not(.visible), .reveal-stagger:not(.visible)').forEach(function(el){el.classList.add('visible');});},1500);})();
 </script>
 
 <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top">

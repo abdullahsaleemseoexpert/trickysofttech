@@ -495,6 +495,8 @@ body{overflow-x:hidden}
 .article-cta-panel p{font-size:14.5px;color:var(--text-secondary);line-height:1.7;margin-bottom:28px}
 
 :root[data-theme="dark"] .article-table th{background:transparent}
+
+@media (max-width:640px){.blog-frame{padding:0 16px}.article-cta-panel{padding:40px 20px}}
 </style>
 </head>
 <body>
@@ -719,12 +721,6 @@ body{overflow-x:hidden}
 <section style="padding:0 0 80px">
   <div class="blog-frame">
 
-
-<main>
-
-<section style="padding:0 0 80px">
-  <div class="blog-frame">
-
     <div class="breadcrumb-row" style="padding-top:156px;margin-bottom:28px">
       <a href="../">Home</a><span>/</span><a href=".">Blog</a><span>/</span><span>How to Report Fake Google Business Profile Listings and Map Spam</span>
     </div>
@@ -787,7 +783,7 @@ body{overflow-x:hidden}
       </div>
     </div>
 
-    <article class="article-body reveal" style="margin-top:44px">
+    <article class="article-body" style="margin-top:44px">
 
 <p>Open Google Maps for a trade like locksmithing, garage door repair, or towing in a busy metro, and you will often find more listings than there are real companies. Some are keyword-stuffed versions of legitimate businesses. Others are addresses that turn out to be a parking lot, a UPS Store, or an apartment. A few are lead-generation fronts that book the job and sell it to whoever is closest. Every one of those fake pins pushes a real, licensed, insured local business down the results.</p>
 <p>You can do something about it, but only some things, and only in some ways. This is a guide to identifying map spam accurately, reporting it through the channels Google actually monitors, setting realistic expectations for what happens next, and spending the same energy on the work that reliably moves your own ranking. It is written for the owner of a legitimate business who is tired of losing calls to listings that should not exist.</p>
@@ -1177,8 +1173,9 @@ window.addEventListener('scroll', () => {
 updateNav();
 const io = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
-}, { threshold: 0.1 });
+}, { threshold: 0, rootMargin: "0px 0px -40px 0px" });
 document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => io.observe(el));
+(function(){function show(){document.querySelectorAll('.reveal:not(.visible), .reveal-stagger:not(.visible)').forEach(function(el){var r=el.getBoundingClientRect();if(r.top<(window.innerHeight||document.documentElement.clientHeight)&&r.bottom>0)el.classList.add('visible');});}requestAnimationFrame(show);setTimeout(function(){document.querySelectorAll('.reveal:not(.visible), .reveal-stagger:not(.visible)').forEach(function(el){el.classList.add('visible');});},1500);})();
 </script>
 
 <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top">
