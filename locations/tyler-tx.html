@@ -281,9 +281,9 @@ body{overflow-x:hidden}
 .nav-dropdown-link:hover{background:rgba(91,95,239,0.08);color:var(--text-primary, #14141F)}
 .nav-dropdown-divider{height:1px;background:rgba(15,15,35,0.08);margin:6px 6px}
 .nav-dropdown-viewall{color:var(--spectrum-core, #5B5FEF);font-weight:700}
-.nav-dropdown-panel-mega{left:auto;right:0;transform:translateY(-6px);min-width:640px}
+.nav-dropdown-panel-mega{left:auto;right:0;transform:translateY(-6px);min-width:900px}
 .nav-dropdown:hover .nav-dropdown-panel-mega{transform:translateY(0)}
-.locations-mega-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:2px 14px;padding:2px}
+.locations-mega-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px 12px;padding:2px}
 .locations-mega-title{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted, #6B6F8C);padding:8px 12px 4px}
 .locations-mega-col .nav-dropdown-link{padding:7px 12px;font-size:13px}
 .mobile-nav-sublink{font-family:'Inter',sans-serif;font-size:15px;font-weight:500;color:var(--text-muted, #6B6F8C);text-decoration:none;padding:8px 24px;width:100%;max-width:320px;text-align:center;opacity:0;transform:translateX(32px);transition:color 200ms}
@@ -396,6 +396,37 @@ body{overflow-x:hidden}
 :root[data-theme="dark"] .theme-toggle .icon-moon{opacity:0;transform:rotate(60deg) scale(0.5)}
 :root[data-theme="dark"] .theme-toggle .icon-sun{opacity:1;transform:rotate(0deg) scale(1)}
 
+
+/* -- Contact form -- */
+.form-field{display:flex;flex-direction:column;gap:6px}
+.form-label{font-size:12px;font-weight:600;letter-spacing:0.05em;color:var(--text-muted);text-transform:uppercase;font-family:'JetBrains Mono',monospace}
+.form-input{background:rgba(15,15,35,0.04);border:1px solid var(--border-default);border-radius:10px;padding:13px 16px;font-size:14px;color:var(--text-primary);font-family:'Inter',sans-serif;transition:border-color 0.2s,background 0.2s;outline:none;width:100%}
+.form-input::placeholder{color:var(--text-muted)}
+.form-input:focus{border-color:var(--border-accent-strong);background:rgba(91,95,239,0.06)}
+select.form-input option{background:var(--ink-raised);color:var(--text-primary)}
+textarea.form-input{resize:vertical;min-height:110px;line-height:1.6}
+/* -- CTA form + map panel -- */
+.cta-form-panel{border-radius:28px;border:1px solid var(--border-default);background:var(--ink-raised);padding:40px;position:relative;overflow:hidden;max-width:1200px;margin:0 auto}
+.cta-form-panel::before{content:'';position:absolute;width:420px;height:420px;border-radius:50%;background:rgba(91,95,239,0.08);filter:blur(70px);top:-130px;right:-100px;pointer-events:none}
+.cta-grid{position:relative;z-index:1;display:grid;grid-template-columns:1fr;gap:34px}
+@media(min-width:920px){.cta-grid{grid-template-columns:1.02fr 0.98fr;gap:46px;align-items:stretch}}
+.cta-map-col{display:flex;flex-direction:column;gap:14px;min-height:100%}
+.loc-map-frame{position:relative;flex:1;min-height:360px;border-radius:20px;overflow:hidden;border:1px solid var(--border-default);box-shadow:0 20px 48px rgba(15,15,35,0.14)}
+.loc-map-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block;filter:grayscale(0.18) contrast(1.03)}
+.loc-map-cap{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--text-muted);font-family:'JetBrains Mono',monospace;letter-spacing:0.02em;line-height:1.4}
+@media(max-width:520px){.cta-form-panel{padding:26px 20px}}
+:root[data-theme="dark"] .loc-map-frame iframe{filter:invert(0.92) hue-rotate(180deg) grayscale(0.2) brightness(0.95) contrast(0.95)}
+/* -- Industry cards -- */
+.ind-card{display:flex;align-items:center;gap:12px;padding:15px 16px;border-radius:14px;border:1px solid var(--border-default);background:var(--ink-raised);text-decoration:none;transition:border-color 0.2s var(--ease-premium),transform 0.2s var(--ease-premium),box-shadow 0.2s var(--ease-premium)}
+.ind-card:hover{border-color:var(--border-accent);transform:translateY(-3px);box-shadow:0 14px 32px rgba(15,15,35,0.10)}
+.ind-card-icon{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:rgba(91,95,239,0.10)}
+.ind-card-name{font-family:'Sora',sans-serif;font-size:14px;font-weight:700;color:var(--text-primary);line-height:1.3}
+.ind-card-arrow{margin-left:auto;flex-shrink:0;color:var(--text-muted);transition:transform 0.2s,color 0.2s}
+.ind-card:hover .ind-card-arrow{color:var(--spectrum-core);transform:translateX(3px)}
+/* loc dark form fix */
+:root[data-theme="dark"] .form-input{background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.10)}
+:root[data-theme="dark"] .form-input:focus{background:rgba(129,132,255,0.08);border-color:var(--border-accent-strong)}
+:root[data-theme="dark"] .loc-map-frame{border-color:rgba(255,255,255,0.10)}
 </style>
 </head>
 <body style="background:var(--ink-void)">
@@ -443,7 +474,7 @@ body{overflow-x:hidden}
         <div class="nav-dropdown">
       <a href="../locations/" class="nav-link active nav-dropdown-trigger">Locations<svg class="nav-caret" width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       <div class="nav-dropdown-panel nav-dropdown-panel-mega">
-        <div class="locations-mega-grid">
+                <div class="locations-mega-grid">
 
         <div class="locations-mega-col">
           <div class="locations-mega-title">Texas</div>
@@ -493,6 +524,24 @@ body{overflow-x:hidden}
           <a href="../locations/clarksville-tn" class="nav-dropdown-link">Clarksville</a>
           <a href="../locations/franklin-tn" class="nav-dropdown-link">Franklin</a>
           <a href="../locations/johnson-city-tn" class="nav-dropdown-link">Johnson City</a>
+        </div>
+
+        <div class="locations-mega-col">
+          <div class="locations-mega-title">South Carolina</div>
+          <a href="../locations/greenville-sc" class="nav-dropdown-link">Greenville</a>
+          <a href="../locations/columbia-sc" class="nav-dropdown-link">Columbia</a>
+          <a href="../locations/charleston-sc" class="nav-dropdown-link">Charleston</a>
+          <a href="../locations/myrtle-beach-sc" class="nav-dropdown-link">Myrtle Beach</a>
+          <a href="../locations/rock-hill-sc" class="nav-dropdown-link">Rock Hill</a>
+        </div>
+
+        <div class="locations-mega-col">
+          <div class="locations-mega-title">Florida</div>
+          <a href="../locations/tallahassee-fl" class="nav-dropdown-link">Tallahassee</a>
+          <a href="../locations/gainesville-fl" class="nav-dropdown-link">Gainesville</a>
+          <a href="../locations/sarasota-fl" class="nav-dropdown-link">Sarasota</a>
+          <a href="../locations/cape-coral-fl" class="nav-dropdown-link">Cape Coral</a>
+          <a href="../locations/pensacola-fl" class="nav-dropdown-link">Pensacola</a>
         </div>
         </div>
         <div class="nav-dropdown-divider"></div>
@@ -579,6 +628,8 @@ body{overflow-x:hidden}
       <a href="../locations/#state-ga" class="mobile-nav-sublink" tabindex="-1">Georgia</a>
       <a href="../locations/#state-nc" class="mobile-nav-sublink" tabindex="-1">North Carolina</a>
       <a href="../locations/#state-tn" class="mobile-nav-sublink" tabindex="-1">Tennessee</a>
+      <a href="../locations/#state-sc" class="mobile-nav-sublink" tabindex="-1">South Carolina</a>
+      <a href="../locations/#state-fl" class="mobile-nav-sublink" tabindex="-1">Florida</a>
     </div>
   </div>
 
@@ -831,19 +882,19 @@ body{overflow-x:hidden}
     <div class="eyebrow"><span class="eyebrow-dot"></span>Industries We Serve</div>
     <h2 class="section-headline mb-6" style="font-size:clamp(26px,3.6vw,38px)">Local trades we help <span class="text-grad-accent">win search in Tyler.</span></h2>
     <p style="font-size:15.5px;color:var(--text-secondary);line-height:1.7;max-width:640px;margin-bottom:24px">From same-day service calls to seasonal bookings, here are the local business categories we specialize in across Tyler and every market we serve.</p>
-    <div class="flex flex-wrap gap-3" style="margin-bottom:24px">
-      <a href="../industries/junk-removal" class="chip-tag">Junk Removal</a>
-      <a href="../industries/car-detailing" class="chip-tag">Car Detailing</a>
-      <a href="../industries/house-cleaning" class="chip-tag">House Cleaning</a>
-      <a href="../industries/towing" class="chip-tag">Towing</a>
-      <a href="../industries/pest-control" class="chip-tag">Pest Control</a>
-      <a href="../industries/landscaping-lawn-care" class="chip-tag">Landscaping & Lawn Care</a>
-      <a href="../industries/locksmith-services" class="chip-tag">Locksmith Services</a>
-      <a href="../industries/plumbing" class="chip-tag">Plumbing</a>
-      <a href="../industries/hvac" class="chip-tag">HVAC</a>
-      <a href="../industries/roofing" class="chip-tag">Roofing</a>
-      <a href="../industries/moving-companies" class="chip-tag">Moving Companies</a>
-      <a href="../industries/appliance-repair" class="chip-tag">Appliance Repair</a>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal-stagger" style="margin-bottom:28px">
+      <a href="../industries/junk-removal" class="ind-card"><span class="ind-card-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14" stroke="#5B5FEF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="ind-card-name">Junk Removal</span><svg class="ind-card-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="../industries/car-detailing" class="ind-card"><span class="ind-card-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M5 13l1.5-4.5A2 2 0 018.4 7h7.2a2 2 0 011.9 1.5L19 13M5 13h14v4H5v-4zM7 17v2M17 17v2" stroke="#5B5FEF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="ind-card-name">Car Detailing</span><svg class="ind-card-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="../industries/house-cleaning" class="ind-card"><span class="ind-card-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M4 21V10l8-6 8 6v11M9 21v-6h6v6M14 3l1 2M17 5l1 1" stroke="#5B5FEF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="ind-card-name">House Cleaning</span><svg class="ind-card-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="../industries/towing" class="ind-card"><span class="ind-card-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M3 17h11v-5l4 1 3 4M3 17V8h8l3 4M3 17v2M8 19a2 2 0 104 0M17 19a2 2 0 104 0" stroke="#5B5FEF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="ind-card-name">Towing</span><svg class="ind-card-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="../industries/pest-control" class="ind-card"><span class="ind-card-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M12 8a4 4 0 014 4v3a4 4 0 01-8 0v-3a4 4 0 014-4zM12 8V5M9 6L7 4M15 6l2-2M8 12H4M20 12h-4M8 16H5M19 16h-3" stroke="#5B5FEF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="ind-card-name">Pest Control</span><svg class="ind-card-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="../industries/landscaping-lawn-care" class="ind-card"><span class="ind-card-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M12 21c0-6 3-10 8-11-1 6-4 9-8 11zM12 21C12 15 9 11 4 10c1 6 4 9 8 11zM12 21v-6" stroke="#5B5FEF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="ind-card-name">Landscaping &amp; Lawn Care</span><svg class="ind-card-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="../industries/locksmith-services" class="ind-card"><span class="ind-card-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M14 7a3 3 0 11-4 2.8V14l-1.5 1.5L10 17l-1.5 1.5L10 20l-2 2-2-2 6.2-6.2A3 3 0 0114 7z" stroke="#5B5FEF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="ind-card-name">Locksmith Services</span><svg class="ind-card-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="../industries/plumbing" class="ind-card"><span class="ind-card-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M9 3v6a3 3 0 006 0V3M7 3h4M13 3h4M12 12v4a4 4 0 004 4h1" stroke="#5B5FEF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="ind-card-name">Plumbing</span><svg class="ind-card-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="../industries/hvac" class="ind-card"><span class="ind-card-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M12 4a2 2 0 00-2 2c0 1 .5 1.5 2 3s2 2 2 3a2 2 0 11-4 0M4 10a2 2 0 002 2c1 0 1.5-.5 3-2s2-2 3-2a2 2 0 100-4M20 14a2 2 0 00-2-2c-1 0-1.5.5-3 2s-2 2-3 2a2 2 0 100 4" stroke="#5B5FEF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="ind-card-name">HVAC</span><svg class="ind-card-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="../industries/roofing" class="ind-card"><span class="ind-card-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M3 12L12 4l9 8M5 11v8h14v-8M10 19v-4h4v4" stroke="#5B5FEF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="ind-card-name">Roofing</span><svg class="ind-card-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="../industries/moving-companies" class="ind-card"><span class="ind-card-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M3 8l4-4h6l4 4M3 8v10h14V8M3 8h14M17 11h3l1 3v4h-4M8 21a2 2 0 100-4 2 2 0 000 4zM17 21a2 2 0 100-4 2 2 0 000 4z" stroke="#5B5FEF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="ind-card-name">Moving Companies</span><svg class="ind-card-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="../industries/appliance-repair" class="ind-card"><span class="ind-card-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M6 3h12a1 1 0 011 1v16a1 1 0 01-1 1H6a1 1 0 01-1-1V4a1 1 0 011-1zM9 7h.01M9 11a3 3 0 106 0 3 3 0 00-6 0z" stroke="#5B5FEF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="ind-card-name">Appliance Repair</span><svg class="ind-card-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
     <a href="../industries/" class="btn-chip">
       View All Industries
@@ -967,17 +1018,89 @@ body{overflow-x:hidden}
 <!-- 7. CTA -->
 <section class="py-24" style="position:relative;overflow:hidden">
   <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 60%,rgba(91,95,239,0.07),transparent 65%);pointer-events:none"></div>
-  <div class="max-w-2xl mx-auto px-6 text-center reveal" style="position:relative;z-index:1">
-    <div class="eyebrow" style="justify-content:center"><span class="eyebrow-dot"></span>Ready When You Are</div>
-    <h2 class="section-headline mb-5" style="font-size:clamp(28px,4vw,44px)">Let's get Tyler<br/><span class="text-grad-accent">searching for you.</span></h2>
-    <p style="font-size:16px;color:var(--text-secondary);line-height:1.7;margin-bottom:32px;max-width:460px;margin-left:auto;margin-right:auto">
-      Book a free local visibility audit and we'll show you exactly what's holding your Tyler search rankings back.
-    </p>
-    <div class="flex flex-wrap justify-center gap-4">
-      <a href="../contact" class="btn-primary">
-        Book My Free Audit
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
+  <div class="max-w-[1600px] mx-auto px-6" style="position:relative;z-index:1">
+    <div class="text-center reveal" style="margin-bottom:44px">
+      <div class="eyebrow" style="justify-content:center"><span class="eyebrow-dot"></span>Ready When You Are</div>
+      <h2 class="section-headline mb-4" style="font-size:clamp(28px,4vw,44px)">Let's get Tyler<br/><span class="text-grad-accent">searching for you.</span></h2>
+      <p style="font-size:16px;color:var(--text-secondary);line-height:1.7;max-width:520px;margin-left:auto;margin-right:auto">Book a free local visibility audit and we'll show you exactly what's holding your Tyler search rankings back. No spam, no commitment.</p>
+    </div>
+
+    <div class="cta-form-panel reveal">
+      <div class="cta-grid">
+
+        <div>
+          <form id="contact-form" onsubmit="handleContact(event)" style="display:flex;flex-direction:column;gap:16px">
+            <input type="hidden" name="_subject" value="New Audit Request | Tyler | Tricky Soft Tech">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_cc" value="info@trickysofttech.com">
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+            <div class="grid grid-cols-2 gap-4">
+              <div class="form-field">
+                <label class="form-label" for="cf-name">Full Name</label>
+                <input class="form-input" id="cf-name" name="Full Name" type="text" placeholder="Your full name" required/>
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="cf-email">Work Email</label>
+                <input class="form-input" id="cf-email" name="Work Email" type="email" placeholder="you@company.com" required/>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="form-field">
+                <label class="form-label" for="cf-company">Company</label>
+                <input class="form-input" id="cf-company" name="Company" type="text" placeholder="Your company name" required/>
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="cf-website">Website</label>
+                <input class="form-input" id="cf-website" name="Website" type="text" placeholder="yoursite.com"/>
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="cf-service">Primary Interest</label>
+              <select class="form-input" id="cf-service" name="Primary Interest">
+                <option value="">Select a service…</option>
+                <option>Local SEO &amp; Google Business Profile</option>
+                <option>Website SEO</option>
+                <option>AI Search Optimization</option>
+                <option>Generative Engine Optimization (GEO)</option>
+                <option>AI Voice Optimization</option>
+                <option>Social Media Marketing</option>
+                <option>Website Development</option>
+                <option>Full-Service Retainer</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="cf-message">What's your biggest challenge?</label>
+              <textarea class="form-input" id="cf-message" name="Message" placeholder="Low rankings, zero AI visibility, weak local presence, or something else entirely…"></textarea>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="cf-captcha">Quick check: what is <span id="cf-cap-q"></span>?</label>
+              <input class="form-input" id="cf-captcha" type="text" inputmode="numeric" autocomplete="off" placeholder="Type the answer" required/>
+              <div id="cf-cap-error" style="display:none;font-size:12.5px;color:#ef4444;margin-top:6px">That's not quite right, try again.</div>
+            </div>
+            <button type="submit" class="btn-primary" id="cf-submit" style="width:100%;justify-content:center;margin-top:4px">
+              Book My Free Tyler Audit
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <p style="font-size:12px;color:var(--text-muted);text-align:center">No spam. No commitment. We respond within 4 business hours.</p>
+          </form>
+        </div>
+
+        <div class="cta-map-col">
+          <div class="loc-map-frame">
+            <iframe title="Map of Tyler, Texas" src="https://maps.google.com/maps?q=Tyler%2C%20Texas&t=&z=11&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Map showing Tyler, Texas"></iframe>
+          </div>
+          <div class="loc-map-cap">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z" stroke="#5B5FEF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" stroke="#5B5FEF" stroke-width="1.8"/></svg>
+            Serving Tyler and the surrounding Texas area
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="text-center" style="margin-top:30px">
       <a href="." class="btn-secondary">View All Locations</a>
     </div>
   </div>
@@ -1100,6 +1223,71 @@ const io = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
 }, { threshold: 0.1 });
 document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => io.observe(el));
+
+let cfCaptchaAnswer = 0;
+function newContactCaptcha() {
+  const a = Math.floor(Math.random() * 9) + 1;
+  const b = Math.floor(Math.random() * 9) + 1;
+  cfCaptchaAnswer = a + b;
+  const q = document.getElementById('cf-cap-q');
+  if (q) q.textContent = a + ' + ' + b;
+  const inp = document.getElementById('cf-captcha');
+  if (inp) inp.value = '';
+}
+newContactCaptcha();
+
+function handleContact(e) {
+  e.preventDefault();
+
+  const capInput = document.getElementById('cf-captcha');
+  const capError = document.getElementById('cf-cap-error');
+  if (parseInt(capInput.value, 10) !== cfCaptchaAnswer) {
+    capError.style.display = 'block';
+    capInput.focus();
+    newContactCaptcha();
+    return;
+  }
+  capError.style.display = 'none';
+
+  const btn = document.getElementById('cf-submit');
+  const originalHTML = btn.innerHTML;
+
+  btn.textContent = 'Sending…';
+  btn.disabled = true;
+  btn.style.opacity = '0.7';
+
+  fetch('https://formsubmit.co/ajax/abdullahsaleem12570@gmail.com', {
+    method: 'POST',
+    headers: { 'Accept': 'application/json' },
+    body: new FormData(e.target)
+  })
+  .then(function(res) { return res.json(); })
+  .then(function(data) {
+    if (data.success === 'true' || data.success === true) {
+      btn.innerHTML = '&#10003; &nbsp;We\'ll be in touch within 4 hours';
+      btn.style.background = 'linear-gradient(135deg,#4ADE80,#16A34A)';
+      btn.style.opacity = '1';
+      btn.style.boxShadow = '0 4px 24px rgba(74,222,128,0.25)';
+      e.target.reset();
+      newContactCaptcha();
+    } else {
+      throw new Error('Submission failed');
+    }
+  })
+  .catch(function() {
+    btn.innerHTML = '&#10007; &nbsp;Something went wrong. Please try again.';
+    btn.style.background = 'linear-gradient(135deg,#ef4444,#dc2626)';
+    btn.style.opacity = '1';
+    btn.style.boxShadow = 'none';
+    btn.disabled = false;
+    newContactCaptcha();
+    setTimeout(function() {
+      btn.innerHTML = originalHTML;
+      btn.style.background = '';
+      btn.style.boxShadow = '';
+    }, 3500);
+  });
+}
 </script>
 
 <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top">
