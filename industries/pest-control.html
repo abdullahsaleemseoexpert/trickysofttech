@@ -281,9 +281,9 @@ body{overflow-x:hidden}
 .nav-dropdown-link:hover{background:rgba(91,95,239,0.08);color:var(--text-primary, #14141F)}
 .nav-dropdown-divider{height:1px;background:rgba(15,15,35,0.08);margin:6px 6px}
 .nav-dropdown-viewall{color:var(--spectrum-core, #5B5FEF);font-weight:700}
-.nav-dropdown-panel-mega{left:auto;right:0;transform:translateY(-6px);min-width:640px}
+.nav-dropdown-panel-mega{left:auto;right:0;transform:translateY(-6px);min-width:900px}
 .nav-dropdown:hover .nav-dropdown-panel-mega{transform:translateY(0)}
-.locations-mega-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:2px 14px;padding:2px}
+.locations-mega-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px 12px;padding:2px}
 .locations-mega-title{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted, #6B6F8C);padding:8px 12px 4px}
 .locations-mega-col .nav-dropdown-link{padding:7px 12px;font-size:13px}
 .mobile-nav-sublink{font-family:'Inter',sans-serif;font-size:15px;font-weight:500;color:var(--text-muted, #6B6F8C);text-decoration:none;padding:8px 24px;width:100%;max-width:320px;text-align:center;opacity:0;transform:translateX(32px);transition:color 200ms}
@@ -443,7 +443,7 @@ body{overflow-x:hidden}
         <div class="nav-dropdown">
       <a href="../locations/" class="nav-link nav-dropdown-trigger">Locations<svg class="nav-caret" width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       <div class="nav-dropdown-panel nav-dropdown-panel-mega">
-        <div class="locations-mega-grid">
+                <div class="locations-mega-grid">
 
         <div class="locations-mega-col">
           <div class="locations-mega-title">Texas</div>
@@ -493,6 +493,24 @@ body{overflow-x:hidden}
           <a href="../locations/clarksville-tn" class="nav-dropdown-link">Clarksville</a>
           <a href="../locations/franklin-tn" class="nav-dropdown-link">Franklin</a>
           <a href="../locations/johnson-city-tn" class="nav-dropdown-link">Johnson City</a>
+        </div>
+
+        <div class="locations-mega-col">
+          <div class="locations-mega-title">South Carolina</div>
+          <a href="../locations/greenville-sc" class="nav-dropdown-link">Greenville</a>
+          <a href="../locations/columbia-sc" class="nav-dropdown-link">Columbia</a>
+          <a href="../locations/charleston-sc" class="nav-dropdown-link">Charleston</a>
+          <a href="../locations/myrtle-beach-sc" class="nav-dropdown-link">Myrtle Beach</a>
+          <a href="../locations/rock-hill-sc" class="nav-dropdown-link">Rock Hill</a>
+        </div>
+
+        <div class="locations-mega-col">
+          <div class="locations-mega-title">Florida</div>
+          <a href="../locations/tallahassee-fl" class="nav-dropdown-link">Tallahassee</a>
+          <a href="../locations/gainesville-fl" class="nav-dropdown-link">Gainesville</a>
+          <a href="../locations/sarasota-fl" class="nav-dropdown-link">Sarasota</a>
+          <a href="../locations/cape-coral-fl" class="nav-dropdown-link">Cape Coral</a>
+          <a href="../locations/pensacola-fl" class="nav-dropdown-link">Pensacola</a>
         </div>
         </div>
         <div class="nav-dropdown-divider"></div>
@@ -579,6 +597,8 @@ body{overflow-x:hidden}
       <a href="../locations/#state-ga" class="mobile-nav-sublink" tabindex="-1">Georgia</a>
       <a href="../locations/#state-nc" class="mobile-nav-sublink" tabindex="-1">North Carolina</a>
       <a href="../locations/#state-tn" class="mobile-nav-sublink" tabindex="-1">Tennessee</a>
+      <a href="../locations/#state-sc" class="mobile-nav-sublink" tabindex="-1">South Carolina</a>
+      <a href="../locations/#state-fl" class="mobile-nav-sublink" tabindex="-1">Florida</a>
     </div>
   </div>
 
@@ -852,7 +872,7 @@ body{overflow-x:hidden}
   <div class="max-w-[1600px] mx-auto px-6" style="--accent-text:#8A6423">
     <div class="text-center mb-12 reveal">
       <div class="eyebrow" style="justify-content:center"><span class="eyebrow-dot"></span>Where We Work</div>
-      <h2 class="section-headline" style="font-size:clamp(26px,3.5vw,36px)">Pest Control marketing across <span class="text-grad-accent">30 local markets.</span></h2>
+      <h2 class="section-headline" style="font-size:clamp(26px,3.5vw,36px)">Pest Control marketing across <span class="text-grad-accent">40 local markets.</span></h2>
       <p class="section-sub" style="max-width:560px;margin:14px auto 0">Real local context in every market we serve, not a copy-pasted city name.</p>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 reveal-stagger">
