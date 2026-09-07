@@ -1,0 +1,74 @@
+{
+ "aggregateRating (JSON-LD)": [],
+ "200+ brands/clients (visible)": [
+  "about.html",
+  "case-studies.html",
+  "index.html"
+ ],
+ "$40M revenue (visible)": [
+  "about.html",
+  "case-studies.html",
+  "index.html",
+  "portfolio.html"
+ ],
+ "tracked client revenue": [],
+ "4.9-star avg client rating (visible)": [
+  "about.html",
+  "case-studies.html",
+  "index.html",
+  "portfolio.html"
+ ],
+ "Clutch (visible/footer)": [
+  "about.html",
+  "case-studies.html",
+  "index.html"
+ ],
+ "SOC 2 (footer)": [],
+ "CCPA (footer)": [
+  "privacy.html",
+  "terms.html"
+ ],
+ "50+ simultaneous/rollout": [],
+ "40 markets (stale)": [
+  "locations/index.html"
+ ],
+ "Metro Plumbing": [
+  "blog/how-local-seo-works.html",
+  "blog/how-many-locations-to-list-online.html",
+  "blog/nap-consistency-local-rankings.html",
+  "blog/plumbing-marketing-guide.html",
+  "blog/report-fake-google-business-listings-map-spam.html",
+  "case-studies.html",
+  "index.html",
+  "portfolio.html"
+ ],
+ "Ray Delgado": [
+  "blog/how-local-seo-works.html",
+  "case-studies.html"
+ ],
+ "Summit Roofing": [
+  "blog/local-seo-ranking-factors-2026.html",
+  "blog/roofing-marketing-guide.html",
+  "case-studies.html",
+  "index.html",
+  "portfolio.html"
+ ],
+ "Todd Hargrove": [
+  "case-studies.html"
+ ],
+ "Evergreen HVAC": [
+  "blog/google-business-profile-checklist.html",
+  "blog/how-to-get-google-reviews.html",
+  "blog/hvac-marketing-guide.html",
+  "case-studies.html",
+  "index.html",
+  "portfolio.html"
+ ],
+ "fabricated result nums (340/847/520/6100/95%)": [
+  "blog/how-to-get-google-reviews.html",
+  "blog/hvac-marketing-guide.html",
+  "case-studies.html",
+  "index.html",
+  "portfolio.html"
+ ]
+}
