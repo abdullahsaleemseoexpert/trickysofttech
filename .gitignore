@@ -11,3 +11,7 @@ Thumbs.db
 # Deploy credentials (never commit these)
 .ftp-config.json
 *.env
+
+# Local secrets + local tooling (GSC API key, report scripts) — never commit or deploy
+.secrets/
+node_modules/
