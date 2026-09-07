@@ -28,165 +28,32 @@
   "inbound": []
  },
  {
-  "page": "blog/appliance-repair-marketing-guide",
-  "type": "blog",
-  "out": 5,
-  "in": 1,
-  "inbound": [
-   "blog/index"
-  ]
- },
- {
-  "page": "blog/car-detailing-marketing-guide",
-  "type": "blog",
-  "out": 6,
-  "in": 1,
-  "inbound": [
-   "blog/index"
-  ]
- },
- {
-  "page": "blog/google-business-profile-not-showing-up",
-  "type": "blog",
-  "out": 8,
-  "in": 1,
-  "inbound": [
-   "blog/index"
-  ]
- },
- {
-  "page": "blog/house-cleaning-marketing-guide",
-  "type": "blog",
-  "out": 5,
-  "in": 1,
-  "inbound": [
-   "blog/index"
-  ]
- },
- {
-  "page": "blog/junk-removal-marketing-guide",
-  "type": "blog",
-  "out": 5,
-  "in": 1,
-  "inbound": [
-   "blog/index"
-  ]
- },
- {
-  "page": "blog/locksmith-marketing-guide",
-  "type": "blog",
-  "out": 6,
-  "in": 1,
-  "inbound": [
-   "blog/index"
-  ]
- },
- {
-  "page": "blog/moving-company-marketing-guide",
-  "type": "blog",
-  "out": 5,
-  "in": 1,
-  "inbound": [
-   "blog/index"
-  ]
- },
- {
-  "page": "blog/pest-control-marketing-guide",
-  "type": "blog",
-  "out": 5,
-  "in": 1,
-  "inbound": [
-   "blog/index"
-  ]
- },
- {
-  "page": "locations/cary-nc",
-  "type": "locations",
-  "out": 20,
-  "in": 1,
-  "inbound": [
-   "locations/index"
-  ]
- },
- {
-  "page": "locations/chandler-az",
-  "type": "locations",
-  "out": 20,
-  "in": 1,
-  "inbound": [
-   "locations/index"
-  ]
- },
- {
-  "page": "locations/concord-nc",
-  "type": "locations",
-  "out": 20,
-  "in": 1,
-  "inbound": [
-   "locations/index"
-  ]
- },
- {
-  "page": "locations/lakeland-fl",
-  "type": "locations",
-  "out": 19,
-  "in": 1,
-  "inbound": [
-   "locations/index"
-  ]
- },
- {
-  "page": "locations/lubbock-tx",
-  "type": "locations",
-  "out": 19,
-  "in": 1,
-  "inbound": [
-   "locations/index"
-  ]
- },
- {
-  "page": "locations/ocala-fl",
-  "type": "locations",
-  "out": 19,
-  "in": 1,
-  "inbound": [
-   "locations/index"
-  ]
- },
- {
-  "page": "locations/sandy-springs-ga",
-  "type": "locations",
-  "out": 20,
-  "in": 1,
-  "inbound": [
-   "locations/index"
-  ]
- },
- {
-  "page": "locations/scottsdale-az",
-  "type": "locations",
-  "out": 21,
-  "in": 1,
-  "inbound": [
-   "locations/index"
-  ]
- },
- {
-  "page": "locations/tempe-az",
-  "type": "locations",
-  "out": 21,
-  "in": 1,
-  "inbound": [
-   "locations/index"
-  ]
- },
- {
   "page": "privacy",
   "type": "root",
   "out": 0,
   "in": 1,
   "inbound": [
    "terms"
+  ]
+ },
+ {
+  "page": "blog/appliance-repair-marketing-guide",
+  "type": "blog",
+  "out": 5,
+  "in": 2,
+  "inbound": [
+   "blog/index",
+   "industries/appliance-repair"
+  ]
+ },
+ {
+  "page": "blog/car-detailing-marketing-guide",
+  "type": "blog",
+  "out": 6,
+  "in": 2,
+  "inbound": [
+   "blog/index",
+   "industries/car-detailing"
   ]
  },
  {
@@ -240,6 +107,16 @@
   ]
  },
  {
+  "page": "blog/google-business-profile-not-showing-up",
+  "type": "blog",
+  "out": 9,
+  "in": 2,
+  "inbound": [
+   "blog/index",
+   "services/google-business-profile"
+  ]
+ },
+ {
   "page": "blog/google-local-services-ads-home-services",
   "type": "blog",
   "out": 10,
@@ -250,63 +127,103 @@
   ]
  },
  {
-  "page": "blog/landscaping-marketing-guide",
+  "page": "blog/house-cleaning-marketing-guide",
   "type": "blog",
   "out": 5,
   "in": 2,
   "inbound": [
    "blog/index",
-   "blog/seasonal-marketing-calendar-home-service"
+   "industries/house-cleaning"
   ]
  },
  {
-  "page": "blog/local-link-building-home-service-businesses",
+  "page": "blog/junk-removal-marketing-guide",
   "type": "blog",
-  "out": 9,
+  "out": 5,
   "in": 2,
   "inbound": [
-   "blog/entity-seo-for-local-businesses",
-   "blog/index"
+   "blog/index",
+   "industries/junk-removal"
   ]
  },
  {
-  "page": "blog/rank-in-google-map-pack",
-  "type": "blog",
-  "out": 12,
-  "in": 2,
-  "inbound": [
-   "blog/google-business-profile-not-showing-up",
-   "blog/index"
-  ]
- },
- {
-  "page": "blog/roofing-marketing-guide",
+  "page": "blog/locksmith-marketing-guide",
   "type": "blog",
   "out": 6,
   "in": 2,
   "inbound": [
    "blog/index",
-   "blog/seasonal-marketing-calendar-home-service"
+   "industries/locksmith-services"
   ]
  },
  {
-  "page": "blog/towing-marketing-guide",
+  "page": "blog/moving-company-marketing-guide",
   "type": "blog",
-  "out": 6,
+  "out": 5,
   "in": 2,
   "inbound": [
    "blog/index",
-   "blog/locksmith-marketing-guide"
+   "industries/moving-companies"
   ]
  },
  {
-  "page": "locations/marietta-ga",
+  "page": "blog/pest-control-marketing-guide",
+  "type": "blog",
+  "out": 5,
+  "in": 2,
+  "inbound": [
+   "blog/index",
+   "industries/pest-control"
+  ]
+ },
+ {
+  "page": "locations/cary-nc",
   "type": "locations",
   "out": 20,
   "in": 2,
   "inbound": [
    "locations/index",
-   "locations/sandy-springs-ga"
+   "locations/north-carolina"
+  ]
+ },
+ {
+  "page": "locations/concord-nc",
+  "type": "locations",
+  "out": 20,
+  "in": 2,
+  "inbound": [
+   "locations/index",
+   "locations/north-carolina"
+  ]
+ },
+ {
+  "page": "locations/lakeland-fl",
+  "type": "locations",
+  "out": 19,
+  "in": 2,
+  "inbound": [
+   "locations/florida",
+   "locations/index"
+  ]
+ },
+ {
+  "page": "locations/lubbock-tx",
+  "type": "locations",
+  "out": 19,
+  "in": 2,
+  "inbound": [
+   "locations/index",
+   "locations/texas"
+  ]
+ },
+ {
+  "page": "locations/ocala-fl",
+  "type": "locations",
+  "out": 19,
+  "in": 2,
+  "inbound": [
+   "locations/florida",
+   "locations/index"
   ]
  },
  {
@@ -342,25 +259,36 @@
   ]
  },
  {
-  "page": "blog/google-business-profile-suspended-reinstatement",
+  "page": "blog/landscaping-marketing-guide",
+  "type": "blog",
+  "out": 5,
+  "in": 3,
+  "inbound": [
+   "blog/index",
+   "blog/seasonal-marketing-calendar-home-service",
+   "industries/landscaping-lawn-care"
+  ]
+ },
+ {
+  "page": "blog/local-link-building-home-service-businesses",
   "type": "blog",
   "out": 10,
   "in": 3,
   "inbound": [
-   "blog/google-business-profile-not-showing-up",
+   "blog/entity-seo-for-local-businesses",
    "blog/index",
-   "blog/report-fake-google-business-listings-map-spam"
+   "services/local-seo"
   ]
  },
  {
-  "page": "blog/plumbing-marketing-guide",
+  "page": "blog/roofing-marketing-guide",
   "type": "blog",
   "out": 6,
   "in": 3,
   "inbound": [
-   "blog/hvac-marketing-guide",
    "blog/index",
-   "blog/seasonal-marketing-calendar-home-service"
+   "blog/seasonal-marketing-calendar-home-service",
+   "industries/roofing"
   ]
  },
  {
@@ -375,6 +303,17 @@
   ]
  },
  {
+  "page": "blog/towing-marketing-guide",
+  "type": "blog",
+  "out": 6,
+  "in": 3,
+  "inbound": [
+   "blog/index",
+   "blog/locksmith-marketing-guide",
+   "industries/towing"
+  ]
+ },
+ {
   "page": "blog/turn-visitors-into-booked-jobs",
   "type": "blog",
   "out": 5,
@@ -386,15 +325,37 @@
   ]
  },
  {
-  "page": "blog/hvac-marketing-guide",
+  "page": "locations/chandler-az",
+  "type": "locations",
+  "out": 20,
+  "in": 3,
+  "inbound": [
+   "locations/arizona",
+   "locations/gilbert-az",
+   "locations/index"
+  ]
+ },
+ {
+  "page": "locations/sandy-springs-ga",
+  "type": "locations",
+  "out": 20,
+  "in": 3,
+  "inbound": [
+   "locations/georgia",
+   "locations/index",
+   "locations/roswell-ga"
+  ]
+ },
+ {
+  "page": "blog/google-business-profile-suspended-reinstatement",
   "type": "blog",
-  "out": 6,
+  "out": 10,
   "in": 4,
   "inbound": [
+   "blog/google-business-profile-not-showing-up",
    "blog/index",
-   "blog/pest-control-marketing-guide",
-   "blog/roofing-marketing-guide",
-   "blog/seasonal-marketing-calendar-home-service"
+   "blog/report-fake-google-business-listings-map-spam",
+   "services/google-business-profile"
   ]
  },
  {
@@ -407,6 +368,30 @@
    "blog/index",
    "blog/towing-marketing-guide",
    "blog/website-speed-and-local-rankings"
+  ]
+ },
+ {
+  "page": "blog/plumbing-marketing-guide",
+  "type": "blog",
+  "out": 6,
+  "in": 4,
+  "inbound": [
+   "blog/hvac-marketing-guide",
+   "blog/index",
+   "blog/seasonal-marketing-calendar-home-service",
+   "industries/plumbing"
+  ]
+ },
+ {
+  "page": "blog/rank-in-google-map-pack",
+  "type": "blog",
+  "out": 13,
+  "in": 4,
+  "inbound": [
+   "blog/google-business-profile-not-showing-up",
+   "blog/index",
+   "services/google-business-profile",
+   "services/local-seo"
   ]
  },
  {
@@ -434,6 +419,18 @@
   ]
  },
  {
+  "page": "locations/marietta-ga",
+  "type": "locations",
+  "out": 20,
+  "in": 4,
+  "inbound": [
+   "locations/georgia",
+   "locations/index",
+   "locations/roswell-ga",
+   "locations/sandy-springs-ga"
+  ]
+ },
+ {
   "page": "locations/pensacola-fl",
   "type": "locations",
   "out": 28,
@@ -443,6 +440,30 @@
    "locations/index",
    "locations/lakeland-fl",
    "locations/ocala-fl"
+  ]
+ },
+ {
+  "page": "locations/scottsdale-az",
+  "type": "locations",
+  "out": 21,
+  "in": 4,
+  "inbound": [
+   "locations/arizona",
+   "locations/gilbert-az",
+   "locations/index",
+   "locations/mesa-az"
+  ]
+ },
+ {
+  "page": "locations/tempe-az",
+  "type": "locations",
+  "out": 21,
+  "in": 4,
+  "inbound": [
+   "locations/arizona",
+   "locations/gilbert-az",
+   "locations/index",
+   "locations/mesa-az"
   ]
  },
  {
@@ -472,19 +493,6 @@
   ]
  },
  {
-  "page": "blog/entity-seo-for-local-businesses",
-  "type": "blog",
-  "out": 10,
-  "in": 5,
-  "inbound": [
-   "blog/index",
-   "blog/measure-ai-search-visibility-local-business",
-   "blog/quarterly-seo-audit-checklist",
-   "blog/service-area-pages-vs-city-pages",
-   "locations/cary-nc"
-  ]
- },
- {
   "page": "blog/how-many-pages-should-a-website-have",
   "type": "blog",
   "out": 5,
@@ -495,6 +503,19 @@
    "blog/seasonal-marketing-calendar-home-service",
    "blog/service-area-pages-vs-city-pages",
    "blog/website-design-mistakes"
+  ]
+ },
+ {
+  "page": "blog/hvac-marketing-guide",
+  "type": "blog",
+  "out": 6,
+  "in": 5,
+  "inbound": [
+   "blog/index",
+   "blog/pest-control-marketing-guide",
+   "blog/roofing-marketing-guide",
+   "blog/seasonal-marketing-calendar-home-service",
+   "industries/hvac"
   ]
  },
  {
@@ -534,6 +555,20 @@
    "locations/greenville-sc",
    "locations/index",
    "locations/south-carolina"
+  ]
+ },
+ {
+  "page": "blog/entity-seo-for-local-businesses",
+  "type": "blog",
+  "out": 11,
+  "in": 6,
+  "inbound": [
+   "blog/index",
+   "blog/measure-ai-search-visibility-local-business",
+   "blog/quarterly-seo-audit-checklist",
+   "blog/service-area-pages-vs-city-pages",
+   "locations/cary-nc",
+   "services/local-seo"
   ]
  },
  {
@@ -590,21 +625,6 @@
    "locations/myrtle-beach-sc",
    "locations/rock-hill-sc",
    "locations/south-carolina"
-  ]
- },
- {
-  "page": "blog/report-fake-google-business-listings-map-spam",
-  "type": "blog",
-  "out": 10,
-  "in": 7,
-  "inbound": [
-   "blog/digital-marketing-cape-coral",
-   "blog/digital-marketing-knoxville",
-   "blog/digital-marketing-savannah-ga",
-   "blog/google-business-profile-not-showing-up",
-   "blog/google-business-profile-suspended-reinstatement",
-   "blog/index",
-   "blog/quarterly-seo-audit-checklist"
   ]
  },
  {
@@ -684,6 +704,22 @@
   ]
  },
  {
+  "page": "blog/report-fake-google-business-listings-map-spam",
+  "type": "blog",
+  "out": 11,
+  "in": 8,
+  "inbound": [
+   "blog/digital-marketing-cape-coral",
+   "blog/digital-marketing-knoxville",
+   "blog/digital-marketing-savannah-ga",
+   "blog/google-business-profile-not-showing-up",
+   "blog/google-business-profile-suspended-reinstatement",
+   "blog/index",
+   "blog/quarterly-seo-audit-checklist",
+   "services/google-business-profile"
+  ]
+ },
+ {
   "page": "locations/gainesville-fl",
   "type": "locations",
   "out": 28,
@@ -734,7 +770,7 @@
  {
   "page": "locations/texas",
   "type": "locations",
-  "out": 31,
+  "out": 32,
   "in": 8,
   "inbound": [
    "locations/arizona",
@@ -745,23 +781,6 @@
    "locations/north-carolina",
    "locations/south-carolina",
    "locations/tennessee"
-  ]
- },
- {
-  "page": "blog/how-long-does-local-seo-take",
-  "type": "blog",
-  "out": 5,
-  "in": 9,
-  "inbound": [
-   "blog/digital-marketing-cape-coral",
-   "blog/digital-marketing-chattanooga",
-   "blog/digital-marketing-greenville-sc",
-   "blog/digital-marketing-knoxville",
-   "blog/digital-marketing-savannah-ga",
-   "blog/index",
-   "blog/rank-in-google-map-pack",
-   "blog/seo-vs-paid-ads",
-   "blog/track-local-seo-roi"
   ]
  },
  {
@@ -799,23 +818,6 @@
   ]
  },
  {
-  "page": "blog/service-area-pages-vs-city-pages",
-  "type": "blog",
-  "out": 9,
-  "in": 9,
-  "inbound": [
-   "blog/digital-marketing-chattanooga",
-   "blog/digital-marketing-greenville-sc",
-   "blog/digital-marketing-knoxville",
-   "blog/digital-marketing-savannah-ga",
-   "blog/entity-seo-for-local-businesses",
-   "blog/index",
-   "blog/quarterly-seo-audit-checklist",
-   "blog/rank-in-google-map-pack",
-   "locations/marietta-ga"
-  ]
- },
- {
   "page": "blog/what-is-geo",
   "type": "blog",
   "out": 5,
@@ -835,7 +837,7 @@
  {
   "page": "locations/florida",
   "type": "locations",
-  "out": 30,
+  "out": 32,
   "in": 9,
   "inbound": [
    "locations/arizona",
@@ -852,7 +854,7 @@
  {
   "page": "locations/georgia",
   "type": "locations",
-  "out": 31,
+  "out": 33,
   "in": 9,
   "inbound": [
    "locations/arizona",
@@ -869,7 +871,7 @@
  {
   "page": "locations/north-carolina",
   "type": "locations",
-  "out": 31,
+  "out": 33,
   "in": 9,
   "inbound": [
    "locations/arizona",
@@ -902,6 +904,24 @@
   ]
  },
  {
+  "page": "blog/service-area-pages-vs-city-pages",
+  "type": "blog",
+  "out": 10,
+  "in": 10,
+  "inbound": [
+   "blog/digital-marketing-chattanooga",
+   "blog/digital-marketing-greenville-sc",
+   "blog/digital-marketing-knoxville",
+   "blog/digital-marketing-savannah-ga",
+   "blog/entity-seo-for-local-businesses",
+   "blog/index",
+   "blog/quarterly-seo-audit-checklist",
+   "blog/rank-in-google-map-pack",
+   "locations/marietta-ga",
+   "services/local-seo"
+  ]
+ },
+ {
   "page": "blog/website-speed-and-local-rankings",
   "type": "blog",
   "out": 5,
@@ -922,7 +942,7 @@
  {
   "page": "locations/arizona",
   "type": "locations",
-  "out": 31,
+  "out": 34,
   "in": 10,
   "inbound": [
    "locations/chandler-az",
@@ -938,29 +958,29 @@
   ]
  },
  {
-  "page": "blog/local-seo-ranking-factors-2026",
+  "page": "blog/how-long-does-local-seo-take",
   "type": "blog",
   "out": 6,
   "in": 11,
   "inbound": [
+   "blog/digital-marketing-cape-coral",
+   "blog/digital-marketing-chattanooga",
+   "blog/digital-marketing-greenville-sc",
+   "blog/digital-marketing-knoxville",
    "blog/digital-marketing-savannah-ga",
-   "blog/google-business-profile-not-showing-up",
-   "blog/how-local-seo-works",
-   "blog/how-long-does-local-seo-take",
    "blog/index",
-   "blog/local-link-building-home-service-businesses",
-   "blog/nap-consistency-local-rankings",
-   "blog/quarterly-seo-audit-checklist",
    "blog/rank-in-google-map-pack",
-   "blog/report-fake-google-business-listings-map-spam",
-   "blog/structured-data-for-ai-search"
+   "blog/seo-vs-paid-ads",
+   "blog/track-local-seo-roi",
+   "services/google-business-profile",
+   "services/local-seo"
   ]
  },
  {
   "page": "blog/track-local-seo-roi",
   "type": "blog",
-  "out": 8,
-  "in": 11,
+  "out": 9,
+  "in": 12,
   "inbound": [
    "blog/call-handling-systems-local-service-business",
    "blog/digital-marketing-cape-coral",
@@ -972,7 +992,29 @@
    "blog/index",
    "blog/local-link-building-home-service-businesses",
    "blog/measure-ai-search-visibility-local-business",
-   "blog/quarterly-seo-audit-checklist"
+   "blog/quarterly-seo-audit-checklist",
+   "services/local-seo"
+  ]
+ },
+ {
+  "page": "blog/local-seo-ranking-factors-2026",
+  "type": "blog",
+  "out": 7,
+  "in": 13,
+  "inbound": [
+   "blog/digital-marketing-savannah-ga",
+   "blog/google-business-profile-not-showing-up",
+   "blog/how-local-seo-works",
+   "blog/how-long-does-local-seo-take",
+   "blog/index",
+   "blog/local-link-building-home-service-businesses",
+   "blog/nap-consistency-local-rankings",
+   "blog/quarterly-seo-audit-checklist",
+   "blog/rank-in-google-map-pack",
+   "blog/report-fake-google-business-listings-map-spam",
+   "blog/structured-data-for-ai-search",
+   "industries/index",
+   "services/local-seo"
   ]
  },
  {
@@ -1021,8 +1063,8 @@
  {
   "page": "blog/how-local-seo-works",
   "type": "blog",
-  "out": 6,
-  "in": 15,
+  "out": 7,
+  "in": 16,
   "inbound": [
    "blog/car-detailing-marketing-guide",
    "blog/digital-marketing-greenville-sc",
@@ -1038,14 +1080,15 @@
    "blog/plumbing-marketing-guide",
    "blog/report-fake-google-business-listings-map-spam",
    "blog/seo-vs-geo",
-   "blog/service-area-pages-vs-city-pages"
+   "blog/service-area-pages-vs-city-pages",
+   "services/local-seo"
   ]
  },
  {
   "page": "blog/how-to-get-google-reviews",
   "type": "blog",
-  "out": 5,
-  "in": 15,
+  "out": 6,
+  "in": 17,
   "inbound": [
    "blog/digital-marketing-cape-coral",
    "blog/digital-marketing-chattanooga",
@@ -1061,14 +1104,16 @@
    "blog/pest-control-marketing-guide",
    "blog/quarterly-seo-audit-checklist",
    "blog/rank-in-google-map-pack",
-   "blog/report-fake-google-business-listings-map-spam"
+   "blog/report-fake-google-business-listings-map-spam",
+   "services/google-business-profile",
+   "services/local-seo"
   ]
  },
  {
   "page": "blog/google-business-profile-checklist",
   "type": "blog",
-  "out": 6,
-  "in": 18,
+  "out": 8,
+  "in": 19,
   "inbound": [
    "blog/call-handling-systems-local-service-business",
    "blog/digital-marketing-cape-coral",
@@ -1087,14 +1132,15 @@
    "blog/rank-in-google-map-pack",
    "blog/report-fake-google-business-listings-map-spam",
    "blog/roofing-marketing-guide",
-   "blog/towing-marketing-guide"
+   "blog/towing-marketing-guide",
+   "services/google-business-profile"
   ]
  },
  {
   "page": "blog/nap-consistency-local-rankings",
   "type": "blog",
-  "out": 5,
-  "in": 18,
+  "out": 6,
+  "in": 19,
   "inbound": [
    "blog/digital-marketing-cape-coral",
    "blog/digital-marketing-chattanooga",
@@ -1113,7 +1159,8 @@
    "blog/rank-in-google-map-pack",
    "blog/report-fake-google-business-listings-map-spam",
    "blog/service-area-pages-vs-city-pages",
-   "blog/track-local-seo-roi"
+   "blog/track-local-seo-roi",
+   "services/local-seo"
   ]
  },
  {
@@ -1518,7 +1565,7 @@
  {
   "page": "locations/roswell-ga",
   "type": "locations",
-  "out": 28,
+  "out": 30,
   "in": 26,
   "inbound": [
    "industries/appliance-repair",
@@ -1865,7 +1912,7 @@
  {
   "page": "locations/gilbert-az",
   "type": "locations",
-  "out": 28,
+  "out": 31,
   "in": 28,
   "inbound": [
    "industries/appliance-repair",
@@ -2119,7 +2166,7 @@
  {
   "page": "locations/mesa-az",
   "type": "locations",
-  "out": 28,
+  "out": 30,
   "in": 29,
   "inbound": [
    "industries/appliance-repair",
@@ -2209,6 +2256,64 @@
   ]
  },
  {
+  "page": "services/social-media-marketing",
+  "type": "services",
+  "out": 49,
+  "in": 50,
+  "inbound": [
+   "case-studies",
+   "index",
+   "industries/car-detailing",
+   "industries/house-cleaning",
+   "industries/landscaping-lawn-care",
+   "industries/moving-companies",
+   "industries/pest-control",
+   "industries/roofing",
+   "locations/asheville-nc",
+   "locations/athens-ga",
+   "locations/augusta-ga",
+   "locations/cape-coral-fl",
+   "locations/charleston-sc",
+   "locations/chattanooga-tn",
+   "locations/clarksville-tn",
+   "locations/college-station-tx",
+   "locations/columbia-sc",
+   "locations/columbus-ga",
+   "locations/denton-tx",
+   "locations/fayetteville-nc",
+   "locations/flagstaff-az",
+   "locations/franklin-tn",
+   "locations/gainesville-fl",
+   "locations/gilbert-az",
+   "locations/glendale-az",
+   "locations/goodyear-az",
+   "locations/greensboro-nc",
+   "locations/greenville-sc",
+   "locations/high-point-nc",
+   "locations/johnson-city-tn",
+   "locations/killeen-tx",
+   "locations/knoxville-tn",
+   "locations/macon-ga",
+   "locations/mcallen-tx",
+   "locations/mesa-az",
+   "locations/murfreesboro-tn",
+   "locations/myrtle-beach-sc",
+   "locations/pensacola-fl",
+   "locations/peoria-az",
+   "locations/rock-hill-sc",
+   "locations/roswell-ga",
+   "locations/sarasota-fl",
+   "locations/savannah-ga",
+   "locations/tallahassee-fl",
+   "locations/tyler-tx",
+   "locations/waco-tx",
+   "locations/wilmington-nc",
+   "locations/winston-salem-nc",
+   "services/google-business-profile",
+   "services/index"
+  ]
+ },
+ {
   "page": "services/website-seo",
   "type": "services",
   "out": 49,
@@ -2264,65 +2369,6 @@
    "services/index",
    "services/local-seo",
    "services/website-development"
-  ]
- },
- {
-  "page": "services/social-media-marketing",
-  "type": "services",
-  "out": 49,
-  "in": 51,
-  "inbound": [
-   "case-studies",
-   "index",
-   "industries/car-detailing",
-   "industries/house-cleaning",
-   "industries/landscaping-lawn-care",
-   "industries/moving-companies",
-   "industries/pest-control",
-   "industries/roofing",
-   "locations/asheville-nc",
-   "locations/athens-ga",
-   "locations/augusta-ga",
-   "locations/cape-coral-fl",
-   "locations/charleston-sc",
-   "locations/chattanooga-tn",
-   "locations/clarksville-tn",
-   "locations/college-station-tx",
-   "locations/columbia-sc",
-   "locations/columbus-ga",
-   "locations/denton-tx",
-   "locations/fayetteville-nc",
-   "locations/flagstaff-az",
-   "locations/franklin-tn",
-   "locations/gainesville-fl",
-   "locations/gilbert-az",
-   "locations/glendale-az",
-   "locations/goodyear-az",
-   "locations/greensboro-nc",
-   "locations/greenville-sc",
-   "locations/high-point-nc",
-   "locations/johnson-city-tn",
-   "locations/killeen-tx",
-   "locations/knoxville-tn",
-   "locations/macon-ga",
-   "locations/mcallen-tx",
-   "locations/mesa-az",
-   "locations/murfreesboro-tn",
-   "locations/myrtle-beach-sc",
-   "locations/pensacola-fl",
-   "locations/peoria-az",
-   "locations/rock-hill-sc",
-   "locations/roswell-ga",
-   "locations/sarasota-fl",
-   "locations/savannah-ga",
-   "locations/tallahassee-fl",
-   "locations/tyler-tx",
-   "locations/waco-tx",
-   "locations/wilmington-nc",
-   "locations/winston-salem-nc",
-   "services/google-business-profile",
-   "services/index",
-   "services/local-seo"
   ]
  },
  {
@@ -2572,7 +2618,7 @@
   "page": "services/ai-search-optimization",
   "type": "services",
   "out": 49,
-  "in": 55,
+  "in": 56,
   "inbound": [
    "blog/quarterly-seo-audit-checklist",
    "index",
@@ -2627,6 +2673,76 @@
    "services/ai-voice-optimization",
    "services/geo",
    "services/index",
+   "services/local-seo",
+   "services/website-development",
+   "services/website-seo"
+  ]
+ },
+ {
+  "page": "case-studies",
+  "type": "root",
+  "out": 14,
+  "in": 61,
+  "inbound": [
+   "404",
+   "index",
+   "industries/appliance-repair",
+   "industries/car-detailing",
+   "industries/house-cleaning",
+   "industries/hvac",
+   "industries/junk-removal",
+   "industries/landscaping-lawn-care",
+   "industries/locksmith-services",
+   "industries/moving-companies",
+   "industries/pest-control",
+   "industries/plumbing",
+   "industries/roofing",
+   "industries/towing",
+   "locations/asheville-nc",
+   "locations/athens-ga",
+   "locations/augusta-ga",
+   "locations/cape-coral-fl",
+   "locations/charleston-sc",
+   "locations/chattanooga-tn",
+   "locations/clarksville-tn",
+   "locations/college-station-tx",
+   "locations/columbia-sc",
+   "locations/columbus-ga",
+   "locations/denton-tx",
+   "locations/fayetteville-nc",
+   "locations/flagstaff-az",
+   "locations/franklin-tn",
+   "locations/gainesville-fl",
+   "locations/gilbert-az",
+   "locations/glendale-az",
+   "locations/goodyear-az",
+   "locations/greensboro-nc",
+   "locations/greenville-sc",
+   "locations/high-point-nc",
+   "locations/johnson-city-tn",
+   "locations/killeen-tx",
+   "locations/knoxville-tn",
+   "locations/macon-ga",
+   "locations/mcallen-tx",
+   "locations/mesa-az",
+   "locations/murfreesboro-tn",
+   "locations/myrtle-beach-sc",
+   "locations/pensacola-fl",
+   "locations/peoria-az",
+   "locations/rock-hill-sc",
+   "locations/roswell-ga",
+   "locations/sarasota-fl",
+   "locations/savannah-ga",
+   "locations/tallahassee-fl",
+   "locations/tyler-tx",
+   "locations/waco-tx",
+   "locations/wilmington-nc",
+   "locations/winston-salem-nc",
+   "portfolio",
+   "services/ai-search-optimization",
+   "services/ai-voice-optimization",
+   "services/geo",
+   "services/social-media-marketing",
    "services/website-development",
    "services/website-seo"
   ]
@@ -2634,7 +2750,7 @@
  {
   "page": "industries/car-detailing",
   "type": "industries",
-  "out": 42,
+  "out": 43,
   "in": 61,
   "inbound": [
    "case-studies",
@@ -2703,7 +2819,7 @@
  {
   "page": "industries/junk-removal",
   "type": "industries",
-  "out": 42,
+  "out": 43,
   "in": 61,
   "inbound": [
    "index",
@@ -2772,7 +2888,7 @@
  {
   "page": "industries/towing",
   "type": "industries",
-  "out": 42,
+  "out": 43,
   "in": 61,
   "inbound": [
    "index",
@@ -2839,80 +2955,9 @@
   ]
  },
  {
-  "page": "case-studies",
-  "type": "root",
-  "out": 14,
-  "in": 63,
-  "inbound": [
-   "404",
-   "index",
-   "industries/appliance-repair",
-   "industries/car-detailing",
-   "industries/house-cleaning",
-   "industries/hvac",
-   "industries/junk-removal",
-   "industries/landscaping-lawn-care",
-   "industries/locksmith-services",
-   "industries/moving-companies",
-   "industries/pest-control",
-   "industries/plumbing",
-   "industries/roofing",
-   "industries/towing",
-   "locations/asheville-nc",
-   "locations/athens-ga",
-   "locations/augusta-ga",
-   "locations/cape-coral-fl",
-   "locations/charleston-sc",
-   "locations/chattanooga-tn",
-   "locations/clarksville-tn",
-   "locations/college-station-tx",
-   "locations/columbia-sc",
-   "locations/columbus-ga",
-   "locations/denton-tx",
-   "locations/fayetteville-nc",
-   "locations/flagstaff-az",
-   "locations/franklin-tn",
-   "locations/gainesville-fl",
-   "locations/gilbert-az",
-   "locations/glendale-az",
-   "locations/goodyear-az",
-   "locations/greensboro-nc",
-   "locations/greenville-sc",
-   "locations/high-point-nc",
-   "locations/johnson-city-tn",
-   "locations/killeen-tx",
-   "locations/knoxville-tn",
-   "locations/macon-ga",
-   "locations/mcallen-tx",
-   "locations/mesa-az",
-   "locations/murfreesboro-tn",
-   "locations/myrtle-beach-sc",
-   "locations/pensacola-fl",
-   "locations/peoria-az",
-   "locations/rock-hill-sc",
-   "locations/roswell-ga",
-   "locations/sarasota-fl",
-   "locations/savannah-ga",
-   "locations/tallahassee-fl",
-   "locations/tyler-tx",
-   "locations/waco-tx",
-   "locations/wilmington-nc",
-   "locations/winston-salem-nc",
-   "portfolio",
-   "services/ai-search-optimization",
-   "services/ai-voice-optimization",
-   "services/geo",
-   "services/google-business-profile",
-   "services/local-seo",
-   "services/social-media-marketing",
-   "services/website-development",
-   "services/website-seo"
-  ]
- },
- {
   "page": "industries/locksmith-services",
   "type": "industries",
-  "out": 42,
+  "out": 43,
   "in": 65,
   "inbound": [
    "case-studies",
@@ -2985,7 +3030,7 @@
  {
   "page": "industries/moving-companies",
   "type": "industries",
-  "out": 42,
+  "out": 43,
   "in": 67,
   "inbound": [
    "index",
@@ -3060,7 +3105,7 @@
  {
   "page": "industries/roofing",
   "type": "industries",
-  "out": 41,
+  "out": 42,
   "in": 68,
   "inbound": [
    "case-studies",
@@ -3136,7 +3181,7 @@
  {
   "page": "industries/appliance-repair",
   "type": "industries",
-  "out": 42,
+  "out": 43,
   "in": 69,
   "inbound": [
    "index",
@@ -3213,7 +3258,7 @@
  {
   "page": "industries/pest-control",
   "type": "industries",
-  "out": 42,
+  "out": 43,
   "in": 69,
   "inbound": [
    "index",
@@ -3290,7 +3335,7 @@
  {
   "page": "industries/landscaping-lawn-care",
   "type": "industries",
-  "out": 42,
+  "out": 43,
   "in": 70,
   "inbound": [
    "case-studies",
@@ -3368,7 +3413,7 @@
  {
   "page": "industries/house-cleaning",
   "type": "industries",
-  "out": 42,
+  "out": 43,
   "in": 71,
   "inbound": [
    "index",
@@ -3445,88 +3490,9 @@
   ]
  },
  {
-  "page": "services/google-business-profile",
-  "type": "services",
-  "out": 49,
-  "in": 71,
-  "inbound": [
-   "blog/google-business-profile-suspended-reinstatement",
-   "blog/quarterly-seo-audit-checklist",
-   "case-studies",
-   "index",
-   "industries/appliance-repair",
-   "industries/car-detailing",
-   "industries/house-cleaning",
-   "industries/hvac",
-   "industries/junk-removal",
-   "industries/landscaping-lawn-care",
-   "industries/locksmith-services",
-   "industries/moving-companies",
-   "industries/pest-control",
-   "industries/plumbing",
-   "industries/roofing",
-   "industries/towing",
-   "locations/arizona",
-   "locations/asheville-nc",
-   "locations/athens-ga",
-   "locations/augusta-ga",
-   "locations/cape-coral-fl",
-   "locations/chandler-az",
-   "locations/charleston-sc",
-   "locations/chattanooga-tn",
-   "locations/clarksville-tn",
-   "locations/college-station-tx",
-   "locations/columbia-sc",
-   "locations/columbus-ga",
-   "locations/concord-nc",
-   "locations/denton-tx",
-   "locations/fayetteville-nc",
-   "locations/flagstaff-az",
-   "locations/florida",
-   "locations/franklin-tn",
-   "locations/gainesville-fl",
-   "locations/georgia",
-   "locations/gilbert-az",
-   "locations/glendale-az",
-   "locations/goodyear-az",
-   "locations/greensboro-nc",
-   "locations/greenville-sc",
-   "locations/high-point-nc",
-   "locations/johnson-city-tn",
-   "locations/killeen-tx",
-   "locations/knoxville-tn",
-   "locations/macon-ga",
-   "locations/mcallen-tx",
-   "locations/mesa-az",
-   "locations/murfreesboro-tn",
-   "locations/myrtle-beach-sc",
-   "locations/north-carolina",
-   "locations/ocala-fl",
-   "locations/pensacola-fl",
-   "locations/peoria-az",
-   "locations/rock-hill-sc",
-   "locations/roswell-ga",
-   "locations/sarasota-fl",
-   "locations/savannah-ga",
-   "locations/scottsdale-az",
-   "locations/south-carolina",
-   "locations/tallahassee-fl",
-   "locations/tempe-az",
-   "locations/tennessee",
-   "locations/texas",
-   "locations/tyler-tx",
-   "locations/waco-tx",
-   "locations/wilmington-nc",
-   "locations/winston-salem-nc",
-   "services/index",
-   "services/local-seo",
-   "services/social-media-marketing"
-  ]
- },
- {
   "page": "industries/hvac",
   "type": "industries",
-  "out": 41,
+  "out": 42,
   "in": 72,
   "inbound": [
    "case-studies",
@@ -3606,7 +3572,7 @@
  {
   "page": "industries/index",
   "type": "industries",
-  "out": 14,
+  "out": 16,
   "in": 72,
   "inbound": [
    "404",
@@ -3686,7 +3652,7 @@
  {
   "page": "industries/plumbing",
   "type": "industries",
-  "out": 41,
+  "out": 42,
   "in": 72,
   "inbound": [
    "case-studies",
@@ -3844,6 +3810,88 @@
   ]
  },
  {
+  "page": "services/google-business-profile",
+  "type": "services",
+  "out": 55,
+  "in": 74,
+  "inbound": [
+   "blog/google-business-profile-checklist",
+   "blog/google-business-profile-not-showing-up",
+   "blog/google-business-profile-suspended-reinstatement",
+   "blog/quarterly-seo-audit-checklist",
+   "blog/report-fake-google-business-listings-map-spam",
+   "case-studies",
+   "index",
+   "industries/appliance-repair",
+   "industries/car-detailing",
+   "industries/house-cleaning",
+   "industries/hvac",
+   "industries/junk-removal",
+   "industries/landscaping-lawn-care",
+   "industries/locksmith-services",
+   "industries/moving-companies",
+   "industries/pest-control",
+   "industries/plumbing",
+   "industries/roofing",
+   "industries/towing",
+   "locations/arizona",
+   "locations/asheville-nc",
+   "locations/athens-ga",
+   "locations/augusta-ga",
+   "locations/cape-coral-fl",
+   "locations/chandler-az",
+   "locations/charleston-sc",
+   "locations/chattanooga-tn",
+   "locations/clarksville-tn",
+   "locations/college-station-tx",
+   "locations/columbia-sc",
+   "locations/columbus-ga",
+   "locations/concord-nc",
+   "locations/denton-tx",
+   "locations/fayetteville-nc",
+   "locations/flagstaff-az",
+   "locations/florida",
+   "locations/franklin-tn",
+   "locations/gainesville-fl",
+   "locations/georgia",
+   "locations/gilbert-az",
+   "locations/glendale-az",
+   "locations/goodyear-az",
+   "locations/greensboro-nc",
+   "locations/greenville-sc",
+   "locations/high-point-nc",
+   "locations/johnson-city-tn",
+   "locations/killeen-tx",
+   "locations/knoxville-tn",
+   "locations/macon-ga",
+   "locations/mcallen-tx",
+   "locations/mesa-az",
+   "locations/murfreesboro-tn",
+   "locations/myrtle-beach-sc",
+   "locations/north-carolina",
+   "locations/ocala-fl",
+   "locations/pensacola-fl",
+   "locations/peoria-az",
+   "locations/rock-hill-sc",
+   "locations/roswell-ga",
+   "locations/sarasota-fl",
+   "locations/savannah-ga",
+   "locations/scottsdale-az",
+   "locations/south-carolina",
+   "locations/tallahassee-fl",
+   "locations/tempe-az",
+   "locations/tennessee",
+   "locations/texas",
+   "locations/tyler-tx",
+   "locations/waco-tx",
+   "locations/wilmington-nc",
+   "locations/winston-salem-nc",
+   "services/index",
+   "services/local-seo",
+   "services/social-media-marketing"
+  ]
+ },
+ {
   "page": "locations/index",
   "type": "locations",
   "out": 59,
@@ -3932,18 +3980,30 @@
  {
   "page": "services/local-seo",
   "type": "services",
-  "out": 49,
-  "in": 79,
+  "out": 58,
+  "in": 91,
   "inbound": [
+   "blog/entity-seo-for-local-businesses",
+   "blog/google-business-profile-checklist",
    "blog/google-local-services-ads-home-services",
+   "blog/how-local-seo-works",
+   "blog/how-long-does-local-seo-take",
+   "blog/how-to-get-google-reviews",
+   "blog/local-link-building-home-service-businesses",
+   "blog/local-seo-ranking-factors-2026",
+   "blog/nap-consistency-local-rankings",
    "blog/quarterly-seo-audit-checklist",
+   "blog/rank-in-google-map-pack",
    "blog/report-fake-google-business-listings-map-spam",
+   "blog/service-area-pages-vs-city-pages",
+   "blog/track-local-seo-roi",
    "case-studies",
    "index",
    "industries/appliance-repair",
    "industries/car-detailing",
    "industries/house-cleaning",
    "industries/hvac",
+   "industries/index",
    "industries/junk-removal",
    "industries/landscaping-lawn-care",
    "industries/locksmith-services",
