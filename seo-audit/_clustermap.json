@@ -1,0 +1,429 @@
+{
+ "404": [],
+ "about": [],
+ "blog/ai-voice-search-optimization": [
+  "ai-search"
+ ],
+ "blog/appliance-repair-marketing-guide": [],
+ "blog/before-after-photos-social-media-leads": [
+  "other-service"
+ ],
+ "blog/best-social-media-platforms-for-local-business": [
+  "other-service"
+ ],
+ "blog/call-handling-systems-local-service-business": [],
+ "blog/car-detailing-marketing-guide": [],
+ "blog/digital-marketing-cape-coral": [],
+ "blog/digital-marketing-chattanooga": [],
+ "blog/digital-marketing-greenville-sc": [],
+ "blog/digital-marketing-knoxville": [],
+ "blog/digital-marketing-savannah-ga": [],
+ "blog/entity-seo-for-local-businesses": [
+  "schema-entity",
+  "ai-search"
+ ],
+ "blog/get-cited-by-ai-search": [
+  "ai-search"
+ ],
+ "blog/google-business-profile-checklist": [
+  "gbp"
+ ],
+ "blog/google-business-profile-not-showing-up": [
+  "gbp"
+ ],
+ "blog/google-business-profile-suspended-reinstatement": [
+  "gbp"
+ ],
+ "blog/google-local-services-ads-home-services": [],
+ "blog/house-cleaning-marketing-guide": [],
+ "blog/how-local-seo-works": [
+  "local-seo-core"
+ ],
+ "blog/how-long-does-local-seo-take": [
+  "local-seo-core"
+ ],
+ "blog/how-many-locations-to-list-online": [],
+ "blog/how-many-pages-should-a-website-have": [],
+ "blog/how-to-get-google-reviews": [
+  "reviews"
+ ],
+ "blog/hvac-marketing-guide": [],
+ "blog/index": [
+  "local-seo-core",
+  "ai-search"
+ ],
+ "blog/junk-removal-marketing-guide": [],
+ "blog/landscaping-marketing-guide": [],
+ "blog/local-link-building-home-service-businesses": [
+  "link-building"
+ ],
+ "blog/local-seo-ranking-factors-2026": [
+  "local-seo-core"
+ ],
+ "blog/locksmith-marketing-guide": [
+  "local-seo-core"
+ ],
+ "blog/marketing-budget-for-local-business": [],
+ "blog/measure-ai-search-visibility-local-business": [
+  "ai-search"
+ ],
+ "blog/mobile-optimization-checklist": [],
+ "blog/moving-company-marketing-guide": [],
+ "blog/nap-consistency-local-rankings": [
+  "citations"
+ ],
+ "blog/pest-control-marketing-guide": [],
+ "blog/plumbing-marketing-guide": [],
+ "blog/quarterly-seo-audit-checklist": [
+  "other-service"
+ ],
+ "blog/rank-in-google-map-pack": [
+  "gbp"
+ ],
+ "blog/report-fake-google-business-listings-map-spam": [
+  "gbp"
+ ],
+ "blog/roofing-marketing-guide": [],
+ "blog/seasonal-marketing-calendar-home-service": [],
+ "blog/seo-vs-geo": [
+  "ai-search"
+ ],
+ "blog/seo-vs-paid-ads": [],
+ "blog/service-area-pages-vs-city-pages": [
+  "local-content"
+ ],
+ "blog/social-media-posting-frequency": [
+  "other-service"
+ ],
+ "blog/structured-data-for-ai-search": [
+  "schema-entity",
+  "ai-search"
+ ],
+ "blog/towing-marketing-guide": [
+  "local-seo-core"
+ ],
+ "blog/track-local-seo-roi": [
+  "local-seo-core"
+ ],
+ "blog/turn-visitors-into-booked-jobs": [],
+ "blog/website-design-mistakes": [],
+ "blog/website-speed-and-local-rankings": [
+  "local-seo-core"
+ ],
+ "blog/what-is-geo": [
+  "ai-search"
+ ],
+ "careers": [],
+ "case-studies": [],
+ "contact": [],
+ "index": [
+  "ai-search"
+ ],
+ "industries/appliance-repair": [
+  "industry"
+ ],
+ "industries/car-detailing": [
+  "industry"
+ ],
+ "industries/house-cleaning": [
+  "industry"
+ ],
+ "industries/hvac": [
+  "industry"
+ ],
+ "industries/index": [
+  "industry"
+ ],
+ "industries/junk-removal": [
+  "industry"
+ ],
+ "industries/landscaping-lawn-care": [
+  "industry"
+ ],
+ "industries/locksmith-services": [
+  "industry"
+ ],
+ "industries/moving-companies": [
+  "industry"
+ ],
+ "industries/pest-control": [
+  "industry"
+ ],
+ "industries/plumbing": [
+  "gbp",
+  "industry"
+ ],
+ "industries/roofing": [
+  "industry"
+ ],
+ "industries/towing": [
+  "industry"
+ ],
+ "location-template": [
+  "local-seo-core"
+ ],
+ "locations/arizona": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/asheville-nc": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/athens-ga": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/augusta-ga": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/cape-coral-fl": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/cary-nc": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/chandler-az": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/charleston-sc": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/chattanooga-tn": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/clarksville-tn": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/college-station-tx": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/columbia-sc": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/columbus-ga": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/concord-nc": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/denton-tx": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/fayetteville-nc": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/flagstaff-az": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/florida": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/franklin-tn": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/gainesville-fl": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/georgia": [
+  "local-seo-core",
+  "ai-search",
+  "location"
+ ],
+ "locations/gilbert-az": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/glendale-az": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/goodyear-az": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/greensboro-nc": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/greenville-sc": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/high-point-nc": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/index": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/johnson-city-tn": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/killeen-tx": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/knoxville-tn": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/lakeland-fl": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/lubbock-tx": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/macon-ga": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/marietta-ga": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/mcallen-tx": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/mesa-az": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/murfreesboro-tn": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/myrtle-beach-sc": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/north-carolina": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/ocala-fl": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/pensacola-fl": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/peoria-az": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/rock-hill-sc": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/roswell-ga": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/sandy-springs-ga": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/sarasota-fl": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/savannah-ga": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/scottsdale-az": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/south-carolina": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/tallahassee-fl": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/tempe-az": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/tennessee": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/texas": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/tyler-tx": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/waco-tx": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/wilmington-nc": [
+  "local-seo-core",
+  "location"
+ ],
+ "locations/winston-salem-nc": [
+  "local-seo-core",
+  "location"
+ ],
+ "portfolio": [],
+ "privacy": [],
+ "services/ai-search-optimization": [
+  "ai-search"
+ ],
+ "services/ai-voice-optimization": [
+  "ai-search"
+ ],
+ "services/geo": [
+  "ai-search"
+ ],
+ "services/google-business-profile": [
+  "gbp"
+ ],
+ "services/index": [
+  "ai-search"
+ ],
+ "services/local-seo": [
+  "local-seo-core",
+  "gbp"
+ ],
+ "services/social-media-marketing": [
+  "other-service"
+ ],
+ "services/website-development": [
+  "other-service"
+ ],
+ "services/website-seo": [
+  "other-service"
+ ],
+ "terms": []
+}
