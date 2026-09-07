@@ -179,7 +179,7 @@
  {
   "page": "locations/cary-nc",
   "type": "locations",
-  "out": 20,
+  "out": 19,
   "in": 2,
   "inbound": [
    "locations/index",
@@ -189,7 +189,7 @@
  {
   "page": "locations/concord-nc",
   "type": "locations",
-  "out": 20,
+  "out": 19,
   "in": 2,
   "inbound": [
    "locations/index",
@@ -199,7 +199,7 @@
  {
   "page": "locations/lakeland-fl",
   "type": "locations",
-  "out": 19,
+  "out": 18,
   "in": 2,
   "inbound": [
    "locations/florida",
@@ -209,7 +209,7 @@
  {
   "page": "locations/lubbock-tx",
   "type": "locations",
-  "out": 19,
+  "out": 18,
   "in": 2,
   "inbound": [
    "locations/index",
@@ -219,7 +219,7 @@
  {
   "page": "locations/ocala-fl",
   "type": "locations",
-  "out": 19,
+  "out": 18,
   "in": 2,
   "inbound": [
    "locations/florida",
@@ -229,7 +229,7 @@
  {
   "page": "locations/rock-hill-sc",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 2,
   "inbound": [
    "locations/index",
@@ -327,7 +327,7 @@
  {
   "page": "locations/chandler-az",
   "type": "locations",
-  "out": 20,
+  "out": 19,
   "in": 3,
   "inbound": [
    "locations/arizona",
@@ -338,7 +338,7 @@
  {
   "page": "locations/sandy-springs-ga",
   "type": "locations",
-  "out": 20,
+  "out": 19,
   "in": 3,
   "inbound": [
    "locations/georgia",
@@ -421,7 +421,7 @@
  {
   "page": "locations/marietta-ga",
   "type": "locations",
-  "out": 20,
+  "out": 19,
   "in": 4,
   "inbound": [
    "locations/georgia",
@@ -433,7 +433,7 @@
  {
   "page": "locations/pensacola-fl",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 4,
   "inbound": [
    "locations/florida",
@@ -445,7 +445,7 @@
  {
   "page": "locations/scottsdale-az",
   "type": "locations",
-  "out": 21,
+  "out": 20,
   "in": 4,
   "inbound": [
    "locations/arizona",
@@ -457,7 +457,7 @@
  {
   "page": "locations/tempe-az",
   "type": "locations",
-  "out": 21,
+  "out": 20,
   "in": 4,
   "inbound": [
    "locations/arizona",
@@ -547,7 +547,7 @@
  {
   "page": "locations/myrtle-beach-sc",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 5,
   "inbound": [
    "locations/charleston-sc",
@@ -588,7 +588,7 @@
  {
   "page": "locations/charleston-sc",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 6,
   "inbound": [
    "locations/columbia-sc",
@@ -602,7 +602,7 @@
  {
   "page": "locations/columbia-sc",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 6,
   "inbound": [
    "locations/charleston-sc",
@@ -616,7 +616,7 @@
  {
   "page": "locations/greenville-sc",
   "type": "locations",
-  "out": 29,
+  "out": 28,
   "in": 6,
   "inbound": [
    "locations/charleston-sc",
@@ -625,6 +625,20 @@
    "locations/myrtle-beach-sc",
    "locations/rock-hill-sc",
    "locations/south-carolina"
+  ]
+ },
+ {
+  "page": "portfolio",
+  "type": "root",
+  "out": 3,
+  "in": 6,
+  "inbound": [
+   "about",
+   "case-studies",
+   "contact",
+   "index",
+   "location-template",
+   "services/index"
   ]
  },
  {
@@ -645,7 +659,7 @@
  {
   "page": "locations/cape-coral-fl",
   "type": "locations",
-  "out": 29,
+  "out": 28,
   "in": 7,
   "inbound": [
    "locations/florida",
@@ -660,7 +674,7 @@
  {
   "page": "locations/south-carolina",
   "type": "locations",
-  "out": 30,
+  "out": 29,
   "in": 7,
   "inbound": [
    "locations/arizona",
@@ -675,7 +689,7 @@
  {
   "page": "locations/tennessee",
   "type": "locations",
-  "out": 31,
+  "out": 30,
   "in": 7,
   "inbound": [
    "locations/arizona",
@@ -722,7 +736,7 @@
  {
   "page": "locations/gainesville-fl",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 8,
   "inbound": [
    "locations/cape-coral-fl",
@@ -738,7 +752,7 @@
  {
   "page": "locations/sarasota-fl",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 8,
   "inbound": [
    "locations/cape-coral-fl",
@@ -754,7 +768,7 @@
  {
   "page": "locations/tallahassee-fl",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 8,
   "inbound": [
    "locations/cape-coral-fl",
@@ -770,7 +784,7 @@
  {
   "page": "locations/texas",
   "type": "locations",
-  "out": 32,
+  "out": 31,
   "in": 8,
   "inbound": [
    "locations/arizona",
@@ -837,7 +851,7 @@
  {
   "page": "locations/florida",
   "type": "locations",
-  "out": 32,
+  "out": 31,
   "in": 9,
   "inbound": [
    "locations/arizona",
@@ -854,7 +868,7 @@
  {
   "page": "locations/georgia",
   "type": "locations",
-  "out": 33,
+  "out": 32,
   "in": 9,
   "inbound": [
    "locations/arizona",
@@ -871,7 +885,7 @@
  {
   "page": "locations/north-carolina",
   "type": "locations",
-  "out": 33,
+  "out": 32,
   "in": 9,
   "inbound": [
    "locations/arizona",
@@ -942,7 +956,7 @@
  {
   "page": "locations/arizona",
   "type": "locations",
-  "out": 34,
+  "out": 33,
   "in": 10,
   "inbound": [
    "locations/chandler-az",
@@ -955,45 +969,6 @@
    "locations/tempe-az",
    "locations/tennessee",
    "locations/texas"
-  ]
- },
- {
-  "page": "blog/how-long-does-local-seo-take",
-  "type": "blog",
-  "out": 6,
-  "in": 11,
-  "inbound": [
-   "blog/digital-marketing-cape-coral",
-   "blog/digital-marketing-chattanooga",
-   "blog/digital-marketing-greenville-sc",
-   "blog/digital-marketing-knoxville",
-   "blog/digital-marketing-savannah-ga",
-   "blog/index",
-   "blog/rank-in-google-map-pack",
-   "blog/seo-vs-paid-ads",
-   "blog/track-local-seo-roi",
-   "services/google-business-profile",
-   "services/local-seo"
-  ]
- },
- {
-  "page": "blog/track-local-seo-roi",
-  "type": "blog",
-  "out": 9,
-  "in": 12,
-  "inbound": [
-   "blog/call-handling-systems-local-service-business",
-   "blog/digital-marketing-cape-coral",
-   "blog/digital-marketing-chattanooga",
-   "blog/digital-marketing-greenville-sc",
-   "blog/digital-marketing-knoxville",
-   "blog/digital-marketing-savannah-ga",
-   "blog/google-local-services-ads-home-services",
-   "blog/index",
-   "blog/local-link-building-home-service-businesses",
-   "blog/measure-ai-search-visibility-local-business",
-   "blog/quarterly-seo-audit-checklist",
-   "services/local-seo"
   ]
  },
  {
@@ -1036,6 +1011,28 @@
    "services/social-media-marketing",
    "services/website-development",
    "services/website-seo"
+  ]
+ },
+ {
+  "page": "blog/how-long-does-local-seo-take",
+  "type": "blog",
+  "out": 6,
+  "in": 14,
+  "inbound": [
+   "blog/digital-marketing-cape-coral",
+   "blog/digital-marketing-chattanooga",
+   "blog/digital-marketing-greenville-sc",
+   "blog/digital-marketing-knoxville",
+   "blog/digital-marketing-savannah-ga",
+   "blog/index",
+   "blog/rank-in-google-map-pack",
+   "blog/seo-vs-paid-ads",
+   "blog/track-local-seo-roi",
+   "industries/hvac",
+   "industries/plumbing",
+   "industries/roofing",
+   "services/google-business-profile",
+   "services/local-seo"
   ]
  },
  {
@@ -1110,6 +1107,32 @@
   ]
  },
  {
+  "page": "blog/track-local-seo-roi",
+  "type": "blog",
+  "out": 9,
+  "in": 18,
+  "inbound": [
+   "blog/call-handling-systems-local-service-business",
+   "blog/digital-marketing-cape-coral",
+   "blog/digital-marketing-chattanooga",
+   "blog/digital-marketing-greenville-sc",
+   "blog/digital-marketing-knoxville",
+   "blog/digital-marketing-savannah-ga",
+   "blog/google-local-services-ads-home-services",
+   "blog/index",
+   "blog/local-link-building-home-service-businesses",
+   "blog/measure-ai-search-visibility-local-business",
+   "blog/quarterly-seo-audit-checklist",
+   "services/ai-search-optimization",
+   "services/ai-voice-optimization",
+   "services/geo",
+   "services/local-seo",
+   "services/social-media-marketing",
+   "services/website-development",
+   "services/website-seo"
+  ]
+ },
+ {
   "page": "blog/google-business-profile-checklist",
   "type": "blog",
   "out": 8,
@@ -1166,7 +1189,7 @@
  {
   "page": "locations/johnson-city-tn",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 24,
   "inbound": [
    "industries/appliance-repair",
@@ -1198,7 +1221,7 @@
  {
   "page": "locations/knoxville-tn",
   "type": "locations",
-  "out": 29,
+  "out": 28,
   "in": 24,
   "inbound": [
    "industries/appliance-repair",
@@ -1230,7 +1253,7 @@
  {
   "page": "locations/mcallen-tx",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 24,
   "inbound": [
    "industries/appliance-repair",
@@ -1262,7 +1285,7 @@
  {
   "page": "locations/clarksville-tn",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 25,
   "inbound": [
    "industries/appliance-repair",
@@ -1295,7 +1318,7 @@
  {
   "page": "locations/flagstaff-az",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 25,
   "inbound": [
    "industries/appliance-repair",
@@ -1328,7 +1351,7 @@
  {
   "page": "locations/franklin-tn",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 25,
   "inbound": [
    "industries/appliance-repair",
@@ -1361,7 +1384,7 @@
  {
   "page": "locations/asheville-nc",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 26,
   "inbound": [
    "industries/appliance-repair",
@@ -1395,7 +1418,7 @@
  {
   "page": "locations/chattanooga-tn",
   "type": "locations",
-  "out": 29,
+  "out": 28,
   "in": 26,
   "inbound": [
    "industries/appliance-repair",
@@ -1429,7 +1452,7 @@
  {
   "page": "locations/columbus-ga",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 26,
   "inbound": [
    "industries/appliance-repair",
@@ -1463,7 +1486,7 @@
  {
   "page": "locations/denton-tx",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 26,
   "inbound": [
    "industries/appliance-repair",
@@ -1497,7 +1520,7 @@
  {
   "page": "locations/killeen-tx",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 26,
   "inbound": [
    "industries/appliance-repair",
@@ -1531,7 +1554,7 @@
  {
   "page": "locations/murfreesboro-tn",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 26,
   "inbound": [
    "industries/appliance-repair",
@@ -1565,7 +1588,7 @@
  {
   "page": "locations/roswell-ga",
   "type": "locations",
-  "out": 30,
+  "out": 29,
   "in": 26,
   "inbound": [
    "industries/appliance-repair",
@@ -1599,7 +1622,7 @@
  {
   "page": "locations/tyler-tx",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 26,
   "inbound": [
    "industries/appliance-repair",
@@ -1633,7 +1656,7 @@
  {
   "page": "locations/wilmington-nc",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 26,
   "inbound": [
    "industries/appliance-repair",
@@ -1667,7 +1690,7 @@
  {
   "page": "locations/athens-ga",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 27,
   "inbound": [
    "industries/appliance-repair",
@@ -1702,7 +1725,7 @@
  {
   "page": "locations/augusta-ga",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 27,
   "inbound": [
    "industries/appliance-repair",
@@ -1737,7 +1760,7 @@
  {
   "page": "locations/college-station-tx",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 27,
   "inbound": [
    "industries/appliance-repair",
@@ -1772,7 +1795,7 @@
  {
   "page": "locations/fayetteville-nc",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 27,
   "inbound": [
    "industries/appliance-repair",
@@ -1807,7 +1830,7 @@
  {
   "page": "locations/macon-ga",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 27,
   "inbound": [
    "industries/appliance-repair",
@@ -1842,7 +1865,7 @@
  {
   "page": "locations/waco-tx",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 27,
   "inbound": [
    "industries/appliance-repair",
@@ -1877,7 +1900,7 @@
  {
   "page": "locations/winston-salem-nc",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 27,
   "inbound": [
    "industries/appliance-repair",
@@ -1912,7 +1935,7 @@
  {
   "page": "locations/gilbert-az",
   "type": "locations",
-  "out": 31,
+  "out": 30,
   "in": 28,
   "inbound": [
    "industries/appliance-repair",
@@ -1948,7 +1971,7 @@
  {
   "page": "locations/greensboro-nc",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 28,
   "inbound": [
    "industries/appliance-repair",
@@ -1984,7 +2007,7 @@
  {
   "page": "locations/high-point-nc",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 28,
   "inbound": [
    "industries/appliance-repair",
@@ -2020,7 +2043,7 @@
  {
   "page": "locations/peoria-az",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 28,
   "inbound": [
    "industries/appliance-repair",
@@ -2056,7 +2079,7 @@
  {
   "page": "locations/savannah-ga",
   "type": "locations",
-  "out": 29,
+  "out": 28,
   "in": 28,
   "inbound": [
    "industries/appliance-repair",
@@ -2092,7 +2115,7 @@
  {
   "page": "locations/glendale-az",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 29,
   "inbound": [
    "industries/appliance-repair",
@@ -2129,7 +2152,7 @@
  {
   "page": "locations/goodyear-az",
   "type": "locations",
-  "out": 28,
+  "out": 27,
   "in": 29,
   "inbound": [
    "industries/appliance-repair",
@@ -2166,7 +2189,7 @@
  {
   "page": "locations/mesa-az",
   "type": "locations",
-  "out": 30,
+  "out": 29,
   "in": 29,
   "inbound": [
    "industries/appliance-repair",
@@ -2203,7 +2226,7 @@
  {
   "page": "services/geo",
   "type": "services",
-  "out": 49,
+  "out": 50,
   "in": 47,
   "inbound": [
    "blog/entity-seo-for-local-businesses",
@@ -2258,7 +2281,7 @@
  {
   "page": "services/social-media-marketing",
   "type": "services",
-  "out": 49,
+  "out": 50,
   "in": 50,
   "inbound": [
    "case-studies",
@@ -2316,7 +2339,7 @@
  {
   "page": "services/website-seo",
   "type": "services",
-  "out": 49,
+  "out": 50,
   "in": 50,
   "inbound": [
    "blog/local-link-building-home-service-businesses",
@@ -2434,7 +2457,7 @@
  {
   "page": "services/ai-voice-optimization",
   "type": "services",
-  "out": 49,
+  "out": 50,
   "in": 52,
   "inbound": [
    "index",
@@ -2555,7 +2578,7 @@
  {
   "page": "services/website-development",
   "type": "services",
-  "out": 49,
+  "out": 50,
   "in": 54,
   "inbound": [
    "blog/service-area-pages-vs-city-pages",
@@ -2617,7 +2640,7 @@
  {
   "page": "services/ai-search-optimization",
   "type": "services",
-  "out": 49,
+  "out": 50,
   "in": 56,
   "inbound": [
    "blog/quarterly-seo-audit-checklist",
@@ -2750,7 +2773,7 @@
  {
   "page": "industries/car-detailing",
   "type": "industries",
-  "out": 43,
+  "out": 42,
   "in": 61,
   "inbound": [
    "case-studies",
@@ -2819,7 +2842,7 @@
  {
   "page": "industries/junk-removal",
   "type": "industries",
-  "out": 43,
+  "out": 42,
   "in": 61,
   "inbound": [
    "index",
@@ -2888,7 +2911,7 @@
  {
   "page": "industries/towing",
   "type": "industries",
-  "out": 43,
+  "out": 42,
   "in": 61,
   "inbound": [
    "index",
@@ -2957,7 +2980,7 @@
  {
   "page": "industries/locksmith-services",
   "type": "industries",
-  "out": 43,
+  "out": 42,
   "in": 65,
   "inbound": [
    "case-studies",
@@ -3030,7 +3053,7 @@
  {
   "page": "industries/moving-companies",
   "type": "industries",
-  "out": 43,
+  "out": 42,
   "in": 67,
   "inbound": [
    "index",
@@ -3105,7 +3128,7 @@
  {
   "page": "industries/roofing",
   "type": "industries",
-  "out": 42,
+  "out": 43,
   "in": 68,
   "inbound": [
    "case-studies",
@@ -3181,7 +3204,7 @@
  {
   "page": "industries/appliance-repair",
   "type": "industries",
-  "out": 43,
+  "out": 42,
   "in": 69,
   "inbound": [
    "index",
@@ -3258,7 +3281,7 @@
  {
   "page": "industries/pest-control",
   "type": "industries",
-  "out": 43,
+  "out": 42,
   "in": 69,
   "inbound": [
    "index",
@@ -3335,7 +3358,7 @@
  {
   "page": "industries/landscaping-lawn-care",
   "type": "industries",
-  "out": 43,
+  "out": 42,
   "in": 70,
   "inbound": [
    "case-studies",
@@ -3413,7 +3436,7 @@
  {
   "page": "industries/house-cleaning",
   "type": "industries",
-  "out": 43,
+  "out": 42,
   "in": 71,
   "inbound": [
    "index",
@@ -3492,7 +3515,7 @@
  {
   "page": "industries/hvac",
   "type": "industries",
-  "out": 42,
+  "out": 43,
   "in": 72,
   "inbound": [
    "case-studies",
@@ -3652,7 +3675,7 @@
  {
   "page": "industries/plumbing",
   "type": "industries",
-  "out": 42,
+  "out": 43,
   "in": 72,
   "inbound": [
    "case-studies",
@@ -3727,86 +3750,6 @@
    "services/social-media-marketing",
    "services/website-development",
    "services/website-seo"
-  ]
- },
- {
-  "page": "portfolio",
-  "type": "root",
-  "out": 3,
-  "in": 72,
-  "inbound": [
-   "about",
-   "case-studies",
-   "contact",
-   "index",
-   "industries/appliance-repair",
-   "industries/car-detailing",
-   "industries/house-cleaning",
-   "industries/junk-removal",
-   "industries/landscaping-lawn-care",
-   "industries/locksmith-services",
-   "industries/moving-companies",
-   "industries/pest-control",
-   "industries/towing",
-   "location-template",
-   "locations/arizona",
-   "locations/asheville-nc",
-   "locations/athens-ga",
-   "locations/augusta-ga",
-   "locations/cape-coral-fl",
-   "locations/cary-nc",
-   "locations/chandler-az",
-   "locations/charleston-sc",
-   "locations/chattanooga-tn",
-   "locations/clarksville-tn",
-   "locations/college-station-tx",
-   "locations/columbia-sc",
-   "locations/columbus-ga",
-   "locations/concord-nc",
-   "locations/denton-tx",
-   "locations/fayetteville-nc",
-   "locations/flagstaff-az",
-   "locations/florida",
-   "locations/franklin-tn",
-   "locations/gainesville-fl",
-   "locations/georgia",
-   "locations/gilbert-az",
-   "locations/glendale-az",
-   "locations/goodyear-az",
-   "locations/greensboro-nc",
-   "locations/greenville-sc",
-   "locations/high-point-nc",
-   "locations/johnson-city-tn",
-   "locations/killeen-tx",
-   "locations/knoxville-tn",
-   "locations/lakeland-fl",
-   "locations/lubbock-tx",
-   "locations/macon-ga",
-   "locations/marietta-ga",
-   "locations/mcallen-tx",
-   "locations/mesa-az",
-   "locations/murfreesboro-tn",
-   "locations/myrtle-beach-sc",
-   "locations/north-carolina",
-   "locations/ocala-fl",
-   "locations/pensacola-fl",
-   "locations/peoria-az",
-   "locations/rock-hill-sc",
-   "locations/roswell-ga",
-   "locations/sandy-springs-ga",
-   "locations/sarasota-fl",
-   "locations/savannah-ga",
-   "locations/scottsdale-az",
-   "locations/south-carolina",
-   "locations/tallahassee-fl",
-   "locations/tempe-az",
-   "locations/tennessee",
-   "locations/texas",
-   "locations/tyler-tx",
-   "locations/waco-tx",
-   "locations/wilmington-nc",
-   "locations/winston-salem-nc",
-   "services/index"
   ]
  },
  {
