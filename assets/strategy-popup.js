@@ -238,6 +238,8 @@
 
   function open() {
     lastFocused = document.activeElement;
+    window.__tstSPOpen = true;
+    document.body.classList.add('tst-sp-active'); // lets the chat widget stand down while this modal is up
     overlay.removeAttribute('hidden');
     // lock scroll, remembering any prior inline value
     dialog.dataset.prevOverflow = document.body.style.overflow || '';
@@ -268,6 +270,8 @@
     document.removeEventListener('keydown', keydownHandler, true);
     document.body.style.overflow = dialog.dataset.prevOverflow || '';
     ss('set', reason || 'dismissed');
+    window.__tstSPOpen = false;
+    document.body.classList.remove('tst-sp-active');
     var finish = function () {
       overlay.setAttribute('hidden', '');
       if (document.activeElement && typeof document.activeElement.blur === 'function') document.activeElement.blur();
@@ -321,19 +325,23 @@
   }
 
   // --- schedule ---------------------------------------------------------
-  function arm() {
+  function arm(delay) {
+    delay = (typeof delay === 'number') ? delay : DELAY_MS;
     setTimeout(function () {
       if (ss('get') && ss('get') !== 'shown') return; // submitted/dismissed in another tab meanwhile
       if (document.getElementById('tst-sp-overlay')) return;
+      // if the visitor is mid-conversation in the chat widget, wait and try later
+      // rather than stacking a second overlay on top of it
+      if (window.__tstChatOpen) { arm(8000); return; }
       try {
         buildModal();
         open();
       } catch (err) { /* never let the popup break the page */ }
-    }, DELAY_MS);
+    }, delay);
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', arm, { once: true });
+    document.addEventListener('DOMContentLoaded', function () { arm(); }, { once: true });
   } else {
     arm();
   }
