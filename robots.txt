@@ -1,8 +1,5 @@
 User-agent: *
 Allow: /
-Allow: /assets/favicon-128.png
-Allow: /assets/favicon-180.png
-Disallow: /assets/
 Disallow: /location-template.html
 
 Sitemap: https://trickysofttech.com/sitemap.xml
