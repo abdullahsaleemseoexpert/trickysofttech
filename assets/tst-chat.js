@@ -54,7 +54,7 @@
     var css = [
       /* keep the existing back-to-top control from colliding with the launcher */
       '.back-to-top{bottom:84px}',
-      '@media (max-width:640px){.back-to-top{bottom:74px}}',
+      '@media (max-width:640px){.back-to-top{bottom:80px}}',
 
       '#tst-chat-launcher{position:fixed;right:24px;bottom:24px;z-index:99990;display:inline-flex;align-items:center;gap:9px;',
       'height:48px;padding:0 20px 0 16px;border:1px solid rgba(255,255,255,0.16);border-radius:999px;cursor:pointer;',
@@ -68,11 +68,15 @@
       '#tst-chat-launcher .tst-chat-x{display:none}',
       '#tst-chat-launcher.is-open .tst-chat-ico{display:none}',
       '#tst-chat-launcher.is-open .tst-chat-x{display:block}',
-      '#tst-chat-launcher.is-open .tst-chat-label{display:none}',
+      '#tst-chat-launcher .tst-chat-ltext{font-family:\'Inter\',system-ui,sans-serif;font-size:14px;font-weight:600;letter-spacing:0.01em;text-transform:none;color:#fff}',
+      '#tst-chat-launcher.is-open .tst-chat-ltext{display:none}',
       '#tst-chat-launcher.is-open{height:48px;width:48px;padding:0;justify-content:center}',
       /* stand down while the Phase 15 strategy modal is up */
       'body.tst-sp-active #tst-chat-launcher{opacity:0;pointer-events:none}',
-      '@media (max-width:640px){#tst-chat-launcher{right:16px;bottom:16px}#tst-chat-launcher.is-open{display:none}}',
+      /* mobile: icon-only circular launcher (the text pill eats too much width) */
+      '@media (max-width:640px){#tst-chat-launcher{right:16px;bottom:16px;width:52px;height:52px;padding:0;justify-content:center;border-radius:50%}',
+      '#tst-chat-launcher .tst-chat-ltext{display:none}',
+      '#tst-chat-launcher.is-open{display:none}}',
 
       '#tst-chat-panel{position:fixed;right:24px;bottom:84px;z-index:99991;width:380px;max-width:calc(100vw - 32px);',
       'max-height:min(600px,calc(100dvh - 120px));display:flex;flex-direction:column;overflow:hidden;',
@@ -167,7 +171,7 @@
         '<path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.7 8.7 0 0 1-3.9-.9L3 20l1.4-4.6a8.7 8.7 0 0 1-.9-3.9A8.38 8.38 0 0 1 12 3a8.38 8.38 0 0 1 9 8.5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>' +
       '<svg class="tst-chat-x" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">' +
         '<path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>' +
-      '<span class="tst-chat-label">Chat with us</span>';
+      '<span class="tst-chat-ltext">Chat with us</span>';
     launcher.addEventListener('click', function () {
       if (document.body.classList.contains('tst-sp-active')) return; // strategy modal owns the screen
       window.__tstChatOpen ? closePanel() : openPanel();
