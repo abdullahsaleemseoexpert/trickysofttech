@@ -352,10 +352,19 @@
 
     /* Nav CTA */
     .btn-nav {
+      align-items: center;
+      gap: 6px;
+      background: var(--grad-brand);
+      color: #FFFFFF;
+      font-weight: 600;
       font-size: 13px;
       padding: 9px 20px;
       border-radius: 10px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: opacity 200ms var(--ease-silk), transform 200ms var(--ease-silk);
     }
+    .btn-nav:hover { opacity: 0.88; transform: translateY(-1px); }
 
     /* Arrow icon */
     .btn-arrow {
@@ -363,7 +372,8 @@
       transition: transform 200ms var(--ease-spring);
     }
     .btn-primary:hover .btn-arrow,
-    .btn-secondary:hover .btn-arrow { transform: translateX(4px); }
+    .btn-secondary:hover .btn-arrow,
+    .btn-nav:hover .btn-arrow { transform: translateX(4px); }
 
     /* ============================================================
        NAVIGATION
@@ -5206,5 +5216,6 @@ textarea.form-input{resize:vertical;min-height:100px;line-height:1.6}
   });
 })();
 </script>
+<script src="assets/strategy-popup.js" defer data-tst-spopup></script>
 </body>
 </html>
