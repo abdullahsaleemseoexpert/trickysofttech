@@ -2,8 +2,8 @@
    Tricky Soft Tech — "Book a Strategy Call" session popup
    -----------------------------------------------------------------------------
    One shared file, referenced sitewide (assets/strategy-popup.js). It injects a
-   single accessible modal ~10s into the visit, then re-shows it 15s after each
-   dismissal until the visitor submits (or the tab session ends).
+   single accessible modal ~15s into the visit, at most once per browser session
+   (whether the visitor dismisses or submits).
    Reuses the existing FormSubmit.co lead mechanism used by contact.html — this
    is NOT a second lead system.
    No framework, no dependencies. Design tokens come from the page's own :root.
@@ -11,9 +11,8 @@
 (function () {
   'use strict';
 
-  var STORAGE_KEY = 'tst_spopup';      // sessionStorage; only ever set to 'submitted' (hard stop)
-  var DELAY_MS = 10000;                // first show ~10s into the visit
-  var REPEAT_MS = 15000;               // then re-show 15s after each dismissal, until submitted
+  var STORAGE_KEY = 'tst_spopup';      // sessionStorage; presence = already handled this session
+  var DELAY_MS = 15000;                // show ~15s into the visit, once per session
   var ENDPOINT = 'https://formsubmit.co/ajax/abdullahsaleem12570@gmail.com';
 
   // --- guard: run once, browser only ---------------------------------------
@@ -28,8 +27,8 @@
     return null;
   }
 
-  // Once the visitor has submitted, never show it again this session.
-  if (ss('get') === 'submitted') return;
+  // Shown / dismissed / submitted this session → never schedule again.
+  if (ss('get')) return;
 
   // Don't show on the dedicated booking page itself.
   var path = (location.pathname || '').replace(/\/+$/, '').toLowerCase();
@@ -263,6 +262,7 @@
 
     // focus the dialog itself so assistive tech announces its title/purpose
     (dialog || closeBtn).focus();
+    ss('set', 'shown');
   }
 
   function close(reason) {
@@ -270,7 +270,7 @@
     overlay.classList.remove('tst-sp-open');
     document.removeEventListener('keydown', keydownHandler, true);
     document.body.style.overflow = dialog.dataset.prevOverflow || '';
-    if (reason === 'submitted') ss('set', 'submitted');
+    ss('set', reason || 'dismissed');
     window.__tstSPOpen = false;
     document.body.classList.remove('tst-sp-active');
     var finish = function () {
@@ -283,20 +283,6 @@
     // wait for the fade-out unless motion is reduced
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches) finish();
     else setTimeout(finish, 240);
-
-    // not submitted → come back in 15s
-    if (reason !== 'submitted') arm(REPEAT_MS);
-  }
-
-  // reset the dialog's UI state (not the typed values) before showing it again
-  function resetUI() {
-    submitting = false;
-    if (!form) return;
-    form.style.display = '';
-    var ok = document.getElementById('tst-sp-success'); if (ok) ok.style.display = 'none';
-    var err = document.getElementById('tst-sp-error'); if (err) err.style.display = 'none';
-    var btn = document.getElementById('tst-sp-submit');
-    if (btn) { btn.disabled = false; btn.style.opacity = '1'; }
   }
 
   // --- submit (mirrors contact.html's FormSubmit.co flow) ----------------
@@ -343,14 +329,13 @@
   function arm(delay) {
     delay = (typeof delay === 'number') ? delay : DELAY_MS;
     setTimeout(function () {
-      if (ss('get') === 'submitted') return;   // already converted this session
+      if (ss('get')) return;                   // shown/dismissed/submitted this session
       if (window.__tstSPOpen) return;          // already on screen
-      // if the visitor is mid-conversation in the chat widget, wait and try later
-      // rather than stacking a second overlay on top of it
-      if (window.__tstChatOpen) { arm(REPEAT_MS); return; }
+      // if the visitor is mid-conversation in the chat widget, wait and try
+      // again shortly rather than stacking a second overlay on top of it
+      if (window.__tstChatOpen) { arm(8000); return; }
       try {
-        if (!overlay) buildModal();
-        else resetUI();
+        buildModal();
         open();
       } catch (err) { /* never let the popup break the page */ }
     }, delay);
