@@ -6,7 +6,7 @@
 <script>(function(){try{var t=localStorage.getItem('tst-theme');if(t==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Industries We Serve | Tricky Soft Tech</title>
-<meta name="description" content="Local SEO, Google Business Profile, and AI Voice Optimization built for local home-service businesses: junk removal, car detailing, house cleaning, towing, plumbing, HVAC, roofing, and more."/>
+<meta name="description" content="Local SEO, Google Business Profile, and AI Voice Optimization built for local home-service businesses: junk removal, car detailing, house cleaning, towing, plumbing, HVAC, roofing, snow removal, electricians, and more."/>
 <link rel="canonical" href="https://trickysofttech.com/industries/"/>
 <meta name="robots" content="index, follow"/>
 <meta name="theme-color" content="#FFFFFF"/>
@@ -14,13 +14,13 @@
 <link rel="apple-touch-icon" href="../assets/favicon-180.png"/>
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="Industries We Serve | Tricky Soft Tech"/>
-<meta property="og:description" content="Local SEO, Google Business Profile, and AI Voice Optimization built for local home-service businesses: junk removal, car detailing, house cleaning, towing, plumbing, HVAC, roofing, and more."/>
+<meta property="og:description" content="Local SEO, Google Business Profile, and AI Voice Optimization built for local home-service businesses: junk removal, car detailing, house cleaning, towing, plumbing, HVAC, roofing, snow removal, electricians, and more."/>
 <meta property="og:url" content="https://trickysofttech.com/industries/"/>
 <meta property="og:site_name" content="Tricky Soft Tech"/>
 <meta property="og:image" content="https://trickysofttech.com/assets/og-image.jpg"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Industries We Serve | Tricky Soft Tech"/>
-<meta name="twitter:description" content="Local SEO, Google Business Profile, and AI Voice Optimization built for local home-service businesses: junk removal, car detailing, house cleaning, towing, plumbing, HVAC, roofing, and more."/>
+<meta name="twitter:description" content="Local SEO, Google Business Profile, and AI Voice Optimization built for local home-service businesses: junk removal, car detailing, house cleaning, towing, plumbing, HVAC, roofing, snow removal, electricians, and more."/>
 <meta name="twitter:image" content="https://trickysofttech.com/assets/og-image.jpg"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tricky Soft Tech","url":"https://trickysofttech.com/","logo":"https://trickysofttech.com/assets/logo-on-light-web.png","email":"info@trickysofttech.com","foundingDate":"2021","address":{"@type":"PostalAddress","addressLocality":"Parsippany","addressRegion":"NJ","addressCountry":"US"},"sameAs":["https://www.youtube.com/@trickysofttech","https://www.linkedin.com/company/trickysofttech","https://www.facebook.com/people/Tricky-Soft-Tech/100095114473931/","https://www.instagram.com/trickysofttech","https://x.com/expert63453"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://trickysofttech.com/"},{"@type":"ListItem","position":2,"name":"Industries","item":"https://trickysofttech.com/industries/"}]}</script>
@@ -279,12 +279,15 @@ body{overflow-x:hidden}
 .nav-dropdown-link:hover{background:rgba(91,95,239,0.08);color:var(--text-primary, #14141F)}
 .nav-dropdown-divider{height:1px;background:rgba(15,15,35,0.08);margin:6px 6px}
 .nav-dropdown-viewall{color:var(--spectrum-core, #5B5FEF);font-weight:700}
-.nav-dropdown-panel-mega{left:auto;right:0;transform:translateY(-6px);min-width:900px}
-.nav-dropdown:hover .nav-dropdown-panel-mega{transform:translateY(0)}
-.locations-mega-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px 12px;padding:2px}
+.nav-dropdown-panel-mega{position:fixed;top:90px;left:50%;right:auto;width:min(1180px,calc(100vw - 48px));min-width:0;transform:translateX(-50%) translateY(-6px);max-height:calc(100vh - 110px);overflow-y:auto}
+.nav-dropdown:hover .nav-dropdown-panel-mega{transform:translateX(-50%) translateY(0)}
+.locations-mega-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:2px 12px;padding:2px}
 .locations-mega-title{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted, #6B6F8C);padding:8px 12px 4px;display:block;text-decoration:none;transition:color 0.2s}
 .locations-mega-title:hover{color:var(--spectrum-core)}
-.locations-mega-col .nav-dropdown-link{padding:7px 12px;font-size:13px}
+.locations-mega-col .nav-dropdown-link{padding:5px 12px;font-size:13px}
+.locations-mega-grid{row-gap:16px}
+.locations-mega-col:nth-child(n+7){border-top:1px solid rgba(15,15,35,0.08);padding-top:12px}
+:root[data-theme="dark"] .locations-mega-col:nth-child(n+7){border-top-color:rgba(255,255,255,0.10)}
 .mobile-nav-sublink{font-family:'Inter',sans-serif;font-size:15px;font-weight:500;color:var(--text-muted, #6B6F8C);text-decoration:none;padding:8px 24px;width:100%;max-width:320px;text-align:center;opacity:0;transform:translateX(32px);transition:color 200ms}
 .mobile-nav-sublink:hover{color:var(--text-primary, #14141F)}
 #mobile-menu.open .mobile-nav-sublink{animation:mobile-link-in 400ms var(--ease-premium, cubic-bezier(0.16,1,0.3,1)) forwards}
@@ -435,6 +438,11 @@ body{overflow-x:hidden}
       <a href="../industries/roofing" class="nav-dropdown-link">Roofing</a>
       <a href="../industries/moving-companies" class="nav-dropdown-link">Moving Companies</a>
       <a href="../industries/appliance-repair" class="nav-dropdown-link">Appliance Repair</a>
+      <a href="../industries/snow-removal" class="nav-dropdown-link">Snow Removal</a>
+      <a href="../industries/chimney-sweep" class="nav-dropdown-link">Chimney Sweep</a>
+      <a href="../industries/water-damage-restoration" class="nav-dropdown-link">Water Damage Restoration</a>
+      <a href="../industries/electricians" class="nav-dropdown-link">Electricians</a>
+      <a href="../industries/holiday-lighting" class="nav-dropdown-link">Holiday Lighting</a>
         <div class="nav-dropdown-divider"></div>
         <a href="../industries/" class="nav-dropdown-link nav-dropdown-viewall">View All Industries →</a>
       </div>
@@ -531,6 +539,76 @@ body{overflow-x:hidden}
           <a href="../locations/ocala-fl" class="nav-dropdown-link">Ocala</a>
           <a href="../locations/daytona-beach-fl" class="nav-dropdown-link">Daytona Beach</a>
         </div>
+
+        <div class="locations-mega-col">
+          <a href="../locations/ohio" class="locations-mega-title">Ohio</a>
+          <a href="../locations/akron-oh" class="nav-dropdown-link">Akron</a>
+          <a href="../locations/dayton-oh" class="nav-dropdown-link">Dayton</a>
+          <a href="../locations/toledo-oh" class="nav-dropdown-link">Toledo</a>
+          <a href="../locations/canton-oh" class="nav-dropdown-link">Canton</a>
+          <a href="../locations/youngstown-oh" class="nav-dropdown-link">Youngstown</a>
+          <a href="../locations/dublin-oh" class="nav-dropdown-link">Dublin</a>
+          <a href="../locations/mason-oh" class="nav-dropdown-link">Mason</a>
+          <a href="../locations/lorain-oh" class="nav-dropdown-link">Lorain</a>
+          <a href="../locations/sandusky-oh" class="nav-dropdown-link">Sandusky</a>
+          <a href="../locations/westerville-oh" class="nav-dropdown-link">Westerville</a>
+        </div>
+
+        <div class="locations-mega-col">
+          <a href="../locations/indiana" class="locations-mega-title">Indiana</a>
+          <a href="../locations/fort-wayne-in" class="nav-dropdown-link">Fort Wayne</a>
+          <a href="../locations/evansville-in" class="nav-dropdown-link">Evansville</a>
+          <a href="../locations/south-bend-in" class="nav-dropdown-link">South Bend</a>
+          <a href="../locations/carmel-in" class="nav-dropdown-link">Carmel</a>
+          <a href="../locations/fishers-in" class="nav-dropdown-link">Fishers</a>
+          <a href="../locations/bloomington-in" class="nav-dropdown-link">Bloomington</a>
+          <a href="../locations/lafayette-in" class="nav-dropdown-link">Lafayette</a>
+          <a href="../locations/muncie-in" class="nav-dropdown-link">Muncie</a>
+          <a href="../locations/noblesville-in" class="nav-dropdown-link">Noblesville</a>
+          <a href="../locations/valparaiso-in" class="nav-dropdown-link">Valparaiso</a>
+        </div>
+
+        <div class="locations-mega-col">
+          <a href="../locations/missouri" class="locations-mega-title">Missouri</a>
+          <a href="../locations/springfield-mo" class="nav-dropdown-link">Springfield</a>
+          <a href="../locations/columbia-mo" class="nav-dropdown-link">Columbia</a>
+          <a href="../locations/lees-summit-mo" class="nav-dropdown-link">Lee's Summit</a>
+          <a href="../locations/ofallon-mo" class="nav-dropdown-link">O'Fallon</a>
+          <a href="../locations/st-charles-mo" class="nav-dropdown-link">St. Charles</a>
+          <a href="../locations/joplin-mo" class="nav-dropdown-link">Joplin</a>
+          <a href="../locations/jefferson-city-mo" class="nav-dropdown-link">Jefferson City</a>
+          <a href="../locations/branson-mo" class="nav-dropdown-link">Branson</a>
+          <a href="../locations/st-joseph-mo" class="nav-dropdown-link">St. Joseph</a>
+          <a href="../locations/independence-mo" class="nav-dropdown-link">Independence</a>
+        </div>
+
+        <div class="locations-mega-col">
+          <a href="../locations/alabama" class="locations-mega-title">Alabama</a>
+          <a href="../locations/huntsville-al" class="nav-dropdown-link">Huntsville</a>
+          <a href="../locations/mobile-al" class="nav-dropdown-link">Mobile</a>
+          <a href="../locations/montgomery-al" class="nav-dropdown-link">Montgomery</a>
+          <a href="../locations/tuscaloosa-al" class="nav-dropdown-link">Tuscaloosa</a>
+          <a href="../locations/auburn-al" class="nav-dropdown-link">Auburn</a>
+          <a href="../locations/hoover-al" class="nav-dropdown-link">Hoover</a>
+          <a href="../locations/dothan-al" class="nav-dropdown-link">Dothan</a>
+          <a href="../locations/madison-al" class="nav-dropdown-link">Madison</a>
+          <a href="../locations/gulf-shores-al" class="nav-dropdown-link">Gulf Shores</a>
+          <a href="../locations/florence-al" class="nav-dropdown-link">Florence</a>
+        </div>
+
+        <div class="locations-mega-col">
+          <a href="../locations/utah" class="locations-mega-title">Utah</a>
+          <a href="../locations/provo-ut" class="nav-dropdown-link">Provo</a>
+          <a href="../locations/orem-ut" class="nav-dropdown-link">Orem</a>
+          <a href="../locations/ogden-ut" class="nav-dropdown-link">Ogden</a>
+          <a href="../locations/st-george-ut" class="nav-dropdown-link">St. George</a>
+          <a href="../locations/logan-ut" class="nav-dropdown-link">Logan</a>
+          <a href="../locations/lehi-ut" class="nav-dropdown-link">Lehi</a>
+          <a href="../locations/sandy-ut" class="nav-dropdown-link">Sandy</a>
+          <a href="../locations/west-jordan-ut" class="nav-dropdown-link">West Jordan</a>
+          <a href="../locations/layton-ut" class="nav-dropdown-link">Layton</a>
+          <a href="../locations/park-city-ut" class="nav-dropdown-link">Park City</a>
+        </div>
         </div>
         <div class="nav-dropdown-divider"></div>
         <a href="../locations/" class="nav-dropdown-link nav-dropdown-viewall">View All Locations →</a>
@@ -601,6 +679,11 @@ body{overflow-x:hidden}
       <a href="../industries/roofing" class="mobile-nav-sublink" tabindex="-1">Roofing</a>
       <a href="../industries/moving-companies" class="mobile-nav-sublink" tabindex="-1">Moving Companies</a>
       <a href="../industries/appliance-repair" class="mobile-nav-sublink" tabindex="-1">Appliance Repair</a>
+      <a href="../industries/snow-removal" class="mobile-nav-sublink" tabindex="-1">Snow Removal</a>
+      <a href="../industries/chimney-sweep" class="mobile-nav-sublink" tabindex="-1">Chimney Sweep</a>
+      <a href="../industries/water-damage-restoration" class="mobile-nav-sublink" tabindex="-1">Water Damage Restoration</a>
+      <a href="../industries/electricians" class="mobile-nav-sublink" tabindex="-1">Electricians</a>
+      <a href="../industries/holiday-lighting" class="mobile-nav-sublink" tabindex="-1">Holiday Lighting</a>
     </div>
   </div>
 
@@ -618,6 +701,11 @@ body{overflow-x:hidden}
       <a href="../locations/tennessee" class="mobile-nav-sublink" tabindex="-1">Tennessee</a>
       <a href="../locations/south-carolina" class="mobile-nav-sublink" tabindex="-1">South Carolina</a>
       <a href="../locations/florida" class="mobile-nav-sublink" tabindex="-1">Florida</a>
+      <a href="../locations/ohio" class="mobile-nav-sublink" tabindex="-1">Ohio</a>
+      <a href="../locations/indiana" class="mobile-nav-sublink" tabindex="-1">Indiana</a>
+      <a href="../locations/missouri" class="mobile-nav-sublink" tabindex="-1">Missouri</a>
+      <a href="../locations/alabama" class="mobile-nav-sublink" tabindex="-1">Alabama</a>
+      <a href="../locations/utah" class="mobile-nav-sublink" tabindex="-1">Utah</a>
     </div>
   </div>
 
@@ -798,6 +886,62 @@ body{overflow-x:hidden}
         <div class="rel-label">Industry</div>
         <div class="rel-name">Appliance Repair</div>
         <div style="font-size:13px;color:var(--text-muted);line-height:1.6;position:relative;z-index:1;margin-top:2px">Brand and appliance-type searches, often same-week. Service-area accuracy and parts availability come up fast.</div>
+        <div class="rel-card-divider"></div>
+        <div class="rel-arrow">Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- == 3b. WINTER-SEASON TRADES == -->
+<section class="py-28">
+  <div class="max-w-[1600px] mx-auto px-6">
+
+    <div class="text-center mb-16 reveal">
+      <div class="eyebrow" style="justify-content:center"><span class="eyebrow-dot"></span>Seasonal peak</div>
+      <h2 class="section-headline">Five winter-season trades,<br/><span class="text-grad-accent">one season to win it.</span></h2>
+      <p class="section-sub" style="max-width:600px;margin:14px auto 0">Cold weather concentrates a year of demand into a few months. These trades win or lose it on how visible they are before the first freeze, which is why the local SEO work starts in the fall.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 reveal-stagger">
+      <a href="snow-removal" class="rel-card reveal" style="--rel-icon-bg:rgba(6,200,212,0.14)">
+        <div class="rel-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M4.93 4.93l14.14 14.14M2 12h20M19.07 4.93L4.93 19.07" stroke="#06C8D4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="rel-label">Industry</div>
+        <div class="rel-name">Snow Removal</div>
+        <div style="font-size:13px;color:var(--text-muted);line-height:1.6;position:relative;z-index:1;margin-top:2px">Won in October, not December. Seasonal contracts and storm-day searches both reward a profile that is already complete.</div>
+        <div class="rel-card-divider"></div>
+        <div class="rel-arrow">Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </a>
+      <a href="chimney-sweep" class="rel-card reveal" style="--rel-icon-bg:rgba(232,184,109,0.16)">
+        <div class="rel-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2c1 4 5 5 5 10a5 5 0 01-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-6 1-9z" stroke="#E8B86D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="rel-label">Industry</div>
+        <div class="rel-name">Chimney Sweep &amp; Fireplace Services</div>
+        <div style="font-size:13px;color:var(--text-muted);line-height:1.6;position:relative;z-index:1;margin-top:2px">A once-a-year safety service booked in the fall rush. Credentials and reviews decide who gets onto the roof.</div>
+        <div class="rel-card-divider"></div>
+        <div class="rel-arrow">Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </a>
+      <a href="water-damage-restoration" class="rel-card reveal" style="--rel-icon-bg:rgba(91,95,239,0.12)">
+        <div class="rel-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2.7l5.66 5.64a8 8 0 11-11.31 0L12 2.7z" stroke="#5B5FEF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="rel-label">Industry</div>
+        <div class="rel-name">Water Damage Restoration</div>
+        <div style="font-size:13px;color:var(--text-muted);line-height:1.6;position:relative;z-index:1;margin-top:2px">The most urgent search a homeowner makes. Availability signals and voice answers decide who gets the call.</div>
+        <div class="rel-card-divider"></div>
+        <div class="rel-arrow">Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </a>
+      <a href="electricians" class="rel-card reveal" style="--rel-icon-bg:rgba(168,85,247,0.14)">
+        <div class="rel-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" stroke="#A855F7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="rel-label">Industry</div>
+        <div class="rel-name">Electricians</div>
+        <div style="font-size:13px;color:var(--text-muted);line-height:1.6;position:relative;z-index:1;margin-top:2px">Outages and planned installs are two different searches. License trust and storm-season visibility carry both.</div>
+        <div class="rel-card-divider"></div>
+        <div class="rel-arrow">Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </a>
+      <a href="holiday-lighting" class="rel-card reveal" style="--rel-icon-bg:rgba(232,184,109,0.16)">
+        <div class="rel-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9 18h6M10 22h4M12 2a7 7 0 00-4 12.7V17h8v-2.3A7 7 0 0012 2z" stroke="#E8B86D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="rel-label">Industry</div>
+        <div class="rel-name">Holiday Lighting Installation</div>
+        <div style="font-size:13px;color:var(--text-muted);line-height:1.6;position:relative;z-index:1;margin-top:2px">A whole year decided in a few autumn weeks. Real project photos and early visibility fill the install calendar.</div>
         <div class="rel-card-divider"></div>
         <div class="rel-arrow">Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
       </a>

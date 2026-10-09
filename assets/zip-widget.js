@@ -119,7 +119,7 @@
     return { kind: 'state', zip: zip, from: uspsCity, fromState: state, statePage: data.statePages[state] };
   }
 
-  var STATE_NAMES = { TX: 'Texas', AZ: 'Arizona', GA: 'Georgia', NC: 'North Carolina', TN: 'Tennessee', SC: 'South Carolina', FL: 'Florida' };
+  var STATE_NAMES = { TX: 'Texas', AZ: 'Arizona', GA: 'Georgia', NC: 'North Carolina', TN: 'Tennessee', SC: 'South Carolina', FL: 'Florida', OH: 'Ohio', IN: 'Indiana', MO: 'Missouri', AL: 'Alabama', UT: 'Utah' };
 
   function init(host, ctx) {
     var id = 'zipw-zip';

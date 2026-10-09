@@ -281,12 +281,15 @@ body{overflow-x:hidden}
 .nav-dropdown-link:hover{background:rgba(91,95,239,0.08);color:var(--text-primary, #14141F)}
 .nav-dropdown-divider{height:1px;background:rgba(15,15,35,0.08);margin:6px 6px}
 .nav-dropdown-viewall{color:var(--spectrum-core, #5B5FEF);font-weight:700}
-.nav-dropdown-panel-mega{left:auto;right:0;transform:translateY(-6px);min-width:900px}
-.nav-dropdown:hover .nav-dropdown-panel-mega{transform:translateY(0)}
-.locations-mega-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px 12px;padding:2px}
+.nav-dropdown-panel-mega{position:fixed;top:90px;left:50%;right:auto;width:min(1180px,calc(100vw - 48px));min-width:0;transform:translateX(-50%) translateY(-6px);max-height:calc(100vh - 110px);overflow-y:auto}
+.nav-dropdown:hover .nav-dropdown-panel-mega{transform:translateX(-50%) translateY(0)}
+.locations-mega-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:2px 12px;padding:2px}
 .locations-mega-title{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted, #6B6F8C);padding:8px 12px 4px;display:block;text-decoration:none;transition:color 0.2s}
 .locations-mega-title:hover{color:var(--spectrum-core)}
-.locations-mega-col .nav-dropdown-link{padding:7px 12px;font-size:13px}
+.locations-mega-col .nav-dropdown-link{padding:5px 12px;font-size:13px}
+.locations-mega-grid{row-gap:16px}
+.locations-mega-col:nth-child(n+7){border-top:1px solid rgba(15,15,35,0.08);padding-top:12px}
+:root[data-theme="dark"] .locations-mega-col:nth-child(n+7){border-top-color:rgba(255,255,255,0.10)}
 .mobile-nav-sublink{font-family:'Inter',sans-serif;font-size:15px;font-weight:500;color:var(--text-muted, #6B6F8C);text-decoration:none;padding:8px 24px;width:100%;max-width:320px;text-align:center;opacity:0;transform:translateX(32px);transition:color 200ms}
 .mobile-nav-sublink:hover{color:var(--text-primary, #14141F)}
 #mobile-menu.open .mobile-nav-sublink{animation:mobile-link-in 400ms var(--ease-premium, cubic-bezier(0.16,1,0.3,1)) forwards}
@@ -538,6 +541,11 @@ body{overflow-x:hidden}
       <a href="../industries/roofing" class="nav-dropdown-link">Roofing</a>
       <a href="../industries/moving-companies" class="nav-dropdown-link">Moving Companies</a>
       <a href="../industries/appliance-repair" class="nav-dropdown-link">Appliance Repair</a>
+      <a href="../industries/snow-removal" class="nav-dropdown-link">Snow Removal</a>
+      <a href="../industries/chimney-sweep" class="nav-dropdown-link">Chimney Sweep</a>
+      <a href="../industries/water-damage-restoration" class="nav-dropdown-link">Water Damage Restoration</a>
+      <a href="../industries/electricians" class="nav-dropdown-link">Electricians</a>
+      <a href="../industries/holiday-lighting" class="nav-dropdown-link">Holiday Lighting</a>
         <div class="nav-dropdown-divider"></div>
         <a href="../industries/" class="nav-dropdown-link nav-dropdown-viewall">View All Industries →</a>
       </div>
@@ -634,6 +642,76 @@ body{overflow-x:hidden}
           <a href="../locations/ocala-fl" class="nav-dropdown-link">Ocala</a>
           <a href="../locations/daytona-beach-fl" class="nav-dropdown-link">Daytona Beach</a>
         </div>
+
+        <div class="locations-mega-col">
+          <a href="../locations/ohio" class="locations-mega-title">Ohio</a>
+          <a href="../locations/akron-oh" class="nav-dropdown-link">Akron</a>
+          <a href="../locations/dayton-oh" class="nav-dropdown-link">Dayton</a>
+          <a href="../locations/toledo-oh" class="nav-dropdown-link">Toledo</a>
+          <a href="../locations/canton-oh" class="nav-dropdown-link">Canton</a>
+          <a href="../locations/youngstown-oh" class="nav-dropdown-link">Youngstown</a>
+          <a href="../locations/dublin-oh" class="nav-dropdown-link">Dublin</a>
+          <a href="../locations/mason-oh" class="nav-dropdown-link">Mason</a>
+          <a href="../locations/lorain-oh" class="nav-dropdown-link">Lorain</a>
+          <a href="../locations/sandusky-oh" class="nav-dropdown-link">Sandusky</a>
+          <a href="../locations/westerville-oh" class="nav-dropdown-link">Westerville</a>
+        </div>
+
+        <div class="locations-mega-col">
+          <a href="../locations/indiana" class="locations-mega-title">Indiana</a>
+          <a href="../locations/fort-wayne-in" class="nav-dropdown-link">Fort Wayne</a>
+          <a href="../locations/evansville-in" class="nav-dropdown-link">Evansville</a>
+          <a href="../locations/south-bend-in" class="nav-dropdown-link">South Bend</a>
+          <a href="../locations/carmel-in" class="nav-dropdown-link">Carmel</a>
+          <a href="../locations/fishers-in" class="nav-dropdown-link">Fishers</a>
+          <a href="../locations/bloomington-in" class="nav-dropdown-link">Bloomington</a>
+          <a href="../locations/lafayette-in" class="nav-dropdown-link">Lafayette</a>
+          <a href="../locations/muncie-in" class="nav-dropdown-link">Muncie</a>
+          <a href="../locations/noblesville-in" class="nav-dropdown-link">Noblesville</a>
+          <a href="../locations/valparaiso-in" class="nav-dropdown-link">Valparaiso</a>
+        </div>
+
+        <div class="locations-mega-col">
+          <a href="../locations/missouri" class="locations-mega-title">Missouri</a>
+          <a href="../locations/springfield-mo" class="nav-dropdown-link">Springfield</a>
+          <a href="../locations/columbia-mo" class="nav-dropdown-link">Columbia</a>
+          <a href="../locations/lees-summit-mo" class="nav-dropdown-link">Lee's Summit</a>
+          <a href="../locations/ofallon-mo" class="nav-dropdown-link">O'Fallon</a>
+          <a href="../locations/st-charles-mo" class="nav-dropdown-link">St. Charles</a>
+          <a href="../locations/joplin-mo" class="nav-dropdown-link">Joplin</a>
+          <a href="../locations/jefferson-city-mo" class="nav-dropdown-link">Jefferson City</a>
+          <a href="../locations/branson-mo" class="nav-dropdown-link">Branson</a>
+          <a href="../locations/st-joseph-mo" class="nav-dropdown-link">St. Joseph</a>
+          <a href="../locations/independence-mo" class="nav-dropdown-link">Independence</a>
+        </div>
+
+        <div class="locations-mega-col">
+          <a href="../locations/alabama" class="locations-mega-title">Alabama</a>
+          <a href="../locations/huntsville-al" class="nav-dropdown-link">Huntsville</a>
+          <a href="../locations/mobile-al" class="nav-dropdown-link">Mobile</a>
+          <a href="../locations/montgomery-al" class="nav-dropdown-link">Montgomery</a>
+          <a href="../locations/tuscaloosa-al" class="nav-dropdown-link">Tuscaloosa</a>
+          <a href="../locations/auburn-al" class="nav-dropdown-link">Auburn</a>
+          <a href="../locations/hoover-al" class="nav-dropdown-link">Hoover</a>
+          <a href="../locations/dothan-al" class="nav-dropdown-link">Dothan</a>
+          <a href="../locations/madison-al" class="nav-dropdown-link">Madison</a>
+          <a href="../locations/gulf-shores-al" class="nav-dropdown-link">Gulf Shores</a>
+          <a href="../locations/florence-al" class="nav-dropdown-link">Florence</a>
+        </div>
+
+        <div class="locations-mega-col">
+          <a href="../locations/utah" class="locations-mega-title">Utah</a>
+          <a href="../locations/provo-ut" class="nav-dropdown-link">Provo</a>
+          <a href="../locations/orem-ut" class="nav-dropdown-link">Orem</a>
+          <a href="../locations/ogden-ut" class="nav-dropdown-link">Ogden</a>
+          <a href="../locations/st-george-ut" class="nav-dropdown-link">St. George</a>
+          <a href="../locations/logan-ut" class="nav-dropdown-link">Logan</a>
+          <a href="../locations/lehi-ut" class="nav-dropdown-link">Lehi</a>
+          <a href="../locations/sandy-ut" class="nav-dropdown-link">Sandy</a>
+          <a href="../locations/west-jordan-ut" class="nav-dropdown-link">West Jordan</a>
+          <a href="../locations/layton-ut" class="nav-dropdown-link">Layton</a>
+          <a href="../locations/park-city-ut" class="nav-dropdown-link">Park City</a>
+        </div>
         </div>
         <div class="nav-dropdown-divider"></div>
         <a href="../locations/" class="nav-dropdown-link nav-dropdown-viewall">View All Locations →</a>
@@ -704,6 +782,11 @@ body{overflow-x:hidden}
       <a href="../industries/roofing" class="mobile-nav-sublink" tabindex="-1">Roofing</a>
       <a href="../industries/moving-companies" class="mobile-nav-sublink" tabindex="-1">Moving Companies</a>
       <a href="../industries/appliance-repair" class="mobile-nav-sublink" tabindex="-1">Appliance Repair</a>
+      <a href="../industries/snow-removal" class="mobile-nav-sublink" tabindex="-1">Snow Removal</a>
+      <a href="../industries/chimney-sweep" class="mobile-nav-sublink" tabindex="-1">Chimney Sweep</a>
+      <a href="../industries/water-damage-restoration" class="mobile-nav-sublink" tabindex="-1">Water Damage Restoration</a>
+      <a href="../industries/electricians" class="mobile-nav-sublink" tabindex="-1">Electricians</a>
+      <a href="../industries/holiday-lighting" class="mobile-nav-sublink" tabindex="-1">Holiday Lighting</a>
     </div>
   </div>
 
@@ -721,6 +804,11 @@ body{overflow-x:hidden}
       <a href="../locations/tennessee" class="mobile-nav-sublink" tabindex="-1">Tennessee</a>
       <a href="../locations/south-carolina" class="mobile-nav-sublink" tabindex="-1">South Carolina</a>
       <a href="../locations/florida" class="mobile-nav-sublink" tabindex="-1">Florida</a>
+      <a href="../locations/ohio" class="mobile-nav-sublink" tabindex="-1">Ohio</a>
+      <a href="../locations/indiana" class="mobile-nav-sublink" tabindex="-1">Indiana</a>
+      <a href="../locations/missouri" class="mobile-nav-sublink" tabindex="-1">Missouri</a>
+      <a href="../locations/alabama" class="mobile-nav-sublink" tabindex="-1">Alabama</a>
+      <a href="../locations/utah" class="mobile-nav-sublink" tabindex="-1">Utah</a>
     </div>
   </div>
 
