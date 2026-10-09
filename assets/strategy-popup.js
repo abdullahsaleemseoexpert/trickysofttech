@@ -325,6 +325,24 @@
       });
   }
 
+  // --- is the visitor in the middle of filling any form on the page? ----
+  // Covers the ZIP widget, contact form, chat input, search boxes: any text-like
+  // field that is focused or already has something typed in it.
+  function formBusy() {
+    try {
+      var TEXTY = 'input:not([type]),input[type=text],input[type=email],input[type=tel],input[type=url],input[type=number],input[type=search],textarea';
+      var a = document.activeElement;
+      if (a && a.matches && a.matches(TEXTY + ',select')) return true;
+      var els = document.querySelectorAll(TEXTY);
+      for (var i = 0; i < els.length; i++) {
+        var el = els[i];
+        if (el.name === '_honey' || el.tabIndex === -1) continue;   // spam-trap fields
+        if (el.value && el.value.trim()) return true;
+      }
+    } catch (e) { /* never block the popup logic on a detection error */ }
+    return false;
+  }
+
   // --- schedule ---------------------------------------------------------
   function arm(delay) {
     delay = (typeof delay === 'number') ? delay : DELAY_MS;
@@ -334,6 +352,8 @@
       // if the visitor is mid-conversation in the chat widget, wait and try
       // again shortly rather than stacking a second overlay on top of it
       if (window.__tstChatOpen) { arm(8000); return; }
+      // same for any form the visitor is typing in: never cover it, check again shortly
+      if (formBusy()) { arm(8000); return; }
       try {
         buildModal();
         open();
