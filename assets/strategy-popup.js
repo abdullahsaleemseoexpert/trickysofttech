@@ -4,7 +4,7 @@
    One shared file, referenced sitewide (assets/strategy-popup.js). It injects a
    single accessible modal ~15s into the visit, at most once per browser session
    (whether the visitor dismisses or submits). A "Get Started" side tab (right
-   edge, hidden on phones) opens the same modal on demand, any time.
+   edge, shown immediately on every screen size) opens the same modal on demand.
    Reuses the existing FormSubmit.co lead mechanism used by contact.html — this
    is NOT a second lead system.
    No framework, no dependencies. Design tokens come from the page's own :root.
@@ -377,7 +377,7 @@
       'background:var(--grad-brand,linear-gradient(135deg,#5B5FEF 0%,#7B6FF0 50%,#A855F7 100%));',
       'box-shadow:-6px 10px 30px rgba(91,95,239,0.34),inset 1px 0 0 rgba(255,255,255,0.22);',
       'font-family:Inter,system-ui,sans-serif;transform:translateY(-50%);',
-      'animation:tst-sp-tab-in 700ms var(--ease-premium,cubic-bezier(0.16,1,0.3,1)) 1.4s backwards;',
+      'animation:tst-sp-tab-in 450ms var(--ease-premium,cubic-bezier(0.16,1,0.3,1)) 0.1s backwards;',
       'transition:transform 240ms var(--ease-premium,cubic-bezier(0.16,1,0.3,1)),box-shadow 240ms,opacity 200ms}',
       '#tst-sp-tab:hover{transform:translateY(-50%) translateX(-5px);box-shadow:-10px 14px 36px rgba(91,95,239,0.46),inset 1px 0 0 rgba(255,255,255,0.28)}',
       '#tst-sp-tab:active{transform:translateY(-50%) translateX(-2px)}',
@@ -388,7 +388,7 @@
       '#tst-sp-tab:hover svg{transform:translateX(2px)}',
       'body.tst-sp-active #tst-sp-tab,body.tst-chat-active #tst-sp-tab{opacity:0;pointer-events:none}',
       '@keyframes tst-sp-tab-in{from{opacity:0;transform:translateY(-50%) translateX(100%)}to{opacity:1;transform:translateY(-50%) translateX(0)}}',
-      '@media (max-width:640px){#tst-sp-tab{display:none}}',
+      '@media (max-width:640px){#tst-sp-tab{width:40px;padding:14px 0 16px;gap:10px}#tst-sp-tab .tst-sp-tab-text{font-size:11px;letter-spacing:0.14em}#tst-sp-tab svg{width:13px;height:13px}}',
       '@media (prefers-reduced-motion:reduce){#tst-sp-tab{animation:none}}',
       '@media print{#tst-sp-tab{display:none}}'
     ].join('');
