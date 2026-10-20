@@ -15,6 +15,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Refresh latest blog posts on the home page
+        run: node scripts/update-home-blog.js
+        continue-on-error: true
+
       - name: Deploy to Hostinger via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -29,4 +33,5 @@ jobs:
             **/.github/**
             **/node_modules/**
             **/.secrets/**
+            **/scripts/**
             **/seo-audit/**
