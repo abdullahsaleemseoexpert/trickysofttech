@@ -373,6 +373,7 @@
     if (!state.built) buildPanel();
     lastFocused = document.activeElement;
     window.__tstChatOpen = true;
+    document.body.classList.add('tst-chat-active'); // lets the "Get Started" side tab stand down
     launcher.classList.add('is-open');
     launcher.setAttribute('aria-expanded', 'true');
     launcher.setAttribute('aria-label', 'Close chat');
@@ -409,6 +410,7 @@
   function closePanel() {
     if (!window.__tstChatOpen) return;
     window.__tstChatOpen = false;
+    document.body.classList.remove('tst-chat-active');
     panel.classList.remove('is-open');
     launcher.classList.remove('is-open');
     launcher.setAttribute('aria-expanded', 'false');

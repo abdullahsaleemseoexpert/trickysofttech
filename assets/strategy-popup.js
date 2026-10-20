@@ -3,7 +3,8 @@
    -----------------------------------------------------------------------------
    One shared file, referenced sitewide (assets/strategy-popup.js). It injects a
    single accessible modal ~15s into the visit, at most once per browser session
-   (whether the visitor dismisses or submits).
+   (whether the visitor dismisses or submits). A "Get Started" side tab (right
+   edge, hidden on phones) opens the same modal on demand, any time.
    Reuses the existing FormSubmit.co lead mechanism used by contact.html — this
    is NOT a second lead system.
    No framework, no dependencies. Design tokens come from the page's own :root.
@@ -27,8 +28,8 @@
     return null;
   }
 
-  // Shown / dismissed / submitted this session → never schedule again.
-  if (ss('get')) return;
+  // Shown / dismissed / submitted this session → arm() will not auto-schedule again
+  // (the side tab below still works).
 
   // Don't show on the dedicated booking page itself.
   var path = (location.pathname || '').replace(/\/+$/, '').toLowerCase();
@@ -355,15 +356,69 @@
       // same for any form the visitor is typing in: never cover it, check again shortly
       if (formBusy()) { arm(8000); return; }
       try {
-        buildModal();
-        open();
+        showModal();
       } catch (err) { /* never let the popup break the page */ }
     }, delay);
   }
 
+  // Build the modal once, then open it (used by the timer and by the side tab).
+  function showModal() {
+    if (!overlay) buildModal();
+    if (window.__tstSPOpen) return;
+    open();
+  }
+
+  // --- "Get Started" side tab ----------------------------------------------
+  function injectTabStyles() {
+    if (document.getElementById('tst-sp-tab-style')) return;
+    var css = [
+      '#tst-sp-tab{position:fixed;right:0;top:50%;z-index:990;display:flex;flex-direction:column;align-items:center;gap:12px;',
+      'width:46px;padding:18px 0 20px;border:0;border-radius:14px 0 0 14px;cursor:pointer;color:#fff;',
+      'background:var(--grad-brand,linear-gradient(135deg,#5B5FEF 0%,#7B6FF0 50%,#A855F7 100%));',
+      'box-shadow:-6px 10px 30px rgba(91,95,239,0.34),inset 1px 0 0 rgba(255,255,255,0.22);',
+      'font-family:Inter,system-ui,sans-serif;transform:translateY(-50%);',
+      'animation:tst-sp-tab-in 700ms var(--ease-premium,cubic-bezier(0.16,1,0.3,1)) 1.4s backwards;',
+      'transition:transform 240ms var(--ease-premium,cubic-bezier(0.16,1,0.3,1)),box-shadow 240ms,opacity 200ms}',
+      '#tst-sp-tab:hover{transform:translateY(-50%) translateX(-5px);box-shadow:-10px 14px 36px rgba(91,95,239,0.46),inset 1px 0 0 rgba(255,255,255,0.28)}',
+      '#tst-sp-tab:active{transform:translateY(-50%) translateX(-2px)}',
+      '#tst-sp-tab:focus-visible{outline:2px solid #fff;outline-offset:-4px;box-shadow:0 0 0 3px rgba(91,95,239,0.55)}',
+      '#tst-sp-tab .tst-sp-tab-text{writing-mode:vertical-rl;transform:rotate(180deg);font-size:12px;font-weight:700;',
+      'letter-spacing:0.16em;text-transform:uppercase;white-space:nowrap;line-height:1}',
+      '#tst-sp-tab svg{width:15px;height:15px;flex-shrink:0;transition:transform 240ms}',
+      '#tst-sp-tab:hover svg{transform:translateX(2px)}',
+      'body.tst-sp-active #tst-sp-tab,body.tst-chat-active #tst-sp-tab{opacity:0;pointer-events:none}',
+      '@keyframes tst-sp-tab-in{from{opacity:0;transform:translateY(-50%) translateX(100%)}to{opacity:1;transform:translateY(-50%) translateX(0)}}',
+      '@media (max-width:640px){#tst-sp-tab{display:none}}',
+      '@media (prefers-reduced-motion:reduce){#tst-sp-tab{animation:none}}',
+      '@media print{#tst-sp-tab{display:none}}'
+    ].join('');
+    var st = document.createElement('style');
+    st.id = 'tst-sp-tab-style';
+    st.textContent = css;
+    document.head.appendChild(st);
+  }
+
+  function buildTab() {
+    if (document.getElementById('tst-sp-tab')) return;
+    injectTabStyles();
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.id = 'tst-sp-tab';
+    b.setAttribute('aria-haspopup', 'dialog');
+    b.setAttribute('aria-label', 'Get started: book a free strategy call');
+    b.setAttribute('data-track', 'side-tab-get-started');
+    b.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>' +
+      '<span class="tst-sp-tab-text">Get Started</span>';
+    b.addEventListener('click', function () {
+      try { showModal(); } catch (err) { /* never let the popup break the page */ }
+    });
+    document.body.appendChild(b);
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function () { arm(); }, { once: true });
+    document.addEventListener('DOMContentLoaded', function () { buildTab(); arm(); }, { once: true });
   } else {
+    buildTab();
     arm();
   }
 })();
