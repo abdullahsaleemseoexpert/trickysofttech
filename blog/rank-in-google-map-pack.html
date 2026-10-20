@@ -283,13 +283,14 @@ body{overflow-x:hidden}
 .nav-dropdown-viewall{color:var(--spectrum-core, #5B5FEF);font-weight:700}
 .nav-dropdown-panel-mega{position:fixed;top:90px;left:50%;right:auto;width:min(1180px,calc(100vw - 48px));min-width:0;transform:translateX(-50%) translateY(-6px);max-height:calc(100vh - 110px);overflow-y:auto}
 .nav-dropdown:hover .nav-dropdown-panel-mega{transform:translateX(-50%) translateY(0)}
-.locations-mega-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:2px 12px;padding:2px}
+.locations-mega-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px 12px;padding:2px}
+.locations-mega-col:first-child{grid-row:span 2}
 .locations-mega-title{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted, #6B6F8C);padding:8px 12px 4px;display:block;text-decoration:none;transition:color 0.2s}
 .locations-mega-title:hover{color:var(--spectrum-core)}
-.locations-mega-col .nav-dropdown-link{padding:5px 12px;font-size:13px}
+.locations-mega-col .nav-dropdown-link{padding:4px 12px;font-size:13px}
 .locations-mega-grid{row-gap:16px}
-.locations-mega-col:nth-child(n+7){border-top:1px solid rgba(15,15,35,0.08);padding-top:12px}
-:root[data-theme="dark"] .locations-mega-col:nth-child(n+7){border-top-color:rgba(255,255,255,0.10)}
+.locations-mega-col:nth-child(n+8){border-top:1px solid rgba(15,15,35,0.08);padding-top:12px}
+:root[data-theme="dark"] .locations-mega-col:nth-child(n+8){border-top-color:rgba(255,255,255,0.10)}
 .mobile-nav-sublink{font-family:'Inter',sans-serif;font-size:15px;font-weight:500;color:var(--text-muted, #6B6F8C);text-decoration:none;padding:8px 24px;width:100%;max-width:320px;text-align:center;opacity:0;transform:translateX(32px);transition:color 200ms}
 .mobile-nav-sublink:hover{color:var(--text-primary, #14141F)}
 #mobile-menu.open .mobile-nav-sublink{animation:mobile-link-in 400ms var(--ease-premium, cubic-bezier(0.16,1,0.3,1)) forwards}
@@ -563,6 +564,12 @@ body{overflow-x:hidden}
           <a href="../locations/lubbock-tx" class="nav-dropdown-link">Lubbock</a>
           <a href="../locations/round-rock-tx" class="nav-dropdown-link">Round Rock</a>
           <a href="../locations/abilene-tx" class="nav-dropdown-link">Abilene</a>
+          <a href="../locations/pearland-tx" class="nav-dropdown-link">Pearland</a>
+          <a href="../locations/angleton-tx" class="nav-dropdown-link">Angleton</a>
+          <a href="../locations/lake-jackson-tx" class="nav-dropdown-link">Lake Jackson</a>
+          <a href="../locations/galveston-tx" class="nav-dropdown-link">Galveston</a>
+          <a href="../locations/sugar-land-tx" class="nav-dropdown-link">Sugar Land</a>
+          <a href="../locations/beaumont-tx" class="nav-dropdown-link">Beaumont</a>
         </div>
 
         <div class="locations-mega-col">
@@ -1049,7 +1056,7 @@ body{overflow-x:hidden}
       <a href="how-to-check-google-maps-ranking" class="related-row">
         <div class="related-row-text">
           <div class="related-label">Local SEO</div>
-          <div class="related-title">How to Check Your Google Maps Ranking: A Geo-Grid Tracking Guide</div>
+          <div class="related-title">Google Maps Rank Tracking: How to Check Your Ranking (Geo-Grid Guide)</div>
         </div>
         <div class="related-arrow">Read <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
       </a>
