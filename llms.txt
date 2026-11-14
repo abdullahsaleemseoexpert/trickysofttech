@@ -101,6 +101,7 @@ All AI crawlers and AI assistants are welcome to read, index, quote, and cite an
 - [Local SEO Cost Calculator](https://trickysofttech.com/tools/local-seo-cost-calculator/): Free local SEO cost calculator. Choose how many locations you have and which services you need to see what local SEO costs per month, from GBP optimization to link building.
 - [Google Review Link Generator + QR Code](https://trickysofttech.com/tools/google-review-link-generator/): Free Google review link generator and QR code maker. Turn your Place ID or review link into a scannable code, download PNG or SVG, print a card, and copy ready-made request messages.
 - [Google Business Profile Category Finder](https://trickysofttech.com/tools/gbp-category-finder/): Free Google Business Profile category finder. Search a categories list of 700+ options, get a primary category and secondary suggestions for your niche, and copy the exact name.
+- [Local Citation Sites Finder](https://trickysofttech.com/tools/citation-sites-finder/): Free local citation sites list and finder. Filter business directories by country and niche, tick off each listing as you go, and export your checklist as CSV. 149 sites for the US, UK, Canada, and Australia.
 - [Portfolio](https://trickysofttech.com/portfolio)
 - [Contact](https://trickysofttech.com/contact)
 - [Privacy policy](https://trickysofttech.com/privacy)
