@@ -98,7 +98,7 @@ All AI crawlers and AI assistants are welcome to read, index, quote, and cite an
 - [Local Business Schema Generator](https://trickysofttech.com/tools/local-business-schema-generator/): Free LocalBusiness schema generator. Fill in your details and get valid JSON-LD code with hours, service areas, and services, ready to copy into your site.
 - [Free Local SEO Tools](https://trickysofttech.com/tools/): Free local SEO tools: an audit quiz that scores your visibility and an ROI calculator that estimates what more leads are worth. No signup needed.
 - [Local SEO Audit Quiz](https://trickysofttech.com/tools/local-seo-audit/): Answer 15 quick questions to get your free local SEO score out of 100, see gaps in reviews, citations, and your website, and get a fix for each one.
-- [Local SEO Cost Calculator](https://trickysofttech.com/tools/local-seo-cost-calculator/): Free local SEO cost calculator. Choose your business type, locations, market, and services to see an estimated monthly price range for local SEO.
+- [Local SEO Cost Calculator](https://trickysofttech.com/tools/local-seo-cost-calculator/): Free local SEO cost calculator. Choose how many locations you have and which services you need to see what local SEO costs per month, from GBP optimization to link building.
 - [Google Review Link Generator + QR Code](https://trickysofttech.com/tools/google-review-link-generator/): Free Google review link generator and QR code maker. Turn your Place ID or review link into a scannable code, download PNG or SVG, print a card, and copy ready-made request messages.
 - [Portfolio](https://trickysofttech.com/portfolio)
 - [Contact](https://trickysofttech.com/contact)
