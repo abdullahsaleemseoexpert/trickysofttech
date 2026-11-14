@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8"/>
+  <meta name="google-site-verification" content="8-qEpGgUQOCGH60cJBcihnF5q4dTLVSObeScueeQiNM" />
+  <script>(function(){try{var t=localStorage.getItem('tst-theme');if(t==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Free Local Business Schema Generator | Tricky Soft Tech</title>
+<meta name="description" content="Free LocalBusiness schema generator. Fill in your details and get valid JSON-LD code with hours, service areas, and services, ready to copy into your site."/>
+<link rel="canonical" href="https://trickysofttech.com/tools/local-business-schema-generator/"/>
+<meta name="robots" content="index, follow"/>
+<meta name="theme-color" content="#FFFFFF"/>
+<link rel="icon" type="image/png" href="../../assets/favicon-128.png"/>
+<link rel="apple-touch-icon" href="../../assets/favicon-180.png"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Free Local Business Schema Generator | Tricky Soft Tech"/>
+<meta property="og:description" content="Free LocalBusiness schema generator. Fill in your details and get valid JSON-LD code with hours, service areas, and services, ready to copy into your site."/>
+<meta property="og:url" content="https://trickysofttech.com/tools/local-business-schema-generator/"/>
+<meta property="og:site_name" content="Tricky Soft Tech"/>
+<meta property="og:image" content="https://trickysofttech.com/assets/og-image.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Free Local Business Schema Generator | Tricky Soft Tech"/>
+<meta name="twitter:description" content="Free LocalBusiness schema generator. Fill in your details and get valid JSON-LD code with hours, service areas, and services, ready to copy into your site."/>
+<meta name="twitter:image" content="https://trickysofttech.com/assets/og-image.jpg"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Tricky Soft Tech","url":"https://trickysofttech.com/","logo":"https://trickysofttech.com/assets/logo-on-light-web.png","email":"info@trickysofttech.com","foundingDate":"2021","address":{"@type":"PostalAddress","addressLocality":"Parsippany","addressRegion":"NJ","addressCountry":"US"},"sameAs":["https://www.youtube.com/@trickysofttech","https://www.linkedin.com/company/trickysofttech","https://www.facebook.com/people/Tricky-Soft-Tech/100095114473931/","https://www.instagram.com/trickysofttech","https://x.com/expert63453"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://trickysofttech.com/"},{"@type":"ListItem","position":2,"name":"Free Tools","item":"https://trickysofttech.com/tools/"},{"@type":"ListItem","position":3,"name":"Local Business Schema Generator","item":"https://trickysofttech.com/tools/local-business-schema-generator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Local Business Schema Generator","url":"https://trickysofttech.com/tools/local-business-schema-generator/","description":"Free LocalBusiness schema generator. Fill in your details and get valid JSON-LD code with hours, service areas, and services, ready to copy into your site.","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Tricky Soft Tech","url":"https://trickysofttech.com/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does schema improve rankings?","acceptedAnswer":{"@type":"Answer","text":"Google says structured data is not a direct ranking factor. What it does is help search engines and AI tools understand who you are, where you operate, and what you offer, and it can make a page eligible for some rich results. Think of it as clear labeling that supports your other local SEO work, not a shortcut to higher rankings."}},{"@type":"Question","name":"Where do I put the code?","acceptedAnswer":{"@type":"Answer","text":"Paste the full script block into the head of your page, or anywhere in the page body. Google reads JSON-LD in either place. Put it on the page that describes the business, usually the home page and the contact or location page, and keep one LocalBusiness block per page."}},{"@type":"Question","name":"Can I use it with Yoast or Rank Math?","acceptedAnswer":{"@type":"Answer","text":"Yes, but avoid duplicates. Both plugins can output business schema from their own local SEO settings. If a plugin already outputs your LocalBusiness details, either use the plugin or paste this code, and turn the plugin version off, so the page does not declare the same business twice with different details."}},{"@type":"Question","name":"Should every page have LocalBusiness schema?","acceptedAnswer":{"@type":"Answer","text":"No. It belongs on pages that describe the business itself, such as the home, contact, and location pages. Blog posts and service pages do not need their own copy. Repeating the same business block everywhere adds noise without much benefit."}},{"@type":"Question","name":"What about multiple locations?","acceptedAnswer":{"@type":"Answer","text":"Create one schema block per location, and place each on that location’s own page. Each block should carry that branch’s own address, phone number, and hours. Run this generator once for each location and keep the details identical to each location’s Google Business Profile."}},{"@type":"Question","name":"Why does Google not show my stars?","acceptedAnswer":{"@type":"Answer","text":"Google’s guidelines treat reviews that a business marks up about itself as self-serving, so they do not qualify for review stars in search results for LocalBusiness and similar types. That is why this generator has no review or rating fields. Your real reviews still show on your Google Business Profile."}}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --ink-void:#FFFFFF;--ink-base:#F1F1F7;--ink-raised:#F1F1F7;--ink-ghost:#E2E2EE;
+  --spectrum-core:#5B5FEF;--spectrum-cyan:#06C8D4;--spectrum-cyan-text:#077A82;--spectrum-purple:#A855F7;--spectrum-purple-text:#7E22CE;--prestige-gold:#E8B86D;--prestige-gold-text:#8A6423;
+  --text-primary:#14141F;--text-secondary:#55597A;--text-muted:#6B6F8C;
+  --border-default:rgba(15,15,35,0.10);--border-subtle:rgba(15,15,35,0.06);
+  --border-accent:rgba(91,95,239,0.24);--border-accent-strong:rgba(91,95,239,0.45);
+  --grad-brand:linear-gradient(135deg,#5B5FEF 0%,#7B6FF0 50%,#A855F7 100%);
+  --grad-ai:linear-gradient(135deg,#0891A0 0%,#5B5FEF 45%,#A855F7 100%);
+  --grad-gold:linear-gradient(135deg,#E8B86D 0%,#D4A042 50%,#B8842A 100%);
+  --ease-premium:cubic-bezier(0.16,1,0.3,1);--ease-spring:cubic-bezier(0.34,1.56,0.64,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--ink-void);color:var(--text-primary);font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased}
+body{overflow-x:hidden}
+
+/* canonical nav overrides */
+#main-nav{z-index:1000;padding:22px 0;border-bottom:1px solid transparent;transition:padding 350ms var(--ease-premium),background 350ms var(--ease-premium),border-color 350ms var(--ease-premium),box-shadow 350ms var(--ease-premium)}
+#main-nav.nav-scrolled{padding:14px 0;background:rgba(255,255,255,0.88);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid rgba(15,15,35,0.05);box-shadow:0 8px 32px rgba(0,0,0,0.40)}
+.nav-logo{font-family:'Sora',sans-serif;font-weight:800;font-size:20px;color:var(--text-primary);text-decoration:none;display:flex;align-items:center;gap:10px}
+.nav-link{font-size:14px;font-weight:500;color:var(--text-secondary);text-decoration:none;transition:color 0.2s;position:relative;padding-bottom:3px}
+.nav-link::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--spectrum-core);transition:width 250ms var(--ease-premium)}
+.nav-link:hover::after,.nav-link.active::after{width:100%}
+.nav-link:hover,.nav-link.active{color:var(--text-primary)}
+.btn-nav{display:inline-flex;align-items:center;padding:9px 20px;border-radius:10px;font-size:13px;font-weight:600;background:var(--grad-brand);color:#fff;text-decoration:none;transition:opacity 0.2s,transform 0.2s}
+.btn-nav:hover{opacity:0.88;transform:translateY(-1px)}
+.hamburger{width:44px;height:44px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer;border-radius:10px;border:1px solid rgba(15,15,35,0.05);background:rgba(15,15,35,0.04);transition:border-color 200ms,background 200ms;flex-shrink:0}
+@media (max-width:1535.98px){header#main-nav nav[aria-label="Main navigation"]{display:none!important}header#main-nav a.btn-nav{display:none!important}header#main-nav button.hamburger{display:flex!important}}
+@media (min-width:1536px){header#main-nav nav[aria-label="Main navigation"]{display:flex!important;align-items:center;gap:24px}header#main-nav a.btn-nav{display:inline-flex!important}header#main-nav button.hamburger{display:none!important}}
+
+.hamburger:hover{border-color:rgba(15,15,35,0.08);background:rgba(15,15,35,0.07)}
+.hamburger span{display:block;width:18px;height:1.5px;background:var(--text-primary);border-radius:2px;transition:all 320ms var(--ease-premium);transform-origin:center}
+.hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+#mobile-menu{position:fixed;inset:0;z-index:998;background:rgba(255,255,255,0.97);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:4px;transform:translateX(100%);transition:transform 420ms var(--ease-premium);padding:100px 24px 40px;overflow-y:auto}
+#mobile-menu.open{transform:translateX(0)}
+.mobile-nav-link{font-family:'Sora',sans-serif;font-size:clamp(24px,5.5vw,32px);font-weight:700;color:var(--text-secondary);text-decoration:none;padding:12px 20px;border-radius:14px;width:100%;text-align:center;transition:color 200ms,background 200ms;opacity:0;transform:translateX(32px)}
+#mobile-menu.open .mobile-nav-link{animation:mobile-link-in 400ms var(--ease-premium) forwards;animation-delay:80ms}
+.mobile-nav-group{width:100%;display:flex;flex-direction:column;align-items:center}
+.mobile-nav-row{display:flex;align-items:center;justify-content:center;gap:8px;width:100%}
+.mobile-nav-row .mobile-nav-link{flex:1;width:auto}
+.mobile-nav-row-spacer{width:40px;flex-shrink:0}
+.mobile-nav-chevron-btn{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:rgba(15,15,35,0.04);border:1px solid rgba(15,15,35,0.06);flex-shrink:0;cursor:pointer;transition:background 200ms;opacity:0;transform:translateX(32px);color:var(--text-secondary)}
+#mobile-menu.open .mobile-nav-chevron-btn{animation:mobile-link-in 400ms var(--ease-premium) forwards;animation-delay:80ms}
+.mobile-nav-chevron-btn:hover{background:rgba(91,95,239,0.10);color:var(--text-primary)}
+.mobile-nav-chevron{transition:transform 280ms var(--ease-premium)}
+.mobile-nav-chevron-btn[aria-expanded="true"] .mobile-nav-chevron{transform:rotate(180deg)}
+.mobile-nav-sublist{width:100%;display:flex;flex-direction:column;align-items:center;max-height:0;overflow:hidden;transition:max-height 380ms var(--ease-premium)}
+.mobile-nav-sublist.open{max-height:900px}
+.mobile-nav-link:hover{color:var(--text-primary);background:rgba(91,95,239,0.08)}
+#mobile-menu.open .mobile-nav-link:nth-child(1){animation-delay:80ms}
+#mobile-menu.open .mobile-nav-link:nth-child(2){animation-delay:140ms}
+#mobile-menu.open .mobile-nav-link:nth-child(3){animation-delay:200ms}
+#mobile-menu.open .mobile-nav-link:nth-child(4){animation-delay:260ms}
+.mobile-cta{margin-top:24px;opacity:0;transform:translateX(32px);width:100%;max-width:300px}
+#mobile-menu.open .mobile-cta{animation:mobile-link-in 400ms var(--ease-premium) forwards;animation-delay:400ms}
+@keyframes mobile-link-in{to{opacity:1;transform:translateX(0)}}
+.mobile-menu-divider{width:100%;max-width:280px;height:1px;background:rgba(15,15,35,0.05);margin:16px 0}
+.btn-arrow{display:inline-block;transition:transform 200ms var(--ease-premium);margin-left:6px}
+.btn-nav:hover .btn-arrow{transform:translateX(4px)}
+
+/* primitives */
+.glass-card{background:rgba(255,255,255,0.6);backdrop-filter:blur(16px);border:1px solid var(--border-default)}
+.eyebrow{position:relative;display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--spectrum-core);margin-bottom:20px}
+.eyebrow-dot{width:6px;height:6px;border-radius:50%;background:var(--spectrum-core);flex-shrink:0}
+.section-headline{font-family:'Sora',sans-serif;font-size:clamp(32px,5vw,56px);font-weight:800;line-height:1.1;letter-spacing:-0.02em;color:var(--text-primary)}
+.section-sub{font-size:clamp(15px,2vw,18px);color:var(--text-secondary);line-height:1.7}
+.text-grad-accent{background:var(--grad-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.text-grad-gold{background:var(--grad-gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.text-grad-ai{background:var(--grad-ai);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:12px;font-size:15px;font-weight:700;background:var(--grad-brand);color:#fff;text-decoration:none;transition:opacity 0.2s,transform 0.2s,box-shadow 0.2s;box-shadow:0 4px 24px rgba(91,95,239,0.28)}
+.btn-primary:hover{opacity:0.88;transform:translateY(-2px);box-shadow:0 8px 32px rgba(91,95,239,0.38)}
+.btn-secondary{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:12px;font-size:15px;font-weight:600;background:transparent;color:var(--text-primary);border:1px solid var(--border-accent-strong);text-decoration:none;transition:all 0.2s}
+.btn-secondary:hover{background:rgba(91,95,239,0.08);border-color:var(--spectrum-core);transform:translateY(-2px)}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 0.7s var(--ease-premium),transform 0.7s var(--ease-premium)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-stagger>*{opacity:0;transform:translateY(22px);transition:opacity 0.6s var(--ease-premium),transform 0.6s var(--ease-premium)}
+.reveal-stagger.visible>*:nth-child(1){opacity:1;transform:none;transition-delay:0ms}
+.reveal-stagger.visible>*:nth-child(2){opacity:1;transform:none;transition-delay:80ms}
+.reveal-stagger.visible>*:nth-child(3){opacity:1;transform:none;transition-delay:160ms}
+.reveal-stagger.visible>*:nth-child(4){opacity:1;transform:none;transition-delay:240ms}
+.reveal-stagger.visible>*:nth-child(5){opacity:1;transform:none;transition-delay:320ms}
+.reveal-stagger.visible>*:nth-child(6){opacity:1;transform:none;transition-delay:400ms}
+.reveal-stagger.visible>*:nth-child(n+7){opacity:1;transform:none;transition-delay:400ms}
+
+/* ── case study card ── */
+.cs-card{
+  border-radius:22px;border:1px solid var(--border-default);
+  background:var(--ink-raised);overflow:hidden;
+  transition:border-color 0.3s var(--ease-premium),transform 0.3s var(--ease-premium),box-shadow 0.3s;
+}
+.cs-card:hover{border-color:var(--cs-accent,var(--border-accent));transform:translateY(-5px);box-shadow:0 24px 56px rgba(0,0,0,0.3)}
+.cs-header{padding:32px 32px 24px;position:relative;overflow:hidden;border-bottom:1px solid var(--border-default)}
+.cs-header-glow{position:absolute;inset:0;pointer-events:none;opacity:0.6}
+.cs-service-tag{display:inline-flex;align-items:center;gap:6px;font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:4px 10px;border-radius:6px;margin-bottom:16px}
+.cs-client-name{font-family:'Sora',sans-serif;font-size:22px;font-weight:800;color:var(--text-primary);line-height:1.1;margin-bottom:4px}
+.cs-industry{font-size:12px;color:var(--text-muted);margin-bottom:16px;font-weight:500}
+.cs-headline{font-size:14px;color:var(--text-secondary);line-height:1.65;position:relative;z-index:1}
+
+/* metrics row */
+.cs-metrics{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--border-default)}
+.cs-metric{padding:18px 20px;border-right:1px solid var(--border-default);text-align:center}
+.cs-metric:last-child{border-right:none}
+.cs-metric-val{font-family:'Sora',sans-serif;font-size:22px;font-weight:800;line-height:1}
+.cs-metric-lbl{font-size:10px;color:var(--text-muted);margin-top:4px;line-height:1.3;font-weight:500}
+
+/* body */
+.cs-body{padding:24px 32px 28px;display:flex;flex-direction:column;gap:20px}
+.cs-section-lbl{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px}
+.cs-challenge{font-size:13px;color:var(--text-muted);line-height:1.7}
+.cs-approach-list{list-style:none;display:flex;flex-direction:column;gap:7px}
+.cs-approach-list li{font-size:13px;color:var(--text-secondary);display:flex;align-items:flex-start;gap:9px;line-height:1.5}
+.cs-approach-list li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--cs-accent-rgb,var(--spectrum-core));flex-shrink:0;margin-top:6px}
+.cs-quote{border-left:2px solid var(--cs-accent,var(--border-accent));padding:12px 16px;background:rgba(15,15,35,0.02);border-radius:0 10px 10px 0}
+.cs-quote-text{font-size:13px;color:var(--text-secondary);line-height:1.7;font-style:italic}
+.cs-quote-attr{font-size:11px;color:var(--text-muted);margin-top:6px;font-weight:600}
+.cs-timeline{display:flex;gap:8px;flex-wrap:wrap}
+.cs-timeline-chip{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;padding:4px 10px;border-radius:5px;background:rgba(15,15,35,0.04);border:1px solid var(--border-default);color:var(--text-muted);letter-spacing:0.06em}
+.cs-footer{padding:0 32px 28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.cs-cta{display:inline-flex;align-items:center;gap:7px;padding:10px 18px;border-radius:10px;font-size:13px;font-weight:700;background:rgba(91,95,239,0.10);border:1px solid var(--border-accent);text-decoration:none;transition:transform 0.2s var(--ease-premium),box-shadow 0.2s var(--ease-premium),background 0.2s,gap 0.2s}
+.cs-cta:hover{gap:10px;background:rgba(91,95,239,0.16);transform:translateY(-2px);box-shadow:0 8px 20px rgba(91,95,239,0.18)}
+:root[data-theme="dark"] .cs-cta{background:rgba(129,132,255,0.14)}
+:root[data-theme="dark"] .cs-cta:hover{background:rgba(129,132,255,0.20)}
+
+/* results-snapshot visual (replaces the old cramped mini bar chart) */
+.cs-visual{position:relative;z-index:1;flex-shrink:0;width:280px;max-width:100%;border-radius:16px;border:1px solid var(--border-default);background:rgba(15,15,35,0.02);padding:20px 22px 18px;display:flex;flex-direction:column}
+:root[data-theme="dark"] .cs-visual{background:rgba(255,255,255,0.03)}
+.cs-visual-label{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:14px}
+.cs-visual-chart{display:block;width:100%;height:auto;overflow:visible}
+.cs-visual-footer{display:flex;align-items:baseline;justify-content:space-between;margin-top:12px;padding-top:12px;border-top:1px solid var(--border-default)}
+.cs-visual-growth{font-family:'Sora',sans-serif;font-size:26px;font-weight:800;line-height:1}
+.cs-visual-growth-lbl{font-size:11px;color:var(--text-muted);font-weight:500}
+@media (max-width:640px){.cs-visual{width:100%;max-width:none}}
+
+/* ── results showcase ── */
+.rs-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border-default);border-radius:20px;overflow:hidden}
+.rs-cell{background:var(--ink-raised);padding:36px 32px;position:relative;overflow:hidden}
+.rs-cell::before{content:'';position:absolute;inset:0;background:var(--rs-glow,none);pointer-events:none;opacity:0.5}
+.rs-num{font-family:'Sora',sans-serif;font-size:clamp(36px,5vw,56px);font-weight:800;line-height:1;margin-bottom:8px}
+.rs-label{font-size:15px;color:var(--text-secondary);font-weight:500;margin-bottom:6px}
+.rs-sub{font-size:13px;color:var(--text-muted);line-height:1.6}
+@media(max-width:640px){.rs-grid{grid-template-columns:1fr}}
+
+/* footer */
+.site-footer{background:var(--ink-base);border-top:1px solid rgba(15,15,35,0.05);padding:80px 0 0}
+.footer-tagline{font-size:13px;color:var(--text-muted);line-height:1.6;max-width:260px;margin-top:12px}
+.footer-socials{display:flex;gap:8px;margin-top:20px}
+.footer-social{width:34px;height:34px;border-radius:9px;border:1px solid rgba(15,15,35,0.08);background:rgba(15,15,35,0.03);display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;transition:border-color 200ms,color 200ms}
+.footer-social:hover{border-color:rgba(91,95,239,0.28);color:var(--spectrum-core)}
+.footer-legal a{color:var(--text-muted);text-decoration:none;transition:color 200ms}
+.footer-legal a:hover{color:var(--text-primary)}
+.footer-badges{display:flex;gap:8px;flex-wrap:wrap}
+.footer-col-title{font-family:'Sora',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:16px}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-links a{font-size:14px;color:var(--text-secondary);text-decoration:none;transition:color 0.2s}
+.footer-links a:hover{color:var(--text-primary)}
+.footer-bottom{border-top:1px solid var(--border-default);padding:24px 0;margin-top:64px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-legal{font-size:13px;color:var(--text-muted)}
+.footer-badge{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:6px;font-size:11px;font-weight:600;background:rgba(15,15,35,0.04);border:1px solid var(--border-default);color:var(--text-muted)}
+
+    /* Official logo lockup: replaces the old placeholder mark+text.
+       height-based sizing keeps the true aspect ratio (720x237) at any scale. */
+    .nav-logo-img { height: 86px; width: auto; display: block; }
+    .footer-logo-img { height: 104px; width: auto; display: block; }
+    @media (max-width: 768px) {
+      .nav-logo-img { height: 68px; }
+    }
+    @media (max-width: 480px) {
+      .nav-logo-img { height: 58px; }
+      .footer-logo-img { height: 76px; }
+    }
+  
+/* -- Services nav dropdown -- */
+.nav-dropdown{position:relative}
+.nav-dropdown::before{content:'';position:absolute;top:100%;left:0;right:0;height:16px}
+.nav-dropdown-trigger{display:inline-flex;align-items:center;gap:5px;cursor:pointer}
+.nav-caret{transition:transform 220ms var(--ease-premium, cubic-bezier(0.16,1,0.3,1))}
+.nav-dropdown:hover .nav-caret{transform:rotate(180deg)}
+.nav-dropdown-panel{position:absolute;top:calc(100% + 16px);left:50%;transform:translateX(-50%) translateY(-6px);min-width:248px;background:rgba(255,255,255,0.98);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border:1px solid rgba(15,15,35,0.08);border-radius:16px;padding:10px;box-shadow:0 24px 56px rgba(15,15,35,0.16);opacity:0;visibility:hidden;pointer-events:none;transition:opacity 220ms var(--ease-premium, cubic-bezier(0.16,1,0.3,1)),transform 220ms var(--ease-premium, cubic-bezier(0.16,1,0.3,1)),visibility 220ms;z-index:200}
+.nav-dropdown:hover .nav-dropdown-panel{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0)}
+.nav-dropdown-link{display:block;padding:10px 12px;border-radius:9px;font-size:13.5px;font-weight:500;color:var(--text-secondary, #55597A);text-decoration:none;transition:background 150ms,color 150ms}
+.nav-dropdown-link:hover{background:rgba(91,95,239,0.08);color:var(--text-primary, #14141F)}
+.nav-dropdown-divider{height:1px;background:rgba(15,15,35,0.08);margin:6px 6px}
+.nav-dropdown-viewall{color:var(--spectrum-core, #5B5FEF);font-weight:700}
+.nav-dropdown-panel-mega{position:fixed;top:90px;left:50%;right:auto;width:min(1180px,calc(100vw - 48px));min-width:0;transform:translateX(-50%) translateY(-6px);max-height:calc(100vh - 110px);overflow-y:auto}
+.nav-dropdown:hover .nav-dropdown-panel-mega{transform:translateX(-50%) translateY(0)}
+.locations-mega-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px 12px;padding:2px}
+.locations-mega-col:first-child{grid-row:span 2}
+.locations-mega-title{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted, #6B6F8C);padding:8px 12px 4px;display:block;text-decoration:none;transition:color 0.2s}
+.locations-mega-title:hover{color:var(--spectrum-core)}
+.locations-mega-col .nav-dropdown-link{padding:4px 12px;font-size:13px}
+.locations-mega-grid{row-gap:16px}
+.locations-mega-col:nth-child(n+8){border-top:1px solid rgba(15,15,35,0.08);padding-top:12px}
+:root[data-theme="dark"] .locations-mega-col:nth-child(n+8){border-top-color:rgba(255,255,255,0.10)}
+.mobile-nav-sublink{font-family:'Inter',sans-serif;font-size:15px;font-weight:500;color:var(--text-muted, #6B6F8C);text-decoration:none;padding:8px 24px;width:100%;max-width:320px;text-align:center;opacity:0;transform:translateX(32px);transition:color 200ms}
+.mobile-nav-sublink:hover{color:var(--text-primary, #14141F)}
+#mobile-menu.open .mobile-nav-sublink{animation:mobile-link-in 400ms var(--ease-premium, cubic-bezier(0.16,1,0.3,1)) forwards}
+#mobile-menu.open .mobile-nav-sublink{animation-delay:150ms}
+
+/* -- Back to top -- */
+.back-to-top{position:fixed;bottom:28px;right:24px;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(15,15,35,0.10);display:flex;align-items:center;justify-content:center;color:#14141F;box-shadow:0 10px 28px rgba(15,15,35,0.16);opacity:0;visibility:hidden;transform:translateY(14px);transition:opacity 260ms cubic-bezier(0.16,1,0.3,1),transform 260ms cubic-bezier(0.16,1,0.3,1),visibility 260ms,border-color 200ms,box-shadow 200ms;z-index:90;cursor:pointer;padding:0}
+.back-to-top.visible{opacity:1;visibility:visible;transform:translateY(0)}
+.back-to-top:hover{border-color:rgba(91,95,239,0.28);box-shadow:0 14px 34px rgba(91,95,239,0.22);transform:translateY(-3px)}
+@media (max-width:640px){.back-to-top{bottom:18px;right:16px;width:44px;height:44px}}
+
+/* ============================================================
+   DARK THEME: token overrides + hardcoded-surface overrides
+============================================================ */
+:root[data-theme="dark"]{
+  /* Surfaces */
+  --ink-void:#0A0B12;--ink-base:#0D0F19;--ink-deep:#10121E;--ink-raised:#151827;--ink-float:#1B1F33;--ink-ghost:#242940;
+
+  /* Borders */
+  --border-subtle:rgba(255,255,255,0.06);--border-default:rgba(255,255,255,0.10);
+  --border-emphasis:rgba(255,255,255,0.14);--border-strong:rgba(255,255,255,0.20);
+  --border-accent:rgba(129,132,255,0.35);--border-accent-strong:rgba(129,132,255,0.55);
+  --border-gold:rgba(232,184,109,0.35);
+
+  /* Spectrum accents stay brand-consistent; only "-text" contrast-safe variants change */
+  --spectrum-bright:#8D90FF;--spectrum-mid-text:#8D82FF;--spectrum-purple-text:#C084FC;
+  --spectrum-cyan-text:#06C8D4;--prestige-gold-text:#E8B86D;
+
+  /* Text scale */
+  --text-primary:#F4F5FA;--text-secondary:#B4B8D0;--text-muted:#8B8FAE;--text-disabled:#3A3E58;
+  --text-accent:#8184FF;--text-cyan:#06C8D4;--text-gold:#E8B86D;--text-success:#4ADE80;--text-error:#F87171;
+
+  /* Gradients that previously started from near-black (invisible on dark bg) */
+  --grad-text-hero:linear-gradient(135deg,#F4F5FA 0%,#8184FF 45%,#06C8D4 100%);
+  --grad-text-stat:linear-gradient(135deg,#F4F5FA 0%,#8184FF 100%);
+}
+
+/* Hardcoded "white glass" surfaces -> dark elevated surfaces */
+:root[data-theme="dark"] #main-nav.nav-scrolled{background:rgba(16,18,30,0.85)}
+:root[data-theme="dark"] #mobile-menu{background:rgba(10,11,18,0.97)}
+:root[data-theme="dark"] .nav-dropdown-panel{background:rgba(21,24,39,0.98);border-color:rgba(255,255,255,0.08)}
+:root[data-theme="dark"] .back-to-top{background:rgba(21,24,39,0.92);color:var(--text-primary);border-color:rgba(255,255,255,0.10)}
+:root[data-theme="dark"] .glass-card{background:rgba(21,24,39,0.75)}
+:root[data-theme="dark"] .glass-surface{background:rgba(16,18,30,0.80)}
+:root[data-theme="dark"] .glass-light{background:rgba(21,24,39,0.55)}
+:root[data-theme="dark"] .dash-card{background:rgba(21,24,39,0.90)}
+:root[data-theme="dark"] .metric-chip{background:rgba(21,24,39,0.90)}
+:root[data-theme="dark"] .case-industry-tag{background:rgba(21,24,39,0.75)}
+
+/* Hardcoded "subtle dark tint" fills -> subtle light tint on dark surfaces */
+:root[data-theme="dark"] .hamburger{background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.08)}
+:root[data-theme="dark"] .hamburger:hover{background:rgba(255,255,255,0.09)}
+:root[data-theme="dark"] .hamburger span{background:var(--text-primary)}
+:root[data-theme="dark"] .mobile-menu-divider{background:rgba(255,255,255,0.08)}
+:root[data-theme="dark"] .footer-social{background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.08)}
+:root[data-theme="dark"] .footer-badge{background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.10)}
+:root[data-theme="dark"] .nav-dropdown-divider{background:rgba(255,255,255,0.10)}
+:root[data-theme="dark"] .form-input{background:rgba(255,255,255,0.05)}
+:root[data-theme="dark"] .form-input:focus{background:rgba(129,132,255,0.08)}
+:root[data-theme="dark"] .role-card:hover{background:rgba(255,255,255,0.04)}
+:root[data-theme="dark"] .role-chip{background:rgba(255,255,255,0.05)}
+:root[data-theme="dark"] .cs-quote{background:rgba(255,255,255,0.03)}
+:root[data-theme="dark"] .cs-timeline-chip{background:rgba(255,255,255,0.05)}
+:root[data-theme="dark"] .policy-table th{background:rgba(255,255,255,0.03)}
+:root[data-theme="dark"] .btn-secondary{color:var(--text-primary);background:rgba(255,255,255,0.05)}
+:root[data-theme="dark"] .btn-secondary:hover{background:rgba(255,255,255,0.09)}
+:root[data-theme="dark"] .cred-cell:hover{background:rgba(255,255,255,0.03)}
+:root[data-theme="dark"] .proof-bar-wrap{background:rgba(255,255,255,0.08)}
+:root[data-theme="dark"] .vertical-cell:hover{background:rgba(255,255,255,0.03)}
+
+/* Body/base */
+:root[data-theme="dark"] body{color-scheme:dark}
+:root[data-theme="dark"] select.form-input option{background:var(--ink-raised);color:var(--text-primary)}
+
+/* Smooth global theme transition. Scoped to real elements only (no
+   ::before/::after pseudo-elements, which double/triple the node count) and
+   to background-color/color/border-color only, box-shadow is deliberately
+   excluded since it forces paint on every element and was causing jank on
+   pages with many SVG/card nodes when the theme toggled. */
+*{
+  transition:background-color 200ms ease,color 200ms ease,border-color 200ms ease;
+}
+
+/* ============================================================
+   LOGO SWAP (light/dark asset crossfade, zero layout shift)
+============================================================ */
+.logo-swap{position:relative;display:inline-block;height:86px;line-height:0}
+.logo-swap.logo-swap-footer{height:104px}
+.logo-swap img{height:100%;width:auto;display:block;transition:opacity 280ms var(--ease-premium,cubic-bezier(0.16,1,0.3,1))}
+.logo-swap .logo-img-light{position:relative;z-index:1}
+.logo-swap .logo-img-dark{position:absolute;top:0;left:0;opacity:0;z-index:2}
+:root[data-theme="dark"] .logo-swap .logo-img-light{opacity:0}
+:root[data-theme="dark"] .logo-swap .logo-img-dark{opacity:1}
+@media (max-width:768px){.logo-swap:not(.logo-swap-footer){height:68px}}
+@media (max-width:480px){.logo-swap:not(.logo-swap-footer){height:58px}.logo-swap-footer{height:76px}}
+
+/* ============================================================
+   THEME TOGGLE BUTTON
+============================================================ */
+.theme-toggle{position:relative;width:40px;height:40px;border-radius:10px;border:1px solid var(--border-default);background:rgba(15,15,35,0.03);display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;transition:border-color 200ms,background 200ms,transform 200ms}
+:root[data-theme="dark"] .theme-toggle{background:rgba(255,255,255,0.05)}
+.theme-toggle:hover{border-color:var(--border-accent);background:rgba(91,95,239,0.08)}
+.theme-toggle:active{transform:scale(0.92)}
+.theme-toggle:focus-visible{outline:2px solid var(--spectrum-core);outline-offset:2px}
+.theme-toggle svg{position:absolute;width:18px;height:18px;color:var(--text-primary);transition:opacity 240ms var(--ease-premium,cubic-bezier(0.16,1,0.3,1)),transform 240ms var(--ease-premium,cubic-bezier(0.16,1,0.3,1))}
+.theme-toggle .icon-moon{opacity:1;transform:rotate(0deg) scale(1)}
+.theme-toggle .icon-sun{opacity:0;transform:rotate(-60deg) scale(0.5)}
+:root[data-theme="dark"] .theme-toggle .icon-moon{opacity:0;transform:rotate(60deg) scale(0.5)}
+:root[data-theme="dark"] .theme-toggle .icon-sun{opacity:1;transform:rotate(0deg) scale(1)}
+.mobile-theme-toggle{display:flex;align-items:center;gap:10px;justify-content:center;margin-top:14px;padding:10px 18px;border-radius:10px;border:1px solid var(--border-default);background:rgba(15,15,35,0.03);font-family:'Inter',sans-serif;font-size:14px;font-weight:600;color:var(--text-primary);cursor:pointer;width:100%;max-width:280px}
+:root[data-theme="dark"] .mobile-theme-toggle{background:rgba(255,255,255,0.05)}
+.mobile-theme-toggle svg{width:16px;height:16px}
+.mobile-theme-toggle .icon-sun{display:none}
+:root[data-theme="dark"] .mobile-theme-toggle .icon-moon{display:none}
+:root[data-theme="dark"] .mobile-theme-toggle .icon-sun{display:block}
+
+</style>
+<link rel="stylesheet" href="../../assets/styles.css"/>
+
+<style>
+.t-wrap{max-width:1600px;margin:0 auto;padding:0 24px}
+.t-split{display:grid;grid-template-columns:minmax(0,860px) minmax(0,340px);justify-content:space-between;gap:48px;align-items:start}
+@media (max-width:1100px){.t-split{grid-template-columns:minmax(0,1fr);gap:36px}}
+.t-aside{position:sticky;top:110px;display:flex;flex-direction:column;gap:18px}
+@media (max-width:1100px){.t-aside{position:static}}
+.t-box{border:1px solid var(--border-default);border-radius:18px;background:var(--ink-void);padding:20px 22px}
+.t-box h3{font-family:'Sora',sans-serif;font-size:16px;font-weight:800;color:var(--text-primary);margin:0 0 10px}
+.t-box p{font-size:14px;line-height:1.65;color:var(--text-secondary);margin:0 0 10px}
+.t-box ul{list-style:none;margin:0;padding:0}
+.t-box li{font-size:14px;line-height:1.55;color:var(--text-secondary);padding:9px 0;border-top:1px solid var(--border-default)}
+.t-box li:first-child{border-top:0;padding-top:0}
+.t-box li strong{display:block;color:var(--text-primary);font-size:14px}
+.t-box a.t-link{color:var(--spectrum-core);font-weight:600;text-decoration:none}
+.t-box a.t-link:hover{text-decoration:underline}
+.t-tool{display:block;text-decoration:none;color:inherit}
+.t-tool b{display:block;color:var(--text-primary);font-size:14px}
+.t-tool span{font-size:13px;color:var(--text-muted);line-height:1.5}
+.t-tool:hover b{color:var(--spectrum-core)}
+</style>
+<style>
+.sg-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:28px;align-items:start}
+@media (max-width:1100px){.sg-grid{grid-template-columns:minmax(0,1fr)}}
+.sg-card{border-radius:22px;border:1px solid var(--border-default);background:var(--ink-raised);padding:28px}
+@media (max-width:520px){.sg-card{padding:20px 16px}}
+.sg-out{position:sticky;top:96px}
+@media (max-width:1100px){.sg-out{position:static}}
+.sg-card h2{font-family:'Sora',sans-serif;font-size:20px;font-weight:800;color:var(--text-primary);margin:0 0 6px}
+.sg-note{font-size:13px;color:var(--text-muted);line-height:1.6;margin:0 0 18px}
+.sg-fs{border:0;border-top:1px solid var(--border-default);margin:20px 0 0;padding:18px 0 0}
+.sg-fs legend{font-family:'Sora',sans-serif;font-size:15px;font-weight:800;color:var(--text-primary);padding:0 10px 0 0;float:left;width:100%;margin-bottom:12px}
+.sg-fs legend+*{clear:both}
+.sg-field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.sg-field label,.sg-lbl{font-size:13px;font-weight:600;color:var(--text-primary)}
+.sg-field small{font-size:12px;color:var(--text-muted);line-height:1.5}
+.sg-in{width:100%;padding:10px 13px;min-height:44px;border-radius:10px;border:1px solid var(--border-default);background:var(--ink-void);color:var(--text-primary);font:500 15px 'Inter',sans-serif}
+.sg-in:focus,.sg-day input:focus-visible{outline:2px solid var(--spectrum-core);outline-offset:1px;border-color:var(--spectrum-core)}
+textarea.sg-in{min-height:84px;resize:vertical;line-height:1.5}
+.sg-row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:520px){.sg-row2{grid-template-columns:1fr}}
+.sg-check{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--text-primary);line-height:1.5;margin:0 0 14px;cursor:pointer}
+.sg-check input{width:18px;height:18px;margin-top:2px;accent-color:var(--spectrum-core);flex-shrink:0}
+.sg-hours.off .sg-day{opacity:.4;pointer-events:none}
+.sg-day{display:grid;grid-template-columns:130px minmax(0,1fr);gap:10px;align-items:start;padding:8px 0;border-top:1px solid var(--border-default)}
+@media (max-width:520px){.sg-day{grid-template-columns:1fr}}
+.sg-dlab{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--text-primary);min-height:44px}
+.sg-dlab input{width:18px;height:18px;accent-color:var(--spectrum-core)}
+.sg-ranges{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.sg-range{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted)}
+.sg-range input{padding:8px 10px;min-height:40px;border-radius:8px;border:1px solid var(--border-default);background:var(--ink-void);color:var(--text-primary);font:500 14px 'Inter',sans-serif}
+.sg-link{background:none;border:0;color:var(--spectrum-core);font:600 13px 'Inter',sans-serif;cursor:pointer;padding:4px 0;min-height:32px}
+.sg-link:hover{text-decoration:underline}
+.sg-rep{display:flex;gap:8px;align-items:center;margin-bottom:10px}
+.sg-rep .sg-in{flex:1;min-width:0}
+.sg-kind{flex:0 0 190px!important}
+@media (max-width:520px){.sg-rep{flex-wrap:wrap}.sg-kind{flex:1 1 100%!important}}
+.sg-svc-f{display:flex;flex-direction:column;gap:8px;flex:1;min-width:0}
+.sg-x{flex:0 0 40px;height:40px;border-radius:10px;border:1px solid var(--border-default);background:var(--ink-void);color:var(--text-muted);font-size:20px;line-height:1;cursor:pointer}
+.sg-x:hover{color:#B03A2E;border-color:#B03A2E}
+.sg-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 18px;min-height:44px;border-radius:10px;font:600 14px 'Inter',sans-serif;border:1px solid var(--border-accent-strong);background:transparent;color:var(--text-primary);cursor:pointer}
+.sg-btn:hover{background:rgba(91,95,239,.08)}
+.sg-btn.primary{background:var(--grad-brand);color:#fff;border-color:transparent}
+.sg-btn.primary:hover{opacity:.9;background:var(--grad-brand)}
+.sg-btn[disabled]{opacity:.45;cursor:not-allowed}
+.sg-actions{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 8px}
+.sg-msg{font-size:13.5px;line-height:1.6;min-height:22px;margin:4px 0 10px}
+.sg-msg.ok{color:#0B7A45;font-weight:600}.sg-msg.warn{color:#8A6423;font-weight:600}.sg-msg.err{color:#B03A2E;font-weight:600}
+.sg-codewrap{border-radius:14px;border:1px solid #23253A;background:#14141F;overflow:hidden}
+.sg-code{margin:0;padding:16px 18px;max-height:440px;overflow:auto;font:500 12.5px/1.65 'JetBrains Mono',monospace;color:#D7D9EE;white-space:pre;tab-size:2}
+.sg-code .ky{color:#8FB8FF}.sg-code .st{color:#9EE7B0}.sg-code .nu{color:#F5C57A}.sg-code .bo,.sg-code .nl{color:#E59BFF}.sg-code .tg{color:#8A8FB5}
+.sg-status{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px;line-height:1.5}
+.sg-status li{display:flex;gap:8px}
+.sg-status li span{font-weight:800;flex-shrink:0;width:16px;text-align:center}
+.sg-status .ok{color:#0B7A45}.sg-status .err{color:#B03A2E}.sg-status .warn{color:#8A6423}
+.sg-callout{margin-top:16px;padding:14px 16px;border-radius:12px;border:1px solid var(--border-default);background:var(--ink-void);font-size:13.5px;line-height:1.65;color:var(--text-secondary)}
+.sg-callout b{color:var(--text-primary)}
+.sg-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-top:20px;border-bottom:1px solid var(--border-default)}
+.sg-tab{padding:10px 14px;min-height:44px;background:none;border:0;border-bottom:2px solid transparent;font:600 14px 'Inter',sans-serif;color:var(--text-muted);cursor:pointer}
+.sg-tab[aria-selected="true"]{color:var(--spectrum-core);border-bottom-color:var(--spectrum-core)}
+.sg-panel{padding:14px 0 0;font-size:14px;line-height:1.7;color:var(--text-secondary)}
+.sg-panel ol{margin:0 0 0 20px}.sg-panel li{margin-bottom:6px}
+.sg-panel[hidden]{display:none}
+.sg-prose{max-width:860px;margin:0}
+.sg-prose h2{font-family:'Sora',sans-serif;font-size:clamp(22px,3vw,30px);font-weight:800;color:var(--text-primary);margin:44px 0 14px;line-height:1.25}
+.sg-prose h2:first-child{margin-top:0}
+.sg-prose h3{font-family:'Sora',sans-serif;font-size:17px;font-weight:700;color:var(--text-primary);margin:0 0 8px}
+.sg-prose p{font-size:16px;line-height:1.75;color:var(--text-secondary);margin-bottom:14px}
+.sg-prose ul,.sg-prose ol{margin:0 0 16px 22px;color:var(--text-secondary);font-size:16px;line-height:1.75}
+.sg-prose li{margin-bottom:8px}
+.sg-prose a{color:var(--spectrum-core);font-weight:600;text-decoration:none}
+.sg-prose a:hover{text-decoration:underline}
+.sg-prose code{font:500 14px 'JetBrains Mono',monospace;background:rgba(15,15,35,.06);padding:2px 6px;border-radius:5px}
+.sg-faq{border-top:1px solid var(--border-default);padding:18px 0}
+.sg-jump{display:none;font-size:13px;margin-bottom:14px}
+@media (max-width:1100px){.sg-jump{display:block}}
+</style>
+</head>
+<body style="background:var(--ink-void)">
+
+<header id="main-nav" role="banner">
+  <div class="max-w-[1600px] mx-auto px-6">
+    <div class="flex items-center justify-between">
+      <a href="../../" class="nav-logo" aria-label="Tricky Soft Tech Homepage"><span class="logo-swap"><img src="../../assets/logo-on-light-web.png" alt="Tricky Soft Tech" class="nav-logo-img logo-img-light"><img src="../../assets/logo-on-dark-web.png" alt="" class="nav-logo-img logo-img-dark" aria-hidden="true"></span></a>
+      <nav aria-label="Main navigation" class="hidden xl:flex items-center gap-6">
+        <a href="../../" class="nav-link">Home</a>
+        <div class="nav-dropdown">
+      <a href="../../services/" class="nav-link nav-dropdown-trigger">Services<svg class="nav-caret" width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <div class="nav-dropdown-panel">
+      <a href="../../services/local-seo" class="nav-dropdown-link">Local SEO</a>
+      <a href="../../services/google-business-profile" class="nav-dropdown-link">Google Business Profile</a>
+      <a href="../../services/website-development" class="nav-dropdown-link">Website Development</a>
+      <a href="../../services/website-seo" class="nav-dropdown-link">Website SEO</a>
+      <a href="../../services/ai-search-optimization" class="nav-dropdown-link">AI Search Optimization</a>
+      <a href="../../services/geo" class="nav-dropdown-link">GEO Services</a>
+      <a href="../../services/ai-voice-optimization" class="nav-dropdown-link">AI Voice Optimization</a>
+      <a href="../../services/social-media-marketing" class="nav-dropdown-link">Social Media Marketing</a>
+        <div class="nav-dropdown-divider"></div>
+        <a href="../../services/" class="nav-dropdown-link nav-dropdown-viewall">View All Services →</a>
+      </div>
+    </div>
+        <div class="nav-dropdown">
+      <a href="../../industries/" class="nav-link nav-dropdown-trigger">Industries<svg class="nav-caret" width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <div class="nav-dropdown-panel">
+      <a href="../../industries/junk-removal" class="nav-dropdown-link">Junk Removal</a>
+      <a href="../../industries/car-detailing" class="nav-dropdown-link">Car Detailing</a>
+      <a href="../../industries/house-cleaning" class="nav-dropdown-link">House Cleaning</a>
+      <a href="../../industries/towing" class="nav-dropdown-link">Towing</a>
+      <a href="../../industries/pest-control" class="nav-dropdown-link">Pest Control</a>
+      <a href="../../industries/landscaping-lawn-care" class="nav-dropdown-link">Landscaping & Lawn Care</a>
+      <a href="../../industries/locksmith-services" class="nav-dropdown-link">Locksmith Services</a>
+      <a href="../../industries/plumbing" class="nav-dropdown-link">Plumbing</a>
+      <a href="../../industries/hvac" class="nav-dropdown-link">HVAC</a>
+      <a href="../../industries/roofing" class="nav-dropdown-link">Roofing</a>
+      <a href="../../industries/moving-companies" class="nav-dropdown-link">Moving Companies</a>
+      <a href="../../industries/appliance-repair" class="nav-dropdown-link">Appliance Repair</a>
+      <a href="../../industries/snow-removal" class="nav-dropdown-link">Snow Removal</a>
+      <a href="../../industries/chimney-sweep" class="nav-dropdown-link">Chimney Sweep</a>
+      <a href="../../industries/water-damage-restoration" class="nav-dropdown-link">Water Damage Restoration</a>
+      <a href="../../industries/electricians" class="nav-dropdown-link">Electricians</a>
+      <a href="../../industries/holiday-lighting" class="nav-dropdown-link">Holiday Lighting</a>
+        <div class="nav-dropdown-divider"></div>
+        <a href="../../industries/" class="nav-dropdown-link nav-dropdown-viewall">View All Industries →</a>
+      </div>
+    </div>
+        <div class="nav-dropdown">
+      <a href="../../locations/" class="nav-link nav-dropdown-trigger">Locations<svg class="nav-caret" width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <div class="nav-dropdown-panel nav-dropdown-panel-mega">
+                <div class="locations-mega-grid">
+
+        <div class="locations-mega-col">
+          <a href="../../locations/texas" class="locations-mega-title">Texas</a>
+          <a href="../../locations/waco-tx" class="nav-dropdown-link">Waco</a>
+          <a href="../../locations/denton-tx" class="nav-dropdown-link">Denton</a>
+          <a href="../../locations/mcallen-tx" class="nav-dropdown-link">McAllen</a>
+          <a href="../../locations/killeen-tx" class="nav-dropdown-link">Killeen</a>
+          <a href="../../locations/college-station-tx" class="nav-dropdown-link">College Station</a>
+          <a href="../../locations/tyler-tx" class="nav-dropdown-link">Tyler</a>
+          <a href="../../locations/lubbock-tx" class="nav-dropdown-link">Lubbock</a>
+          <a href="../../locations/round-rock-tx" class="nav-dropdown-link">Round Rock</a>
+          <a href="../../locations/abilene-tx" class="nav-dropdown-link">Abilene</a>
+          <a href="../../locations/pearland-tx" class="nav-dropdown-link">Pearland</a>
+          <a href="../../locations/angleton-tx" class="nav-dropdown-link">Angleton</a>
+          <a href="../../locations/lake-jackson-tx" class="nav-dropdown-link">Lake Jackson</a>
+          <a href="../../locations/galveston-tx" class="nav-dropdown-link">Galveston</a>
+          <a href="../../locations/sugar-land-tx" class="nav-dropdown-link">Sugar Land</a>
+          <a href="../../locations/beaumont-tx" class="nav-dropdown-link">Beaumont</a>
+        </div>
+
+        <div class="locations-mega-col">
+          <a href="../../locations/arizona" class="locations-mega-title">Arizona</a>
+          <a href="../../locations/gilbert-az" class="nav-dropdown-link">Gilbert</a>
+          <a href="../../locations/mesa-az" class="nav-dropdown-link">Mesa</a>
+          <a href="../../locations/glendale-az" class="nav-dropdown-link">Glendale</a>
+          <a href="../../locations/peoria-az" class="nav-dropdown-link">Peoria</a>
+          <a href="../../locations/goodyear-az" class="nav-dropdown-link">Goodyear</a>
+          <a href="../../locations/flagstaff-az" class="nav-dropdown-link">Flagstaff</a>
+          <a href="../../locations/scottsdale-az" class="nav-dropdown-link">Scottsdale</a>
+          <a href="../../locations/chandler-az" class="nav-dropdown-link">Chandler</a>
+          <a href="../../locations/tempe-az" class="nav-dropdown-link">Tempe</a>
+          <a href="../../locations/yuma-az" class="nav-dropdown-link">Yuma</a>
+        </div>
+
+        <div class="locations-mega-col">
+          <a href="../../locations/georgia" class="locations-mega-title">Georgia</a>
+          <a href="../../locations/savannah-ga" class="nav-dropdown-link">Savannah</a>
+          <a href="../../locations/augusta-ga" class="nav-dropdown-link">Augusta</a>
+          <a href="../../locations/athens-ga" class="nav-dropdown-link">Athens</a>
+          <a href="../../locations/macon-ga" class="nav-dropdown-link">Macon</a>
+          <a href="../../locations/columbus-ga" class="nav-dropdown-link">Columbus</a>
+          <a href="../../locations/roswell-ga" class="nav-dropdown-link">Roswell</a>
+          <a href="../../locations/marietta-ga" class="nav-dropdown-link">Marietta</a>
+          <a href="../../locations/sandy-springs-ga" class="nav-dropdown-link">Sandy Springs</a>
+          <a href="../../locations/warner-robins-ga" class="nav-dropdown-link">Warner Robins</a>
+          <a href="../../locations/valdosta-ga" class="nav-dropdown-link">Valdosta</a>
+        </div>
+
+        <div class="locations-mega-col">
+          <a href="../../locations/north-carolina" class="locations-mega-title">North Carolina</a>
+          <a href="../../locations/greensboro-nc" class="nav-dropdown-link">Greensboro</a>
+          <a href="../../locations/winston-salem-nc" class="nav-dropdown-link">Winston-Salem</a>
+          <a href="../../locations/fayetteville-nc" class="nav-dropdown-link">Fayetteville</a>
+          <a href="../../locations/wilmington-nc" class="nav-dropdown-link">Wilmington</a>
+          <a href="../../locations/high-point-nc" class="nav-dropdown-link">High Point</a>
+          <a href="../../locations/asheville-nc" class="nav-dropdown-link">Asheville</a>
+          <a href="../../locations/cary-nc" class="nav-dropdown-link">Cary</a>
+          <a href="../../locations/concord-nc" class="nav-dropdown-link">Concord</a>
+          <a href="../../locations/durham-nc" class="nav-dropdown-link">Durham</a>
+        </div>
+
+        <div class="locations-mega-col">
+          <a href="../../locations/tennessee" class="locations-mega-title">Tennessee</a>
+          <a href="../../locations/knoxville-tn" class="nav-dropdown-link">Knoxville</a>
+          <a href="../../locations/chattanooga-tn" class="nav-dropdown-link">Chattanooga</a>
+          <a href="../../locations/murfreesboro-tn" class="nav-dropdown-link">Murfreesboro</a>
+          <a href="../../locations/clarksville-tn" class="nav-dropdown-link">Clarksville</a>
+          <a href="../../locations/franklin-tn" class="nav-dropdown-link">Franklin</a>
+          <a href="../../locations/johnson-city-tn" class="nav-dropdown-link">Johnson City</a>
+          <a href="../../locations/jackson-tn" class="nav-dropdown-link">Jackson</a>
+        </div>
+
+        <div class="locations-mega-col">
+          <a href="../../locations/south-carolina" class="locations-mega-title">South Carolina</a>
+          <a href="../../locations/greenville-sc" class="nav-dropdown-link">Greenville</a>
+          <a href="../../locations/columbia-sc" class="nav-dropdown-link">Columbia</a>
+          <a href="../../locations/charleston-sc" class="nav-dropdown-link">Charleston</a>
+          <a href="../../locations/myrtle-beach-sc" class="nav-dropdown-link">Myrtle Beach</a>
+          <a href="../../locations/rock-hill-sc" class="nav-dropdown-link">Rock Hill</a>
+          <a href="../../locations/spartanburg-sc" class="nav-dropdown-link">Spartanburg</a>
+          <a href="../../locations/sumter-sc" class="nav-dropdown-link">Sumter</a>
+        </div>
+
+        <div class="locations-mega-col">
+          <a href="../../locations/florida" class="locations-mega-title">Florida</a>
+          <a href="../../locations/tallahassee-fl" class="nav-dropdown-link">Tallahassee</a>
+          <a href="../../locations/gainesville-fl" class="nav-dropdown-link">Gainesville</a>
+          <a href="../../locations/sarasota-fl" class="nav-dropdown-link">Sarasota</a>
+          <a href="../../locations/cape-coral-fl" class="nav-dropdown-link">Cape Coral</a>
+          <a href="../../locations/pensacola-fl" class="nav-dropdown-link">Pensacola</a>
+          <a href="../../locations/lakeland-fl" class="nav-dropdown-link">Lakeland</a>
+          <a href="../../locations/ocala-fl" class="nav-dropdown-link">Ocala</a>
+          <a href="../../locations/daytona-beach-fl" class="nav-dropdown-link">Daytona Beach</a>
+        </div>
+
+        <div class="locations-mega-col">
+          <a href="../../locations/ohio" class="locations-mega-title">Ohio</a>
+          <a href="../../locations/akron-oh" class="nav-dropdown-link">Akron</a>
+          <a href="../../locations/dayton-oh" class="nav-dropdown-link">Dayton</a>
+          <a href="../../locations/toledo-oh" class="nav-dropdown-link">Toledo</a>
+          <a href="../../locations/canton-oh" class="nav-dropdown-link">Canton</a>
+          <a href="../../locations/youngstown-oh" class="nav-dropdown-link">Youngstown</a>
+          <a href="../../locations/dublin-oh" class="nav-dropdown-link">Dublin</a>
+          <a href="../../locations/mason-oh" class="nav-dropdown-link">Mason</a>
+          <a href="../../locations/lorain-oh" class="nav-dropdown-link">Lorain</a>
+          <a href="../../locations/sandusky-oh" class="nav-dropdown-link">Sandusky</a>
+          <a href="../../locations/westerville-oh" class="nav-dropdown-link">Westerville</a>
+        </div>
+
+        <div class="locations-mega-col">
+          <a href="../../locations/indiana" class="locations-mega-title">Indiana</a>
+          <a href="../../locations/fort-wayne-in" class="nav-dropdown-link">Fort Wayne</a>
+          <a href="../../locations/evansville-in" class="nav-dropdown-link">Evansville</a>
+          <a href="../../locations/south-bend-in" class="nav-dropdown-link">South Bend</a>
+          <a href="../../locations/carmel-in" class="nav-dropdown-link">Carmel</a>
+          <a href="../../locations/fishers-in" class="nav-dropdown-link">Fishers</a>
+          <a href="../../locations/bloomington-in" class="nav-dropdown-link">Bloomington</a>
+          <a href="../../locations/lafayette-in" class="nav-dropdown-link">Lafayette</a>
+          <a href="../../locations/muncie-in" class="nav-dropdown-link">Muncie</a>
+          <a href="../../locations/noblesville-in" class="nav-dropdown-link">Noblesville</a>
+          <a href="../../locations/valparaiso-in" class="nav-dropdown-link">Valparaiso</a>
+        </div>
+
+        <div class="locations-mega-col">
+          <a href="../../locations/missouri" class="locations-mega-title">Missouri</a>
+          <a href="../../locations/springfield-mo" class="nav-dropdown-link">Springfield</a>
+          <a href="../../locations/columbia-mo" class="nav-dropdown-link">Columbia</a>
+          <a href="../../locations/lees-summit-mo" class="nav-dropdown-link">Lee's Summit</a>
+          <a href="../../locations/ofallon-mo" class="nav-dropdown-link">O'Fallon</a>
+          <a href="../../locations/st-charles-mo" class="nav-dropdown-link">St. Charles</a>
+          <a href="../../locations/joplin-mo" class="nav-dropdown-link">Joplin</a>
+          <a href="../../locations/jefferson-city-mo" class="nav-dropdown-link">Jefferson City</a>
+          <a href="../../locations/branson-mo" class="nav-dropdown-link">Branson</a>
+          <a href="../../locations/st-joseph-mo" class="nav-dropdown-link">St. Joseph</a>
+          <a href="../../locations/independence-mo" class="nav-dropdown-link">Independence</a>
+        </div>
+
+        <div class="locations-mega-col">
+          <a href="../../locations/alabama" class="locations-mega-title">Alabama</a>
+          <a href="../../locations/huntsville-al" class="nav-dropdown-link">Huntsville</a>
+          <a href="../../locations/mobile-al" class="nav-dropdown-link">Mobile</a>
+          <a href="../../locations/montgomery-al" class="nav-dropdown-link">Montgomery</a>
+          <a href="../../locations/tuscaloosa-al" class="nav-dropdown-link">Tuscaloosa</a>
+          <a href="../../locations/auburn-al" class="nav-dropdown-link">Auburn</a>
+          <a href="../../locations/hoover-al" class="nav-dropdown-link">Hoover</a>
+          <a href="../../locations/dothan-al" class="nav-dropdown-link">Dothan</a>
+          <a href="../../locations/madison-al" class="nav-dropdown-link">Madison</a>
+          <a href="../../locations/gulf-shores-al" class="nav-dropdown-link">Gulf Shores</a>
+          <a href="../../locations/florence-al" class="nav-dropdown-link">Florence</a>
+        </div>
+
+        <div class="locations-mega-col">
+          <a href="../../locations/utah" class="locations-mega-title">Utah</a>
+          <a href="../../locations/provo-ut" class="nav-dropdown-link">Provo</a>
+          <a href="../../locations/orem-ut" class="nav-dropdown-link">Orem</a>
+          <a href="../../locations/ogden-ut" class="nav-dropdown-link">Ogden</a>
+          <a href="../../locations/st-george-ut" class="nav-dropdown-link">St. George</a>
+          <a href="../../locations/logan-ut" class="nav-dropdown-link">Logan</a>
+          <a href="../../locations/lehi-ut" class="nav-dropdown-link">Lehi</a>
+          <a href="../../locations/sandy-ut" class="nav-dropdown-link">Sandy</a>
+          <a href="../../locations/west-jordan-ut" class="nav-dropdown-link">West Jordan</a>
+          <a href="../../locations/layton-ut" class="nav-dropdown-link">Layton</a>
+          <a href="../../locations/park-city-ut" class="nav-dropdown-link">Park City</a>
+        </div>
+        </div>
+        <div class="nav-dropdown-divider"></div>
+        <a href="../../locations/" class="nav-dropdown-link nav-dropdown-viewall">View All Locations →</a>
+      </div>
+    </div>
+        <a href="../../blog/" class="nav-link">Blog</a>
+        <a href="../../portfolio" class="nav-link">Portfolio</a>
+        <a href="../../case-studies" class="nav-link">Case Studies</a>
+        <a href="../../about" class="nav-link">About</a>
+        <a href="../../contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <button type="button" class="theme-toggle" id="theme-toggle-btn" aria-label="Switch to dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <a href="../../contact" class="btn-nav hidden xl:inline-flex">
+          Book Strategy Call
+          <span class="btn-arrow" aria-hidden="true">→</span>
+        </a>
+        <button class="hamburger xl:hidden" id="hamburger-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav id="mobile-menu" role="navigation" aria-label="Mobile navigation" aria-hidden="true">
+  <a href="../../" class="mobile-nav-link" tabindex="-1">Home</a>
+  <div class="mobile-nav-group">
+    <div class="mobile-nav-row">
+      <span class="mobile-nav-row-spacer" aria-hidden="true"></span>
+      <a href="../../services/" class="mobile-nav-link" tabindex="-1">Services</a>
+      <button type="button" class="mobile-nav-chevron-btn" tabindex="-1" aria-expanded="false" aria-controls="mm-services" aria-label="Toggle Services submenu"><svg class="mobile-nav-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+    <div class="mobile-nav-sublist" id="mm-services">
+      <a href="../../services/local-seo" class="mobile-nav-sublink" tabindex="-1">Local SEO</a>
+      <a href="../../services/google-business-profile" class="mobile-nav-sublink" tabindex="-1">Google Business Profile</a>
+      <a href="../../services/website-development" class="mobile-nav-sublink" tabindex="-1">Website Development</a>
+      <a href="../../services/website-seo" class="mobile-nav-sublink" tabindex="-1">Website SEO</a>
+      <a href="../../services/ai-search-optimization" class="mobile-nav-sublink" tabindex="-1">AI Search Optimization</a>
+      <a href="../../services/geo" class="mobile-nav-sublink" tabindex="-1">GEO Services</a>
+      <a href="../../services/ai-voice-optimization" class="mobile-nav-sublink" tabindex="-1">AI Voice Optimization</a>
+      <a href="../../services/social-media-marketing" class="mobile-nav-sublink" tabindex="-1">Social Media Marketing</a>
+    </div>
+  </div>
+  <div class="mobile-nav-group">
+    <div class="mobile-nav-row">
+      <span class="mobile-nav-row-spacer" aria-hidden="true"></span>
+      <a href="../../industries/" class="mobile-nav-link" tabindex="-1">Industries</a>
+      <button type="button" class="mobile-nav-chevron-btn" tabindex="-1" aria-expanded="false" aria-controls="mm-industries" aria-label="Toggle Industries submenu"><svg class="mobile-nav-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+    <div class="mobile-nav-sublist" id="mm-industries">
+      <a href="../../industries/junk-removal" class="mobile-nav-sublink" tabindex="-1">Junk Removal</a>
+      <a href="../../industries/car-detailing" class="mobile-nav-sublink" tabindex="-1">Car Detailing</a>
+      <a href="../../industries/house-cleaning" class="mobile-nav-sublink" tabindex="-1">House Cleaning</a>
+      <a href="../../industries/towing" class="mobile-nav-sublink" tabindex="-1">Towing</a>
+      <a href="../../industries/pest-control" class="mobile-nav-sublink" tabindex="-1">Pest Control</a>
+      <a href="../../industries/landscaping-lawn-care" class="mobile-nav-sublink" tabindex="-1">Landscaping &amp; Lawn Care</a>
+      <a href="../../industries/locksmith-services" class="mobile-nav-sublink" tabindex="-1">Locksmith Services</a>
+      <a href="../../industries/plumbing" class="mobile-nav-sublink" tabindex="-1">Plumbing</a>
+      <a href="../../industries/hvac" class="mobile-nav-sublink" tabindex="-1">HVAC</a>
+      <a href="../../industries/roofing" class="mobile-nav-sublink" tabindex="-1">Roofing</a>
+      <a href="../../industries/moving-companies" class="mobile-nav-sublink" tabindex="-1">Moving Companies</a>
+      <a href="../../industries/appliance-repair" class="mobile-nav-sublink" tabindex="-1">Appliance Repair</a>
+      <a href="../../industries/snow-removal" class="mobile-nav-sublink" tabindex="-1">Snow Removal</a>
+      <a href="../../industries/chimney-sweep" class="mobile-nav-sublink" tabindex="-1">Chimney Sweep</a>
+      <a href="../../industries/water-damage-restoration" class="mobile-nav-sublink" tabindex="-1">Water Damage Restoration</a>
+      <a href="../../industries/electricians" class="mobile-nav-sublink" tabindex="-1">Electricians</a>
+      <a href="../../industries/holiday-lighting" class="mobile-nav-sublink" tabindex="-1">Holiday Lighting</a>
+    </div>
+  </div>
+  <div class="mobile-nav-group">
+    <div class="mobile-nav-row">
+      <span class="mobile-nav-row-spacer" aria-hidden="true"></span>
+      <a href="../../locations/" class="mobile-nav-link" tabindex="-1">Locations</a>
+      <button type="button" class="mobile-nav-chevron-btn" tabindex="-1" aria-expanded="false" aria-controls="mm-locations" aria-label="Toggle Locations submenu"><svg class="mobile-nav-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+    <div class="mobile-nav-sublist" id="mm-locations">
+      <a href="../../locations/texas" class="mobile-nav-sublink" tabindex="-1">Texas</a>
+      <a href="../../locations/arizona" class="mobile-nav-sublink" tabindex="-1">Arizona</a>
+      <a href="../../locations/georgia" class="mobile-nav-sublink" tabindex="-1">Georgia</a>
+      <a href="../../locations/north-carolina" class="mobile-nav-sublink" tabindex="-1">North Carolina</a>
+      <a href="../../locations/tennessee" class="mobile-nav-sublink" tabindex="-1">Tennessee</a>
+      <a href="../../locations/south-carolina" class="mobile-nav-sublink" tabindex="-1">South Carolina</a>
+      <a href="../../locations/florida" class="mobile-nav-sublink" tabindex="-1">Florida</a>
+      <a href="../../locations/ohio" class="mobile-nav-sublink" tabindex="-1">Ohio</a>
+      <a href="../../locations/indiana" class="mobile-nav-sublink" tabindex="-1">Indiana</a>
+      <a href="../../locations/missouri" class="mobile-nav-sublink" tabindex="-1">Missouri</a>
+      <a href="../../locations/alabama" class="mobile-nav-sublink" tabindex="-1">Alabama</a>
+      <a href="../../locations/utah" class="mobile-nav-sublink" tabindex="-1">Utah</a>
+    </div>
+  </div>
+  <a href="../../blog/" class="mobile-nav-link" tabindex="-1">Blog</a>
+  <a href="../../portfolio" class="mobile-nav-link" tabindex="-1">Portfolio</a>
+  <a href="../../case-studies" class="mobile-nav-link" tabindex="-1">Case Studies</a>
+  <a href="../../about" class="mobile-nav-link" tabindex="-1">About</a>
+  <a href="../../contact" class="mobile-nav-link" tabindex="-1">Contact</a>
+  <div class="mobile-menu-divider"></div>
+  <div class="mobile-cta">
+    <a href="../../contact" class="btn-nav w-full justify-center" tabindex="-1">
+      Book Strategy Call
+      <span class="btn-arrow" aria-hidden="true">→</span>
+    </a>
+  </div>
+</nav>
+
+<main>
+
+<section style="padding:150px 0 40px;position:relative;overflow:hidden">
+  <div style="position:absolute;width:520px;height:520px;border-radius:50%;background:rgba(91,95,239,0.09);filter:blur(90px);top:-120px;right:-60px;pointer-events:none"></div>
+  <div class="t-wrap" style="position:relative;z-index:1">
+    <nav aria-label="Breadcrumb" style="font-size:13px;color:var(--text-muted);margin-bottom:22px">
+      <a href="../../" style="color:var(--text-muted);text-decoration:none">Home</a> &rsaquo; <a href="../" style="color:var(--text-muted);text-decoration:none">Tools</a> &rsaquo; <span style="color:var(--text-secondary)">Local Business Schema Generator</span>
+    </nav>
+    <div class="eyebrow"><span class="eyebrow-dot"></span>Free Tool</div>
+    <h1 class="section-headline mb-5" style="font-size:clamp(30px,4.6vw,54px)">Local Business Schema Generator</h1>
+    <p class="section-sub" style="max-width:720px">Fill in your business details and get valid LocalBusiness JSON-LD code, with opening hours, service areas, and services, ready to paste into your website. Free, no signup, and everything stays in your browser.</p>
+  </div>
+</section>
+
+<section style="padding:20px 0 70px">
+  <div class="t-wrap">
+    <div class="sg-grid">
+
+      <form class="sg-card" id="sg-form" autocomplete="off" aria-label="Local business schema inputs">
+        <h2>Your business details</h2>
+        <p class="sg-note">Fields you leave empty are left out of the code. Use the same details as your Google Business Profile.</p>
+        <p class="sg-jump"><a href="#sg-output" style="color:var(--spectrum-core);font-weight:600">Jump to your code &darr;</a></p>
+
+        <div class="sg-field"><label for="sg-type">Business type</label>
+          <select class="sg-in" id="sg-type"><option value="Plumber">Plumber</option><option value="Electrician">Electrician</option><option value="HVACBusiness">HVACBusiness</option><option value="RoofingContractor">RoofingContractor</option><option value="GeneralContractor">GeneralContractor</option><option value="HousePainter">HousePainter</option><option value="Locksmith">Locksmith</option><option value="MovingCompany">MovingCompany</option><option value="Dentist">Dentist</option><option value="MedicalClinic">MedicalClinic</option><option value="Physician">Physician</option><option value="Attorney">Attorney</option><option value="LegalService">LegalService</option><option value="AutoRepair">AutoRepair</option><option value="AutoBodyShop">AutoBodyShop</option><option value="BeautySalon">BeautySalon</option><option value="DaySpa">DaySpa</option><option value="Restaurant">Restaurant</option><option value="RealEstateAgent">RealEstateAgent</option><option value="AccountingService">AccountingService</option><option value="InsuranceAgency">InsuranceAgency</option><option value="ProfessionalService">ProfessionalService</option><option value="HomeAndConstructionBusiness">HomeAndConstructionBusiness</option><option value="LocalBusiness" selected>LocalBusiness (generic)</option></select>
+          <small>Pick the most specific schema.org type that fits. Use LocalBusiness if none do.</small></div>
+        <div class="sg-field"><label for="sg-name">Business name <span aria-hidden="true">*</span></label><input class="sg-in" id="sg-name" type="text" autocomplete="organization"/></div>
+        <div class="sg-field"><label for="sg-url">Website URL <span aria-hidden="true">*</span></label><input class="sg-in" id="sg-url" type="url" placeholder="https://example.com" autocomplete="url"/></div>
+        <div class="sg-row2">
+          <div class="sg-field"><label for="sg-phone">Phone <span aria-hidden="true">*</span></label><input class="sg-in" id="sg-phone" type="tel" placeholder="+1 555 123 4567" autocomplete="tel"/></div>
+          <div class="sg-field"><label for="sg-email">Email</label><input class="sg-in" id="sg-email" type="email" autocomplete="email"/></div>
+        </div>
+        <div class="sg-row2">
+          <div class="sg-field"><label for="sg-logo">Logo URL</label><input class="sg-in" id="sg-logo" type="url" placeholder="https://example.com/logo.png"/></div>
+          <div class="sg-field"><label for="sg-image">Image URL</label><input class="sg-in" id="sg-image" type="url" placeholder="https://example.com/photo.jpg"/></div>
+        </div>
+        <div class="sg-field"><label for="sg-price">Price range</label><input class="sg-in" id="sg-price" type="text" placeholder="$$"/><small>Optional. Use $ to $$$$ or a range such as $50-$200.</small></div>
+        <div class="sg-field"><label for="sg-desc">Short description</label><textarea class="sg-in" id="sg-desc" maxlength="500" placeholder="One or two sentences about what you do and who you serve."></textarea></div>
+
+        <fieldset class="sg-fs"><legend>Address</legend>
+          <label class="sg-check"><input type="checkbox" id="sg-sab"/><span><b>Service-area business (no public address).</b> Hides street and postal code, and makes areas served required.</span></label>
+          <div data-sab-hide><div class="sg-field"><label for="sg-street">Street address</label><input class="sg-in" id="sg-street" type="text" autocomplete="street-address"/></div></div>
+          <div class="sg-row2">
+            <div class="sg-field"><label for="sg-city">City</label><input class="sg-in" id="sg-city" type="text" autocomplete="address-level2"/></div>
+            <div class="sg-field"><label for="sg-region">State / region</label><input class="sg-in" id="sg-region" type="text" autocomplete="address-level1"/></div>
+          </div>
+          <div class="sg-row2">
+            <div data-sab-hide><div class="sg-field"><label for="sg-postal">Postal code</label><input class="sg-in" id="sg-postal" type="text" autocomplete="postal-code"/></div></div>
+            <div class="sg-field"><label for="sg-country">Country</label><select class="sg-in" id="sg-country"></select></div>
+          </div>
+        </fieldset>
+
+        <fieldset class="sg-fs"><legend>Map location (optional)</legend>
+          <div class="sg-row2">
+            <div class="sg-field"><label for="sg-lat">Latitude</label><input class="sg-in" id="sg-lat" type="text" placeholder="30.2672" inputmode="decimal"/></div>
+            <div class="sg-field"><label for="sg-lng">Longitude</label><input class="sg-in" id="sg-lng" type="text" placeholder="-97.7431" inputmode="decimal"/></div>
+          </div>
+          <p class="sg-note" style="margin-top:-4px">In Google Maps, right-click your business pin and click the coordinates at the top of the menu to copy them. The first number is latitude and the second is longitude.</p>
+          <div class="sg-field"><label for="sg-hasmap">Google Maps or Business Profile link</label><input class="sg-in" id="sg-hasmap" type="url" placeholder="https://www.google.com/maps/place/..."/></div>
+        </fieldset>
+
+        <fieldset class="sg-fs"><legend>Opening hours</legend>
+          <label class="sg-check"><input type="checkbox" id="sg-h24"/><span><b>Open 24/7.</b> Sets every day to open all day.</span></label>
+          <button type="button" class="sg-link" id="sg-fill">Quick fill: Monday to Friday, 9:00 to 17:00</button>
+          <div class="sg-hours" id="sg-hours"></div>
+          <p class="sg-note" style="margin-top:10px">Tick the days you are open. Days left unticked are treated as closed. Use &ldquo;+ Split shift&rdquo; for a lunch break or a second shift.</p>
+        </fieldset>
+
+        <fieldset class="sg-fs"><legend>Areas served<span id="sg-area-req" style="font-weight:600;color:var(--text-muted);font-size:13px"></span></legend>
+          <div id="sg-areas"></div>
+          <button type="button" class="sg-link" id="sg-add-area">+ Add another area</button>
+        </fieldset>
+
+        <fieldset class="sg-fs"><legend>Profiles and links (sameAs)</legend>
+          <div id="sg-same"></div>
+          <button type="button" class="sg-link" id="sg-add-same">+ Add another link</button>
+        </fieldset>
+
+        <fieldset class="sg-fs"><legend>Services offered</legend>
+          <div id="sg-svcs"></div>
+          <button type="button" class="sg-link" id="sg-add-svc">+ Add another service</button>
+        </fieldset>
+      </form>
+
+      <div class="sg-card sg-out" id="sg-output">
+        <h2>Your schema code</h2>
+        <p class="sg-note">Updates as you type. Copy the whole block and paste it into your page.</p>
+        <div class="sg-codewrap"><pre class="sg-code" tabindex="0" aria-label="Generated JSON-LD code"><code id="sg-code"></code></pre></div>
+        <div class="sg-actions">
+          <button type="button" class="sg-btn primary" id="sg-copy">Copy code</button>
+          <button type="button" class="sg-btn" id="sg-download">Download .json</button>
+          <button type="button" class="sg-btn" id="sg-reset">Reset</button>
+        </div>
+        <div class="sg-actions" style="margin-top:0">
+          <button type="button" class="sg-btn" id="sg-rich">Test in Google Rich Results Test</button>
+          <button type="button" class="sg-btn" id="sg-validator">Validate on Schema.org Validator</button>
+        </div>
+        <p class="sg-msg" id="sg-msg" role="status" aria-live="polite"></p>
+        <ul class="sg-status" id="sg-status" aria-label="Checks"></ul>
+
+        <div class="sg-callout"><b>Why there are no review or rating fields.</b> Google does not show review stars for a business that marks up its own reviews, because that is treated as a self-serving review. Adding them can look risky and gains nothing, so they are left out on purpose.</div>
+
+        <div class="sg-tabs" role="tablist" aria-label="How to add the code">
+          <button type="button" class="sg-tab" role="tab" id="sg-t0" aria-controls="sg-p0" aria-selected="true">WordPress</button>
+          <button type="button" class="sg-tab" role="tab" id="sg-t1" aria-controls="sg-p1" aria-selected="false" tabindex="-1">Shopify</button>
+          <button type="button" class="sg-tab" role="tab" id="sg-t2" aria-controls="sg-p2" aria-selected="false" tabindex="-1">Wix</button>
+          <button type="button" class="sg-tab" role="tab" id="sg-t3" aria-controls="sg-p3" aria-selected="false" tabindex="-1">HTML</button>
+        </div>
+        <div class="sg-panel" role="tabpanel" id="sg-p0" aria-labelledby="sg-t0"><ol><li>Copy the code with the button above.</li><li>Use a header and footer scripts plugin, or your SEO plugin&rsquo;s custom code option, and paste the full block into the head section for the page you want.</li><li>If Yoast or Rank Math already outputs LocalBusiness schema, turn that output off or skip this step so the page does not declare the business twice.</li><li>Save, then test the page URL in the Rich Results Test.</li></ol></div>
+        <div class="sg-panel" role="tabpanel" id="sg-p1" aria-labelledby="sg-t1" hidden><ol><li>Copy the code.</li><li>In your Shopify admin, open Online Store, then Themes, then Edit code.</li><li>Open <code>theme.liquid</code> and paste the block just before the closing <code>&lt;/head&gt;</code> tag, then save.</li><li>Menu names can change, so check Shopify&rsquo;s help if the path differs. Then test your home page URL.</li></ol></div>
+        <div class="sg-panel" role="tabpanel" id="sg-p2" aria-labelledby="sg-t2" hidden><ol><li>Copy the code.</li><li>In Wix, open the page&rsquo;s SEO settings, go to the Advanced SEO tab, and look for Structured Data Markup, then add the code there. Alternatively, use Custom Code in your site settings and add it to the head.</li><li>If a field rejects the script tags, paste only the JSON between them.</li><li>Publish the site, then test the live URL. Menu names can change.</li></ol></div>
+        <div class="sg-panel" role="tabpanel" id="sg-p3" aria-labelledby="sg-t3" hidden><ol><li>Copy the code.</li><li>Open your page&rsquo;s HTML file and paste the full block inside the <code>&lt;head&gt;</code> section, or anywhere in the body.</li><li>Upload the file, then test the live URL in the Rich Results Test.</li></ol></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section style="padding:20px 0 80px;background:var(--ink-base)">
+  <div class="t-wrap">
+    <div class="t-split" style="padding-top:34px">
+    <div class="sg-prose">
+
+      <h2>What is LocalBusiness schema and why it matters for local SEO and AI search</h2>
+      <p>LocalBusiness schema is a block of structured data, written in JSON-LD, that describes your business to machines: its name, address, phone number, opening hours, the area it serves, and the services it offers. It uses the shared vocabulary at schema.org, so search engines and AI tools can read your details without guessing from page text.</p>
+      <p>It matters for two reasons. First, clear, consistent business details support the other local SEO work you do, from your Google Business Profile to your citations. Second, AI assistants and answer engines draw on structured, consistent information when they describe or recommend businesses, so well-labeled data makes your details easier to read correctly. Schema is not a ranking shortcut, but it removes ambiguity. For the wider picture, read our guide to <a href="../../blog/localbusiness-schema">LocalBusiness schema</a> and <a href="../../blog/entity-seo-for-local-businesses">entity SEO for local businesses</a>.</p>
+
+      <h2>How to use this schema generator</h2>
+      <ol>
+        <li><strong>Choose your business type</strong> from the list, picking the most specific match.</li>
+        <li><strong>Fill in the required fields:</strong> name, website, and phone. Add an address, or areas served if you work at customers&rsquo; locations.</li>
+        <li><strong>Add optional details</strong> such as hours, map link, profile links, and services. Empty fields are left out.</li>
+        <li><strong>Check the status list</strong> under the code for missing fields and format warnings.</li>
+        <li><strong>Copy the code</strong>, paste it into your site, then test it with the buttons provided.</li>
+      </ol>
+      <p>Your progress is saved in your own browser, so a refresh will not lose your entries.</p>
+
+      <h2>Which business type should you choose?</h2>
+      <p>Pick the most specific schema.org type that describes what you do. A plumbing company should use <code>Plumber</code>, a heating and cooling company <code>HVACBusiness</code>, and a roofer <code>RoofingContractor</code>. If your trade has no specific type, a broader one such as <code>HomeAndConstructionBusiness</code> or <code>ProfessionalService</code> works, and <code>LocalBusiness</code> is the safe generic choice.</p>
+      <p>Avoid inventing types or using one that does not fit just because it looks popular. Mismatched types are one of the most common mistakes. Keep the type consistent with your Google Business Profile primary category where you can; our guide to <a href="../../blog/google-business-profile-categories">choosing profile categories</a> can help.</p>
+
+      <h2>Service-area businesses: what to include and what to leave out</h2>
+      <p>If you travel to customers and do not serve people at your address, turn on the service-area business option. That removes the street address and postal code from the code, and makes areas served required.</p>
+      <ul>
+        <li><strong>Include:</strong> your business name, website, phone, city and region you are based in, and a list of the cities or regions you actually serve.</li>
+        <li><strong>Leave out:</strong> a street address you do not show publicly, and areas you do not really serve.</li>
+        <li><strong>Keep consistent:</strong> your service areas should match what you list on your Google Business Profile. See our guide to <a href="../../blog/google-business-profile-service-area-business">Google Business Profile for service area businesses</a>.</li>
+      </ul>
+
+      <h2>How to add schema to your site and test it</h2>
+      <p>Copy the code, then add it to the head of the page that describes your business, usually your home page and contact or location page. The tabs under the generator show steps for WordPress, Shopify, Wix, and plain HTML.</p>
+      <p>After publishing, test the live page URL. Google&rsquo;s Rich Results Test shows whether your structured data can be read, and the Schema.org Validator checks the syntax against the vocabulary. Both buttons above open the tools in a new tab and copy your code so you can paste it into the Code option. Fix any errors, retest, and keep the data in step with your profile whenever your hours, phone, or address change.</p>
+
+      <h2>Common schema mistakes</h2>
+      <ul>
+        <li><strong>Wrong type.</strong> Using a type that does not describe the business, or a made-up one.</li>
+        <li><strong>NAP that does not match your Google Business Profile.</strong> Name, address, and phone should be identical everywhere. See <a href="../../blog/nap-consistency-local-rankings">NAP consistency</a>.</li>
+        <li><strong>Fake or self-serving review markup.</strong> Marking up reviews you wrote about yourself breaks Google&rsquo;s guidelines and does not earn stars.</li>
+        <li><strong>Duplicate schema from plugins.</strong> A theme or SEO plugin may already output business schema, so adding more can create conflicting blocks.</li>
+        <li><strong>Marking up details that are not on the page,</strong> or leaving old hours and phone numbers in place after a change.</li>
+      </ul>
+      <p>If you would rather have an expert set this up and check the rest of your technical foundations, see our <a href="../../services/website-seo">website SEO service</a> and <a href="../../services/local-seo">Local SEO service</a>.</p>
+
+      <h2>Frequently asked questions</h2>
+      <div class="sg-faq"><h3>Does schema improve rankings?</h3><p style="margin-bottom:0">Google says structured data is not a direct ranking factor. What it does is help search engines and AI tools understand who you are, where you operate, and what you offer, and it can make a page eligible for some rich results. Think of it as clear labeling that supports your other local SEO work, not a shortcut to higher rankings.</p></div>
+      <div class="sg-faq"><h3>Where do I put the code?</h3><p style="margin-bottom:0">Paste the full script block into the head of your page, or anywhere in the page body. Google reads JSON-LD in either place. Put it on the page that describes the business, usually the home page and the contact or location page, and keep one LocalBusiness block per page.</p></div>
+      <div class="sg-faq"><h3>Can I use it with Yoast or Rank Math?</h3><p style="margin-bottom:0">Yes, but avoid duplicates. Both plugins can output business schema from their own local SEO settings. If a plugin already outputs your LocalBusiness details, either use the plugin or paste this code, and turn the plugin version off, so the page does not declare the same business twice with different details.</p></div>
+      <div class="sg-faq"><h3>Should every page have LocalBusiness schema?</h3><p style="margin-bottom:0">No. It belongs on pages that describe the business itself, such as the home, contact, and location pages. Blog posts and service pages do not need their own copy. Repeating the same business block everywhere adds noise without much benefit.</p></div>
+      <div class="sg-faq"><h3>What about multiple locations?</h3><p style="margin-bottom:0">Create one schema block per location, and place each on that location’s own page. Each block should carry that branch’s own address, phone number, and hours. Run this generator once for each location and keep the details identical to each location’s Google Business Profile.</p></div>
+      <div class="sg-faq"><h3>Why does Google not show my stars?</h3><p style="margin-bottom:0">Google’s guidelines treat reviews that a business marks up about itself as self-serving, so they do not qualify for review stars in search results for LocalBusiness and similar types. That is why this generator has no review or rating fields. Your real reviews still show on your Google Business Profile.</p></div>
+    </div>
+      <aside class="t-aside" aria-label="Related tools and help">
+        <div class="t-box"><h3>Want it done for you?</h3><p>We handle technical SEO and local SEO for service businesses, including structured data.</p><a class="t-link" href="../../services/website-seo">Technical SEO (Website SEO) &rarr;</a><br><a class="t-link" href="../../services/local-seo">Local SEO &rarr;</a></div>
+        <div class="t-box"><h3>More free tools</h3><ul><li><a class="t-tool" href="../../tools/local-seo-audit/"><b>Local SEO Audit Quiz</b><span>Answer 15 questions and get a local SEO score out of 100, with a fix for every gap.</span></a></li><li><a class="t-tool" href="../../tools/local-seo-roi-calculator/"><b>Local SEO ROI Calculator</b><span>Estimate the extra leads, revenue, and payback month from local SEO, with a realistic 12-month ramp-up.</span></a></li><li><a class="t-link" href="../../tools/">All free tools &rarr;</a></li></ul></div>
+        <div class="t-box"><h3>Want an expert to look?</h3><p>Book a free audit and we will show you what we would fix first for your market.</p><a class="t-link" href="../../contact">Get a free Local SEO audit &rarr;</a></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer" role="contentinfo" aria-label="Site footer">
+  <div class="max-w-[1600px] mx-auto px-6 lg:px-10">
+    <div class="grid grid-cols-2 lg:grid-cols-5 gap-x-6 gap-y-10 pb-14">
+      <div class="col-span-2 lg:col-span-2">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:0;">
+          <span class="logo-swap logo-swap-footer"><img src="../../assets/logo-on-light-web.png" alt="Tricky Soft Tech" class="footer-logo-img logo-img-light"><img src="../../assets/logo-on-dark-web.png" alt="" class="footer-logo-img logo-img-dark" aria-hidden="true"></span>
+        </div>
+        <p class="footer-tagline">A world-class digital growth agency specializing in SEO, GEO, AI Search, Web Development, and Social Media, delivering compounding, measurable results.</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/company/trickysofttech" class="footer-social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="https://x.com/expert63453" class="footer-social" aria-label="Twitter / X" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="https://www.instagram.com/trickysofttech" class="footer-social" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg></a>
+          <a href="https://www.facebook.com/people/Tricky-Soft-Tech/100095114473931/" class="footer-social" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg></a>
+          <a href="https://www.youtube.com/@trickysofttech" class="footer-social" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20.06 12 20.06 12 20.06s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Services</p>
+        <ul class="footer-links">
+          <li><a href="../../services/website-development">Website Development</a></li>
+          <li><a href="../../services/website-seo">Website SEO</a></li>
+          <li><a href="../../services/local-seo">Local SEO</a></li>
+          <li><a href="../../services/google-business-profile">GBP Optimization</a></li>
+          <li><a href="../../services/ai-search-optimization">AI Search Optimization</a></li>
+          <li><a href="../../services/geo">GEO Services</a></li>
+          <li><a href="../../services/ai-voice-optimization">AI Voice Optimization</a></li>
+          <li><a href="../../services/social-media-marketing">Social Media</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Company</p>
+        <ul class="footer-links">
+          <li><a href="../../locations/">Locations</a></li>
+          <li><a href="../../blog/">Blog</a></li>
+          <li><a href="../../tools/">Free Tools</a></li>
+          <li><a href="../../about">About Us</a></li>
+          <li><a href="../../portfolio">Portfolio</a></li>
+          <li><a href="../../case-studies">Case Studies</a></li>
+          <li><a href="../../careers">Careers</a></li>
+          <li><a href="../../contact">Contact Us</a></li>
+          <li><a href="../../privacy">Privacy Policy</a></li>
+          <li><a href="../../terms">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="col-span-2 lg:col-span-1">
+        <p class="footer-col-title">Get in Touch</p>
+        <ul class="footer-links">
+          <li><a href="mailto:info@trickysofttech.com" style="display:flex;align-items:center;gap:6px;">
+            <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="14" height="10" rx="2"/><path d="M1 5l7 5 7-5"/></svg>
+            info@trickysofttech.com
+          </a></li>
+          <li style="padding-top:4px;">
+            <div style="padding:12px 14px;border-radius:10px;border:1px solid var(--border-accent-strong);background:rgba(91,95,239,0.06);">
+              <div style="font-size:11px;font-weight:700;color:var(--spectrum-core);margin-bottom:4px;">Free Growth Audit</div>
+              <div style="font-size:12px;color:var(--text-muted);margin-bottom:8px;">30-minute strategy call. No obligation.</div>
+              <a href="../../contact" class="btn-nav" style="font-size:12px;padding:8px 14px;display:inline-flex;">Book Now →</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-legal">© 2026 Tricky Soft Tech. All rights reserved. &nbsp;·&nbsp; <a href="../../privacy">Privacy Policy</a> &nbsp;·&nbsp; <a href="../../terms">Terms of Service</a></p>
+      <div class="footer-badges">
+        <span class="footer-badge">Founded 2021</span>
+        <span class="footer-badge">Senior-Led</span>
+        <span class="footer-badge">Remote, US-Wide</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+'use strict';
+const mainNav = document.getElementById('main-nav');
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+let menuOpen = false;
+let dropdownHovered = false;
+document.querySelectorAll('.nav-dropdown').forEach(d => {
+  d.addEventListener('mouseenter', () => { dropdownHovered = true; });
+  d.addEventListener('mouseleave', () => { dropdownHovered = false; });
+});
+function updateNav() { if (dropdownHovered) return; mainNav.classList.toggle('nav-scrolled', window.scrollY > 80); }
+function openMenu() {
+  menuOpen = true; hamburgerBtn.classList.add('open'); hamburgerBtn.setAttribute('aria-expanded','true');
+  hamburgerBtn.setAttribute('aria-label','Close navigation menu'); mobileMenu.classList.add('open');
+  mobileMenu.setAttribute('aria-hidden','false'); document.body.style.overflow = 'hidden';
+  mobileMenu.querySelectorAll('[tabindex="-1"]').forEach(el => el.removeAttribute('tabindex'));
+}
+function closeMenu() {
+  menuOpen = false; hamburgerBtn.classList.remove('open'); hamburgerBtn.setAttribute('aria-expanded','false');
+  hamburgerBtn.setAttribute('aria-label','Open navigation menu'); mobileMenu.classList.remove('open');
+  mobileMenu.setAttribute('aria-hidden','true'); document.body.style.overflow = '';
+  mobileMenu.querySelectorAll('a, button').forEach(el => el.setAttribute('tabindex','-1'));
+}
+hamburgerBtn.addEventListener('click', () => { menuOpen ? closeMenu() : openMenu(); });
+mobileMenu.querySelectorAll('.mobile-nav-link, .mobile-cta a').forEach(l => l.addEventListener('click', closeMenu));
+mobileMenu.querySelectorAll('.mobile-nav-chevron-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+    const sublist = document.getElementById(btn.getAttribute('aria-controls'));
+    if (sublist) sublist.classList.toggle('open', !expanded);
+  });
+});
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && menuOpen) { closeMenu(); hamburgerBtn.focus(); } });
+let rafPending = false;
+window.addEventListener('scroll', () => {
+  if (!rafPending) { rafPending = true; requestAnimationFrame(() => { updateNav(); rafPending = false; }); }
+}, { passive: true });
+updateNav();
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => io.observe(el));
+</script>
+
+<button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<script>
+(function(){
+  var btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  var ticking = false;
+  function update() { btn.classList.toggle('visible', window.scrollY > 480); ticking = false; }
+  window.addEventListener('scroll', function(){ if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  btn.addEventListener('click', function(){ window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  update();
+})();
+</script>
+
+<script>
+(function(){
+  'use strict';
+  var THEME_KEY = 'tst-theme';
+  var COLOR_MAP = {
+    '#157F3C':'#4ADE80','#B54708':'#FB923C','#92610A':'#FBBF24','#8A6D14':'#FBBC04',
+    '#8A6423':'#E8B86D','#7E22CE':'#C084FC','#077A82':'#06C8D4','#0369A1':'#38BDF8',
+    '#BE185D':'#F472B6','#047857':'#34D399','#4338CA':'#818CF8'
+  };
+
+  function initColorMapFixups() {
+    document.querySelectorAll('[style*="color:"]').forEach(function(el){
+      if (el.dataset.baseColor) return;
+      var raw = el.getAttribute('style') || '';
+      var m = raw.match(/color:\s*(#[0-9A-Fa-f]{6})/i);
+      if (m && COLOR_MAP[m[1].toUpperCase()]) el.dataset.baseColor = m[1].toUpperCase();
+    });
+  }
+  function applyColorMapFixups(theme) {
+    document.querySelectorAll('[data-base-color]').forEach(function(el){
+      var base = el.dataset.baseColor;
+      el.style.color = (theme === 'dark' && COLOR_MAP[base]) ? COLOR_MAP[base] : base;
+    });
+  }
+  function updateToggleLabels(theme) {
+    document.querySelectorAll('.theme-toggle').forEach(function(btn){
+      btn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    });
+  }
+  function setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    try { localStorage.setItem(THEME_KEY, theme); } catch(e) {}
+    applyColorMapFixups(theme);
+    updateToggleLabels(theme);
+  }
+
+  var currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+  initColorMapFixups();
+  applyColorMapFixups(currentTheme);
+  updateToggleLabels(currentTheme);
+
+  document.querySelectorAll('.theme-toggle').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      setTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+    });
+  });
+})();
+</script>
+<script src="../../assets/strategy-popup.js?v=3" defer data-tst-spopup></script>
+<script src="../../assets/tst-chat.js?v=3" defer data-tst-chat></script>
+<script>
+(function () {
+  var KEY = 'tst-schema-gen-v1';
+  var DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  var SAME_KINDS = ['Google Business Profile', 'Facebook', 'Instagram', 'LinkedIn', 'Yelp', 'YouTube', 'X (Twitter)', 'Other'];
+  var COUNTRIES = 'US:United States|CA:Canada|GB:United Kingdom|AU:Australia|IE:Ireland|NZ:New Zealand|ZA:South Africa|IN:India|PK:Pakistan|AE:United Arab Emirates|SA:Saudi Arabia|QA:Qatar|KW:Kuwait|BH:Bahrain|OM:Oman|SG:Singapore|MY:Malaysia|PH:Philippines|ID:Indonesia|TH:Thailand|VN:Vietnam|JP:Japan|KR:South Korea|CN:China|HK:Hong Kong|TW:Taiwan|BD:Bangladesh|LK:Sri Lanka|NP:Nepal|DE:Germany|FR:France|ES:Spain|IT:Italy|PT:Portugal|NL:Netherlands|BE:Belgium|LU:Luxembourg|CH:Switzerland|AT:Austria|DK:Denmark|SE:Sweden|NO:Norway|FI:Finland|IS:Iceland|PL:Poland|CZ:Czechia|SK:Slovakia|HU:Hungary|RO:Romania|BG:Bulgaria|GR:Greece|TR:Turkey|UA:Ukraine|RU:Russia|IL:Israel|EG:Egypt|MA:Morocco|NG:Nigeria|KE:Kenya|GH:Ghana|MX:Mexico|BR:Brazil|AR:Argentina|CL:Chile|CO:Colombia|PE:Peru|CR:Costa Rica|PA:Panama|DO:Dominican Republic|JM:Jamaica|TT:Trinidad and Tobago|PR:Puerto Rico'.split('|').map(function (s) { var i = s.indexOf(':'); return [s.slice(0, i), s.slice(i + 1)]; });
+
+  function blank() {
+    var h = {}; DAYS.forEach(function (d) { h[d] = { on: false, ranges: [{ o: '09:00', c: '17:00' }] }; });
+    return { type: 'LocalBusiness', name: '', url: '', logo: '', image: '', phone: '', email: '', price: '', desc: '', sab: false,
+      street: '', city: '', region: '', postal: '', country: '', lat: '', lng: '', h24: false, hours: h, hasmap: '',
+      areas: [''], same: [{ k: 'Google Business Profile', u: '' }], svcs: [{ n: '', d: '' }] };
+  }
+  var M = blank();
+  var $ = function (id) { return document.getElementById(id); };
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(M)); } catch (e) {} }
+  function load() {
+    try {
+      var r = localStorage.getItem(KEY); if (!r) return; var o = JSON.parse(r); var b = blank();
+      Object.keys(b).forEach(function (k) { if (o[k] !== undefined && typeof o[k] === typeof b[k]) b[k] = o[k]; });
+      if (!Array.isArray(b.areas) || !b.areas.length) b.areas = [''];
+      if (!Array.isArray(b.same) || !b.same.length) b.same = [{ k: 'Google Business Profile', u: '' }];
+      if (!Array.isArray(b.svcs) || !b.svcs.length) b.svcs = [{ n: '', d: '' }];
+      DAYS.forEach(function (d) { var x = b.hours && b.hours[d]; if (!x || !Array.isArray(x.ranges) || !x.ranges.length) b.hours[d] = { on: !!(x && x.on), ranges: [{ o: '09:00', c: '17:00' }] }; });
+      M = b;
+    } catch (e) {}
+  }
+
+  // ---------- build the JSON-LD object (always via JSON.stringify, empty fields stripped)
+  function t(v) { return (v == null ? '' : String(v)).trim(); }
+  function put(o, k, v) { v = t(v); if (v) o[k] = v; }
+  function num(v) { v = t(v); if (v === '') return null; var n = Number(v); return isFinite(n) ? n : null; }
+  function buildHours() {
+    var specs = [];
+    if (M.h24) { return [{ '@type': 'OpeningHoursSpecification', dayOfWeek: DAYS.slice(), opens: '00:00', closes: '23:59' }]; }
+    var map = {}, order = [];
+    DAYS.forEach(function (d) {
+      var x = M.hours[d]; if (!x || !x.on) return;
+      x.ranges.forEach(function (r) { if (!r.o || !r.c) return; var key = r.o + '|' + r.c; if (!map[key]) { map[key] = []; order.push(key); } map[key].push(d); });
+    });
+    order.forEach(function (key) { var p = key.split('|'); specs.push({ '@type': 'OpeningHoursSpecification', dayOfWeek: map[key].length === 1 ? map[key][0] : map[key], opens: p[0], closes: p[1] }); });
+    return specs;
+  }
+  function build() {
+    var o = { '@context': 'https://schema.org', '@type': t(M.type) || 'LocalBusiness' };
+    put(o, 'name', M.name); put(o, 'url', M.url); put(o, 'logo', M.logo); put(o, 'image', M.image);
+    put(o, 'telephone', M.phone); put(o, 'email', M.email); put(o, 'priceRange', M.price); put(o, 'description', M.desc);
+    var a = { '@type': 'PostalAddress' };
+    if (!M.sab) { put(a, 'streetAddress', M.street); put(a, 'postalCode', M.postal); }
+    put(a, 'addressLocality', M.city); put(a, 'addressRegion', M.region); put(a, 'addressCountry', M.country);
+    if (Object.keys(a).length > 1) o.address = a;
+    var la = num(M.lat), lo = num(M.lng);
+    if (la !== null && lo !== null) o.geo = { '@type': 'GeoCoordinates', latitude: la, longitude: lo };
+    var hs = buildHours(); if (hs.length) o.openingHoursSpecification = hs;
+    var areas = M.areas.map(t).filter(Boolean).map(function (n) { return { '@type': 'City', name: n }; });
+    if (areas.length) o.areaServed = areas;
+    put(o, 'hasMap', M.hasmap);
+    var same = M.same.map(function (s) { return t(s.u); }).filter(Boolean); if (same.length) o.sameAs = same;
+    var offers = M.svcs.filter(function (s) { return t(s.n); }).map(function (s) { var it = { '@type': 'Service', name: t(s.n) }; put(it, 'description', s.d); return { '@type': 'Offer', itemOffered: it }; });
+    if (offers.length) o.makesOffer = offers;
+    return o;
+  }
+
+  // ---------- validation
+  function isUrl(v) { try { var u = new URL(v); return u.protocol === 'http:' || u.protocol === 'https:'; } catch (e) { return false; } }
+  function validate() {
+    var r = [];
+    var add = function (lvl, txt) { r.push({ l: lvl, t: txt }); };
+    var areas = M.areas.map(t).filter(Boolean);
+    if (!t(M.name)) add('err', 'Business name is required.');
+    if (!t(M.url)) add('err', 'Website URL is required.'); else if (!isUrl(t(M.url))) add('warn', 'Website URL should be a full address starting with https://.'); else if (!/^https:/i.test(t(M.url))) add('warn', 'Website URL is not https. Use the secure version if your site has one.');
+    if (!t(M.phone)) add('err', 'Phone number is required.');
+    else { var digits = t(M.phone).replace(/\D/g, ''); if (!/^\+?[0-9 ()\-.]+$/.test(t(M.phone)) || digits.length < 7 || digits.length > 15) add('warn', 'Phone format looks unusual. Use the same format as your Google Business Profile, ideally with the country code, such as +1 555 123 4567.'); }
+    if (M.sab) { if (!areas.length) add('err', 'Add at least one area served. It is required for a service-area business.'); }
+    else if (!t(M.street) && !t(M.city) && !areas.length) add('err', 'Add your address, or add areas served.');
+    if (!M.sab && (t(M.street) || t(M.city)) && !t(M.country)) add('warn', 'Choose a country so the address is complete.');
+    if (t(M.logo) && !/^https:\/\//i.test(t(M.logo))) add('warn', 'Logo URL should be https and a full web address.');
+    if (t(M.image) && !isUrl(t(M.image))) add('warn', 'Image URL does not look like a full web address.');
+    if (t(M.email) && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(t(M.email))) add('warn', 'Email address format looks wrong.');
+    if (t(M.hasmap) && !isUrl(t(M.hasmap))) add('warn', 'Map URL does not look like a full web address.');
+    M.same.forEach(function (s) { if (t(s.u) && !isUrl(t(s.u))) add('warn', 'A profile link (' + (s.k || 'sameAs') + ') is not a full web address.'); });
+    var la = num(M.lat), lo = num(M.lng);
+    if ((t(M.lat) !== '' || t(M.lng) !== '')) {
+      if (la === null || lo === null) add('warn', 'Latitude and longitude must both be numbers.');
+      else if (la < -90 || la > 90 || lo < -180 || lo > 180) add('warn', 'Coordinates are out of range (latitude -90 to 90, longitude -180 to 180).');
+    }
+    if (!M.h24) DAYS.forEach(function (d) { var x = M.hours[d]; if (x && x.on) x.ranges.forEach(function (rg) { if (rg.o && rg.c && rg.c <= rg.o) add('warn', d + ': closing time should be after opening time.'); }); });
+    if (!r.some(function (x) { return x.l === 'err'; })) r.unshift({ l: 'ok', t: 'All required fields are filled in.' });
+    return r;
+  }
+
+  // ---------- highlighting
+  function hl(s) {
+    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/(&lt;\/?script[^&]*?&gt;)|("(?:\\u[a-fA-F0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(?:true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function (m, tag) {
+        if (tag) return '<span class="tg">' + m + '</span>';
+        var c = 'nu'; if (/^"/.test(m)) c = /:$/.test(m) ? 'ky' : 'st'; else if (/true|false/.test(m)) c = 'bo'; else if (/null/.test(m)) c = 'nl';
+        return '<span class="' + c + '">' + m + '</span>';
+      });
+  }
+
+  var rawJson = '', rawBlock = '';
+  function renderOutput() {
+    var o = build();
+    rawJson = JSON.stringify(o, null, 2);
+    rawBlock = '<scr' + 'ipt type="application/ld+json">\n' + rawJson + '\n</' + 'script>';
+    $('sg-code').innerHTML = hl(rawBlock);
+    var v = validate();
+    $('sg-status').innerHTML = v.map(function (x) { return '<li class="' + x.l + '"><span aria-hidden="true">' + (x.l === 'ok' ? '&#10003;' : x.l === 'err' ? '&#10007;' : '!') + '</span> ' + esc(x.t) + '</li>'; }).join('');
+    save();
+  }
+
+  // ---------- form <-> model
+  var SIMPLE = { 'sg-name': 'name', 'sg-url': 'url', 'sg-logo': 'logo', 'sg-image': 'image', 'sg-phone': 'phone', 'sg-email': 'email', 'sg-price': 'price', 'sg-desc': 'desc',
+    'sg-street': 'street', 'sg-city': 'city', 'sg-region': 'region', 'sg-postal': 'postal', 'sg-lat': 'lat', 'sg-lng': 'lng', 'sg-hasmap': 'hasmap', 'sg-type': 'type', 'sg-country': 'country' };
+  function fillStatic() {
+    Object.keys(SIMPLE).forEach(function (id) { $(id).value = M[SIMPLE[id]] || ''; });
+    $('sg-sab').checked = !!M.sab; $('sg-h24').checked = !!M.h24;
+    applySab(); applyH24();
+  }
+  function applySab() {
+    document.querySelectorAll('[data-sab-hide]').forEach(function (el) { el.style.display = M.sab ? 'none' : ''; });
+    $('sg-area-req').textContent = M.sab ? ' (required for service-area businesses)' : '';
+  }
+  function applyH24() { $('sg-hours').classList.toggle('off', !!M.h24); $('sg-fill').disabled = !!M.h24; }
+
+  function renderHours() {
+    var h = '';
+    DAYS.forEach(function (d) {
+      var x = M.hours[d];
+      h += '<div class="sg-day"><label class="sg-dlab"><input type="checkbox" data-day="' + d + '" data-f="on"' + (x.on ? ' checked' : '') + '/> ' + d + '</label><div class="sg-ranges">';
+      x.ranges.forEach(function (r, i) {
+        h += '<div class="sg-range"><input type="time" aria-label="' + d + ' opens" data-day="' + d + '" data-i="' + i + '" data-f="o" value="' + esc(r.o) + '"/><span>to</span><input type="time" aria-label="' + d + ' closes" data-day="' + d + '" data-i="' + i + '" data-f="c" value="' + esc(r.c) + '"/>';
+        if (i > 0) h += '<button type="button" class="sg-x" aria-label="Remove shift" data-rm="' + d + '" data-i="' + i + '">&times;</button>';
+        h += '</div>';
+      });
+      h += '<button type="button" class="sg-link" data-add="' + d + '">+ Split shift</button></div></div>';
+    });
+    $('sg-hours').innerHTML = h;
+  }
+  function renderAreas() {
+    $('sg-areas').innerHTML = M.areas.map(function (a, i) {
+      return '<div class="sg-rep"><input class="sg-in" type="text" aria-label="Area served ' + (i + 1) + '" placeholder="City or region, such as Austin" data-area="' + i + '" value="' + esc(a) + '"/>' + (M.areas.length > 1 ? '<button type="button" class="sg-x" aria-label="Remove area" data-rmarea="' + i + '">&times;</button>' : '') + '</div>';
+    }).join('');
+  }
+  function renderSame() {
+    $('sg-same').innerHTML = M.same.map(function (s, i) {
+      var opts = SAME_KINDS.map(function (k) { return '<option' + (k === s.k ? ' selected' : '') + '>' + esc(k) + '</option>'; }).join('');
+      return '<div class="sg-rep"><select class="sg-in sg-kind" aria-label="Profile type ' + (i + 1) + '" data-samek="' + i + '">' + opts + '</select><input class="sg-in" type="url" aria-label="Profile link ' + (i + 1) + '" placeholder="https://" data-sameu="' + i + '" value="' + esc(s.u) + '"/>' + (M.same.length > 1 ? '<button type="button" class="sg-x" aria-label="Remove link" data-rmsame="' + i + '">&times;</button>' : '') + '</div>';
+    }).join('');
+  }
+  function renderSvcs() {
+    $('sg-svcs').innerHTML = M.svcs.map(function (s, i) {
+      return '<div class="sg-rep sg-svc"><div class="sg-svc-f"><input class="sg-in" type="text" aria-label="Service name ' + (i + 1) + '" placeholder="Service name, such as Water heater repair" data-svcn="' + i + '" value="' + esc(s.n) + '"/><input class="sg-in" type="text" aria-label="Service description ' + (i + 1) + ' (optional)" placeholder="Short description (optional)" data-svcd="' + i + '" value="' + esc(s.d) + '"/></div>' + (M.svcs.length > 1 ? '<button type="button" class="sg-x" aria-label="Remove service" data-rmsvc="' + i + '">&times;</button>' : '') + '</div>';
+    }).join('');
+  }
+  function renderAll() { fillStatic(); renderHours(); renderAreas(); renderSame(); renderSvcs(); renderOutput(); }
+
+  // ---------- events
+  var form = $('sg-form');
+  form.addEventListener('input', function (e) {
+    var el = e.target, id = el.id;
+    if (SIMPLE[id]) { M[SIMPLE[id]] = el.value; }
+    else if (el.hasAttribute('data-area')) M.areas[+el.getAttribute('data-area')] = el.value;
+    else if (el.hasAttribute('data-sameu')) M.same[+el.getAttribute('data-sameu')].u = el.value;
+    else if (el.hasAttribute('data-svcn')) M.svcs[+el.getAttribute('data-svcn')].n = el.value;
+    else if (el.hasAttribute('data-svcd')) M.svcs[+el.getAttribute('data-svcd')].d = el.value;
+    else if (el.hasAttribute('data-day') && el.getAttribute('data-f') !== 'on') M.hours[el.getAttribute('data-day')].ranges[+el.getAttribute('data-i')][el.getAttribute('data-f')] = el.value;
+    else return;
+    renderOutput();
+  });
+  form.addEventListener('change', function (e) {
+    var el = e.target, id = el.id;
+    if (id === 'sg-sab') { M.sab = el.checked; applySab(); }
+    else if (id === 'sg-h24') { M.h24 = el.checked; applyH24(); }
+    else if (SIMPLE[id]) { M[SIMPLE[id]] = el.value; }
+    else if (el.hasAttribute('data-samek')) M.same[+el.getAttribute('data-samek')].k = el.value;
+    else if (el.hasAttribute('data-day') && el.getAttribute('data-f') === 'on') M.hours[el.getAttribute('data-day')].on = el.checked;
+    else return;
+    renderOutput();
+  });
+  form.addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b) return;
+    var d;
+    if ((d = b.getAttribute('data-add'))) { M.hours[d].ranges.push({ o: '13:00', c: '17:00' }); M.hours[d].on = true; renderHours(); }
+    else if ((d = b.getAttribute('data-rm'))) { M.hours[d].ranges.splice(+b.getAttribute('data-i'), 1); renderHours(); }
+    else if (b.hasAttribute('data-rmarea')) { M.areas.splice(+b.getAttribute('data-rmarea'), 1); renderAreas(); }
+    else if (b.hasAttribute('data-rmsame')) { M.same.splice(+b.getAttribute('data-rmsame'), 1); renderSame(); }
+    else if (b.hasAttribute('data-rmsvc')) { M.svcs.splice(+b.getAttribute('data-rmsvc'), 1); renderSvcs(); }
+    else if (b.id === 'sg-add-area') { M.areas.push(''); renderAreas(); var q = $('sg-areas').querySelectorAll('input'); q[q.length - 1].focus(); }
+    else if (b.id === 'sg-add-same') { M.same.push({ k: 'Other', u: '' }); renderSame(); }
+    else if (b.id === 'sg-add-svc') { M.svcs.push({ n: '', d: '' }); renderSvcs(); var z = $('sg-svcs').querySelectorAll('input'); z[z.length - 2].focus(); }
+    else if (b.id === 'sg-fill') { DAYS.forEach(function (x, i) { M.hours[x] = { on: i < 5, ranges: [{ o: '09:00', c: '17:00' }] }; }); renderHours(); }
+    else return;
+    renderOutput();
+  });
+  form.addEventListener('submit', function (e) { e.preventDefault(); });
+
+  function msg(text, cls) { var m = $('sg-msg'); m.textContent = text; m.className = 'sg-msg ' + (cls || ''); clearTimeout(msg.t); msg.t = setTimeout(function () { m.textContent = ''; }, 6000); }
+  function copyText(txt) {
+    if (navigator.clipboard && navigator.clipboard.writeText) return navigator.clipboard.writeText(txt);
+    return new Promise(function (res, rej) { try { var a = document.createElement('textarea'); a.value = txt; a.setAttribute('readonly', ''); a.style.position = 'fixed'; a.style.opacity = '0'; document.body.appendChild(a); a.select(); var ok = document.execCommand('copy'); document.body.removeChild(a); ok ? res() : rej(); } catch (er) { rej(er); } });
+  }
+  function hasErr() { return validate().some(function (x) { return x.l === 'err'; }); }
+  $('sg-copy').addEventListener('click', function () {
+    copyText(rawBlock).then(function () { msg(hasErr() ? 'Copied, but some required fields are still missing.' : 'Code copied to clipboard.', hasErr() ? 'warn' : 'ok'); }, function () { msg('Copy failed. Select the code and copy it manually.', 'err'); });
+  });
+  $('sg-download').addEventListener('click', function () {
+    try { var b = new Blob([rawJson + '\n'], { type: 'application/json' }); var a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = 'local-business-schema.json'; document.body.appendChild(a); a.click(); setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500); msg('Downloaded local-business-schema.json (JSON only, without the script tags).', 'ok'); } catch (e) { msg('Download failed. Use Copy code instead.', 'err'); }
+  });
+  $('sg-reset').addEventListener('click', function () { if (!window.confirm('Clear the form and start over?')) return; M = blank(); try { localStorage.removeItem(KEY); } catch (e) {} renderAll(); msg('Form cleared.', 'ok'); });
+  function openTest(url, name, opt) {
+    copyText(rawBlock).then(function () { msg('Code copied. In ' + name + ', choose ' + opt + ', paste, and run the test.', 'ok'); }, function () { msg('Open ' + name + ', then paste your code. Copy it first with the Copy code button.', 'warn'); });
+    window.open(url, '_blank', 'noopener');
+  }
+  $('sg-rich').addEventListener('click', function () { openTest('https://search.google.com/test/rich-results', 'the Rich Results Test', 'the Code option'); });
+  $('sg-validator').addEventListener('click', function () { openTest('https://validator.schema.org/', 'the Schema.org Validator', 'Code Snippet'); });
+
+  // install tabs
+  var tabs = document.querySelectorAll('.sg-tab');
+  function selectTab(i) { tabs.forEach(function (tb, k) { var on = k === i; tb.setAttribute('aria-selected', on ? 'true' : 'false'); tb.tabIndex = on ? 0 : -1; $(tb.getAttribute('aria-controls')).hidden = !on; }); }
+  tabs.forEach(function (tb, i) {
+    tb.addEventListener('click', function () { selectTab(i); });
+    tb.addEventListener('keydown', function (e) { if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { var n = (i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length; selectTab(n); tabs[n].focus(); } });
+  });
+
+  // init
+  var cs = $('sg-country'); cs.innerHTML = '<option value="">Select country</option>' + COUNTRIES.map(function (c) { return '<option value="' + c[0] + '">' + esc(c[1]) + ' (' + c[0] + ')</option>'; }).join('');
+  load(); renderAll(); selectTab(0);
+})();
+
+</script>
+</body>
+</html>
