@@ -40,6 +40,20 @@
   var selfScript = document.currentScript || document.querySelector('script[data-tst-spopup]');
   var ASSETS = selfScript ? selfScript.src.replace(/[^/]+$/, '') : '/assets/';
 
+  // --- Thanksgiving offer (slider bar + offer popup) -------------------------
+  // While the offer runs, the offer popup replaces this form's 15-second auto popup
+  // (the "Get Started" side tab keeps working). It switches itself off after `end`
+  // and the normal auto popup comes back. To stop it early, set enabled to false.
+  var OFFER = { enabled: true, end: '2026-11-30T23:59:59-05:00', endLabel: 'November 30', endYear: '2026', contactHref: '/contact' };
+  function offerRunning() { return OFFER.enabled && Date.now() < new Date(OFFER.end).getTime(); }
+  if (offerRunning()) {
+    window.TST_OFFER = OFFER;
+    var os = document.createElement('script');
+    os.src = ASSETS + 'thanksgiving-offer.js?v=1';
+    os.defer = true;
+    document.head.appendChild(os);
+  }
+
   var overlay, dialog, form, closeBtn, firstField, lastFocused, keydownHandler;
 
   // --- styles --------------------------------------------------------------
@@ -347,6 +361,7 @@
   // --- schedule ---------------------------------------------------------
   function arm(delay) {
     delay = (typeof delay === 'number') ? delay : DELAY_MS;
+    if (offerRunning()) return;                // offer popup is in charge for now
     setTimeout(function () {
       if (ss('get')) return;                   // shown/dismissed/submitted this session
       if (window.__tstSPOpen) return;          // already on screen
@@ -367,6 +382,19 @@
     if (window.__tstSPOpen) return;
     open();
   }
+
+  // Lets the offer popup open this form with the offer pre-filled.
+  window.tstOpenStrategy = function (opts) {
+    try {
+      showModal();
+      if (opts && dialog) {
+        var subj = dialog.querySelector('input[name="_subject"]');
+        if (subj && opts.subject) subj.value = opts.subject;
+        var msg = dialog.querySelector('#tst-sp-help');
+        if (msg && opts.message && !msg.value.trim()) msg.value = opts.message;
+      }
+    } catch (err) { /* never let the popup break the page */ }
+  };
 
   // --- "Get Started" side tab ----------------------------------------------
   function injectTabStyles() {
