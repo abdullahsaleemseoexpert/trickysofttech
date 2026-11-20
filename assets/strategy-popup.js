@@ -44,7 +44,7 @@
   // While the offer runs, the offer popup replaces this form's 15-second auto popup
   // (the "Get Started" side tab keeps working). It switches itself off after `end`
   // and the normal auto popup comes back. To stop it early, set enabled to false.
-  var OFFER = { enabled: true, end: '2026-11-30T23:59:59-05:00', endLabel: 'November 30', endYear: '2026', contactHref: '/contact' };
+  var OFFER = { enabled: true, end: '2026-12-05T23:59:59-05:00', endLabel: 'December 5', endYear: '2026', contactHref: '/contact' };
   function offerRunning() { return OFFER.enabled && Date.now() < new Date(OFFER.end).getTime(); }
   if (offerRunning()) {
     window.TST_OFFER = OFFER;
