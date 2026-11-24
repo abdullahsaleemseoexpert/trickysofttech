@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Refresh latest blog posts on the home page
         run: node scripts/update-home-blog.js
@@ -35,3 +37,7 @@ jobs:
             **/.secrets/**
             **/scripts/**
             **/seo-audit/**
+
+      - name: Notify IndexNow (Bing, Yandex, Naver, Seznam)
+        run: node scripts/indexnow.js "${{ github.event.before }}" "${{ github.sha }}"
+        continue-on-error: true
